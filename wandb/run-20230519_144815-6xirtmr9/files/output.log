@@ -1,0 +1,324 @@
+self.nx:  2
+len(x0):  2
+Episode : 1 sum_costs : -342.08 Avg Reward : -342.08
+self.nx:  2
+len(x0):  2
+Episode : 2 sum_costs : -818.17 Avg Reward : -580.13
+self.nx:  2
+len(x0):  2
+Episode : 3 sum_costs : -540.14 Avg Reward : -566.80
+self.nx:  2
+len(x0):  2
+Episode : 4 sum_costs : -389.80 Avg Reward : -522.55
+self.nx:  2
+len(x0):  2
+Episode : 5 sum_costs : -395.21 Avg Reward : -497.08
+self.nx:  2
+len(x0):  2
+Episode : 6 sum_costs : -238.54 Avg Reward : -453.99
+self.nx:  2
+len(x0):  2
+Episode : 7 sum_costs : -268.41 Avg Reward : -427.48
+self.nx:  2
+len(x0):  2
+Episode : 8 sum_costs : -643.77 Avg Reward : -454.52
+self.nx:  2
+len(x0):  2
+Episode : 9 sum_costs : -458.77 Avg Reward : -454.99
+self.nx:  2
+len(x0):  2
+Episode : 10 sum_costs : -267.01 Avg Reward : -436.19
+self.nx:  2
+len(x0):  2
+Episode : 11 sum_costs : -701.10 Avg Reward : -460.27
+self.nx:  2
+len(x0):  2
+Episode : 12 sum_costs : -320.77 Avg Reward : -448.65
+self.nx:  2
+len(x0):  2
+Episode : 13 sum_costs : -303.58 Avg Reward : -437.49
+self.nx:  2
+len(x0):  2
+Episode : 14 sum_costs : -247.12 Avg Reward : -423.89
+self.nx:  2
+len(x0):  2
+Episode : 15 sum_costs : -218.66 Avg Reward : -410.21
+self.nx:  2
+len(x0):  2
+Episode : 16 sum_costs : -272.59 Avg Reward : -401.61
+self.nx:  2
+len(x0):  2
+Episode : 17 sum_costs : -502.29 Avg Reward : -407.53
+self.nx:  2
+len(x0):  2
+Episode : 18 sum_costs : -456.71 Avg Reward : -410.26
+self.nx:  2
+len(x0):  2
+Episode : 19 sum_costs : -296.74 Avg Reward : -404.29
+self.nx:  2
+len(x0):  2
+Episode : 20 sum_costs : -585.67 Avg Reward : -413.36
+self.nx:  2
+len(x0):  2
+Episode : 21 sum_costs : -198.56 Avg Reward : -403.13
+self.nx:  2
+len(x0):  2
+Episode : 22 sum_costs : -323.57 Avg Reward : -399.51
+self.nx:  2
+len(x0):  2
+Episode : 23 sum_costs : -473.03 Avg Reward : -402.71
+self.nx:  2
+len(x0):  2
+Episode : 24 sum_costs : -290.97 Avg Reward : -398.05
+self.nx:  2
+len(x0):  2
+Episode : 25 sum_costs : -707.59 Avg Reward : -410.43
+self.nx:  2
+len(x0):  2
+Episode : 26 sum_costs : -266.74 Avg Reward : -404.91
+self.nx:  2
+len(x0):  2
+Episode : 27 sum_costs : -358.76 Avg Reward : -403.20
+self.nx:  2
+len(x0):  2
+Episode : 28 sum_costs : -648.27 Avg Reward : -411.95
+self.nx:  2
+len(x0):  2
+Episode : 29 sum_costs : -316.77 Avg Reward : -408.67
+self.nx:  2
+len(x0):  2
+Episode : 30 sum_costs : -898.32 Avg Reward : -424.99
+self.nx:  2
+len(x0):  2
+Episode : 31 sum_costs : -566.10 Avg Reward : -429.54
+self.nx:  2
+len(x0):  2
+Episode : 32 sum_costs : -255.42 Avg Reward : -424.10
+self.nx:  2
+len(x0):  2
+Episode : 33 sum_costs : -383.11 Avg Reward : -422.86
+self.nx:  2
+len(x0):  2
+Episode : 34 sum_costs : -686.84 Avg Reward : -430.62
+self.nx:  2
+len(x0):  2
+Episode : 35 sum_costs : -326.42 Avg Reward : -427.65
+self.nx:  2
+len(x0):  2
+Episode : 36 sum_costs : -310.33 Avg Reward : -424.39
+self.nx:  2
+len(x0):  2
+Episode : 37 sum_costs : -389.73 Avg Reward : -423.45
+self.nx:  2
+len(x0):  2
+Episode : 38 sum_costs : -717.10 Avg Reward : -431.18
+self.nx:  2
+len(x0):  2
+Episode : 39 sum_costs : -700.39 Avg Reward : -438.08
+self.nx:  2
+len(x0):  2
+Episode : 40 sum_costs : -209.30 Avg Reward : -432.36
+self.nx:  2
+len(x0):  2
+Episode : 41 sum_costs : -278.76 Avg Reward : -428.61
+self.nx:  2
+len(x0):  2
+Episode : 42 sum_costs : -376.59 Avg Reward : -427.38
+self.nx:  2
+len(x0):  2
+Episode : 43 sum_costs : -364.98 Avg Reward : -425.92
+self.nx:  2
+len(x0):  2
+Episode : 44 sum_costs : -513.03 Avg Reward : -427.90
+self.nx:  2
+len(x0):  2
+Episode : 45 sum_costs : -676.50 Avg Reward : -433.43
+self.nx:  2
+len(x0):  2
+Episode : 46 sum_costs : -350.03 Avg Reward : -431.62
+self.nx:  2
+len(x0):  2
+Episode : 47 sum_costs : -281.25 Avg Reward : -428.42
+self.nx:  2
+len(x0):  2
+Episode : 48 sum_costs : -308.78 Avg Reward : -425.92
+self.nx:  2
+len(x0):  2
+Episode : 49 sum_costs : -314.49 Avg Reward : -423.65
+self.nx:  2
+len(x0):  2
+Episode : 50 sum_costs : -352.41 Avg Reward : -422.23
+self.nx:  2
+len(x0):  2
+Episode : 51 sum_costs : -302.93 Avg Reward : -419.89
+self.nx:  2
+len(x0):  2
+Episode : 52 sum_costs : -233.98 Avg Reward : -416.31
+self.nx:  2
+len(x0):  2
+Episode : 53 sum_costs : -377.04 Avg Reward : -415.57
+self.nx:  2
+len(x0):  2
+Episode : 54 sum_costs : -266.51 Avg Reward : -412.81
+self.nx:  2
+len(x0):  2
+Episode : 55 sum_costs : -760.79 Avg Reward : -419.14
+self.nx:  2
+len(x0):  2
+Episode : 56 sum_costs : -282.55 Avg Reward : -416.70
+self.nx:  2
+len(x0):  2
+Episode : 57 sum_costs : -185.04 Avg Reward : -412.63
+self.nx:  2
+len(x0):  2
+Episode : 58 sum_costs : -842.73 Avg Reward : -420.05
+self.nx:  2
+len(x0):  2
+Episode : 59 sum_costs : -293.61 Avg Reward : -417.91
+self.nx:  2
+len(x0):  2
+Episode : 60 sum_costs : -210.97 Avg Reward : -414.46
+self.nx:  2
+len(x0):  2
+Episode : 61 sum_costs : -803.78 Avg Reward : -420.84
+self.nx:  2
+len(x0):  2
+Episode : 62 sum_costs : -260.02 Avg Reward : -418.25
+self.nx:  2
+len(x0):  2
+Episode : 63 sum_costs : -336.42 Avg Reward : -416.95
+self.nx:  2
+len(x0):  2
+Episode : 64 sum_costs : -519.51 Avg Reward : -418.55
+self.nx:  2
+len(x0):  2
+Episode : 65 sum_costs : -300.75 Avg Reward : -416.74
+self.nx:  2
+len(x0):  2
+Episode : 66 sum_costs : -449.18 Avg Reward : -417.23
+self.nx:  2
+len(x0):  2
+Episode : 67 sum_costs : -79.14 Avg Reward : -412.18
+self.nx:  2
+len(x0):  2
+Episode : 68 sum_costs : -627.30 Avg Reward : -415.35
+self.nx:  2
+len(x0):  2
+Episode : 69 sum_costs : -259.69 Avg Reward : -413.09
+self.nx:  2
+len(x0):  2
+Episode : 70 sum_costs : -384.12 Avg Reward : -412.68
+self.nx:  2
+len(x0):  2
+Episode : 71 sum_costs : -376.41 Avg Reward : -412.17
+self.nx:  2
+len(x0):  2
+Episode : 72 sum_costs : -255.90 Avg Reward : -410.00
+self.nx:  2
+len(x0):  2
+Episode : 73 sum_costs : -411.10 Avg Reward : -410.01
+self.nx:  2
+len(x0):  2
+Episode : 74 sum_costs : -232.34 Avg Reward : -407.61
+self.nx:  2
+len(x0):  2
+Episode : 75 sum_costs : -289.18 Avg Reward : -406.03
+self.nx:  2
+len(x0):  2
+Episode : 76 sum_costs : -635.32 Avg Reward : -409.05
+self.nx:  2
+len(x0):  2
+Episode : 77 sum_costs : -301.26 Avg Reward : -407.65
+self.nx:  2
+len(x0):  2
+Episode : 78 sum_costs : -341.71 Avg Reward : -406.80
+self.nx:  2
+len(x0):  2
+Episode : 79 sum_costs : -353.19 Avg Reward : -406.12
+self.nx:  2
+len(x0):  2
+Episode : 80 sum_costs : -328.01 Avg Reward : -405.15
+self.nx:  2
+len(x0):  2
+Episode : 81 sum_costs : -423.26 Avg Reward : -405.37
+self.nx:  2
+len(x0):  2
+Episode : 82 sum_costs : -376.52 Avg Reward : -405.02
+self.nx:  2
+len(x0):  2
+Episode : 83 sum_costs : -304.89 Avg Reward : -403.81
+self.nx:  2
+len(x0):  2
+Episode : 84 sum_costs : -270.67 Avg Reward : -402.23
+self.nx:  2
+len(x0):  2
+Episode : 85 sum_costs : -378.53 Avg Reward : -401.95
+self.nx:  2
+len(x0):  2
+Episode : 86 sum_costs : -441.61 Avg Reward : -402.41
+self.nx:  2
+len(x0):  2
+Episode : 87 sum_costs : -236.47 Avg Reward : -400.50
+self.nx:  2
+len(x0):  2
+Episode : 88 sum_costs : -300.20 Avg Reward : -399.36
+self.nx:  2
+len(x0):  2
+Episode : 89 sum_costs : -487.71 Avg Reward : -400.36
+self.nx:  2
+len(x0):  2
+Episode : 90 sum_costs : -277.72 Avg Reward : -398.99
+self.nx:  2
+len(x0):  2
+Episode : 91 sum_costs : -318.58 Avg Reward : -398.11
+self.nx:  2
+len(x0):  2
+Episode : 92 sum_costs : -289.21 Avg Reward : -396.93
+self.nx:  2
+len(x0):  2
+Episode : 93 sum_costs : -335.45 Avg Reward : -396.26
+self.nx:  2
+len(x0):  2
+Episode : 94 sum_costs : -514.57 Avg Reward : -397.52
+self.nx:  2
+len(x0):  2
+Episode : 95 sum_costs : -351.26 Avg Reward : -397.04
+self.nx:  2
+len(x0):  2
+Episode : 96 sum_costs : -418.25 Avg Reward : -397.26
+self.nx:  2
+len(x0):  2
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 173, in train_dqn
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 146, in step
+    self.x = x0.copy()
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 204, in dynamics
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA._omni_sys_exc: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 173, in train_dqn
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 146, in step
+    self.x = x0.copy()
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 204, in dynamics
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA.TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)

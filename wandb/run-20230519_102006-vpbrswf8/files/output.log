@@ -1,0 +1,17 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m wandb.watch only works with pytorch, couldn't import torch.
+Traceback (most recent call last):
+  File "DQN template.py", line 176, in <module>
+    wandb.watch(dqn.Q, total_reward_hist, log="all", log_freq=10)
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/sdk/wandb_watch.py", line 65, in watch
+    torch = wandb.util.get_module(
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/util.py", line 228, in get_module
+    raise wandb.Error(required)
+wandb.errors.Error: wandb.watch only works with pytorch, couldn't import torch.
+Traceback (most recent call last):
+  File "DQN template.py", line 176, in <module>
+    wandb.watch(dqn.Q, total_reward_hist, log="all", log_freq=10)
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/sdk/wandb_watch.py", line 65, in watch
+    torch = wandb.util.get_module(
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/util.py", line 228, in get_module
+    raise wandb.Error(required)
+wandb.errors.Error: wandb.watch only works with pytorch, couldn't import torch.

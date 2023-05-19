@@ -132,10 +132,17 @@ class Pendulum:
             q0 = np.pi*(np.random.rand(self.nq)*2-1)
             v0 = np.random.rand(self.nv)*2-1
             x0 = np.vstack([q0,v0])
+            print("stack shape: ", np.shape(x0))
+            x0 = np.concatenate((q0,v0))
+            print("concatenate shape: ", np.shape(x0))
+
+        # print("self.nx: ", self.nx)
+        # print("len(x0): ", len(x0))
         assert len(x0)==self.nx
         self.x = x0.copy()
         self.r = 0.0
         return self.obs(self.x)
+    
 
     def step(self, u):
         ''' Simulate one time step '''
@@ -176,26 +183,33 @@ class Pendulum:
             pin.computeAllTerms(self.model,self.data,q,v)
             M   = self.data.M
             b   = self.data.nle
-            a   = inv(M)*(u-self.Kf*v-b)
+            #a   = inv(M)*(u-self.Kf*v-b)
+            a   = np.dot(inv(M),(u-self.Kf*v-b))
             a   = a.reshape(self.nv) + np.random.randn(self.nv)*self.noise_stddev
             self.a = a
 
             q    += (v+0.5*DT*a)*DT
             v    += a*DT
             q_goal = 0
+            print(q)
+            print(v)
             delta_q = sumsq(q_goal-abs(q))
-            Wq = 0.7
+            Wq = 0.9
             Wv = 1-Wq
 
 
             # print("q: ", q)
             # print("v: ", v)
-            # cost += (sumsq(q) + 1e-1*sumsq(v) + 1e-3*sumsq(u))*DT # cost function
-            cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+            
+            #cost += (sumsq(q) + 1e-1*sumsq(v) + 1e-3*sumsq(u))*DT # cost function
+
+            #cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+            #print(f"delta_q: {delta_q},  np.exp(-delta_q/2): {np.exp(-delta_q/2)}, np.sum(v): {np.sum(v)}, np.exp(-delta_q/2) * np.sum(v) {np.exp(-delta_q/2) * np.sum(v)}")
+            cost += delta_q
 
             if display:
                 self.display(q)
-                time.sleep(1e-4)
+                time.sleep(1e-2)
 
         x[:self.nq] = modulePi(q)
         x[self.nq:] = np.clip(v,-self.vmax,self.vmax)
@@ -210,26 +224,26 @@ class Pendulum:
 
 
 
-# Define the RK4 method
-def rk4_step(theta, omega, dt):
-    g=9.81
-    L=1
-    k1_theta = omega
-    k1_omega = -(g/L)*np.sin(theta)
+# # Define the RK4 method
+# def rk4_step(theta, omega, dt):
+#     g=9.81
+#     L=1
+#     k1_theta = omega
+#     k1_omega = -(g/L)*np.sin(theta)
     
-    k2_theta = omega + 0.5*dt*k1_omega
-    k2_omega = -(g/L)*np.sin(theta + 0.5*dt*k1_theta)
+#     k2_theta = omega + 0.5*dt*k1_omega
+#     k2_omega = -(g/L)*np.sin(theta + 0.5*dt*k1_theta)
     
-    k3_theta = omega + 0.5*dt*k2_omega
-    k3_omega = -(g/L)*np.sin(theta + 0.5*dt*k2_theta)
+#     k3_theta = omega + 0.5*dt*k2_omega
+#     k3_omega = -(g/L)*np.sin(theta + 0.5*dt*k2_theta)
     
-    k4_theta = omega + dt*k3_omega
-    k4_omega = -(g/L)*np.sin(theta + dt*k3_theta)
+#     k4_theta = omega + dt*k3_omega
+#     k4_omega = -(g/L)*np.sin(theta + dt*k3_theta)
     
-    theta_new = theta + (dt/6.0)*(k1_theta + 2*k2_theta + 2*k3_theta + k4_theta)
-    omega_new = omega + (dt/6.0)*(k1_omega + 2*k2_omega + 2*k3_omega + k4_omega)
+#     theta_new = theta + (dt/6.0)*(k1_theta + 2*k2_theta + 2*k3_theta + k4_theta)
+#     omega_new = omega + (dt/6.0)*(k1_omega + 2*k2_omega + 2*k3_omega + k4_omega)
     
-    return theta_new, omega_new
+#     return theta_new, omega_new
 
 
 
@@ -237,6 +251,7 @@ def rk4_step(theta, omega, dt):
 if __name__ == "__main__":
     env = Pendulum(1)
     env.reset()
+    env.render()
 
     for i in range(10000):
         env.step(np.zeros(env.nu))

@@ -1,0 +1,144 @@
+
+Episode : 1 sum_costs : -280.57 Avg Reward : -280.57
+Episode : 2 sum_costs : -572.01 Avg Reward : -426.29
+Episode : 3 sum_costs : -104.07 Avg Reward : -318.88
+Episode : 4 sum_costs : -593.28 Avg Reward : -387.48
+Episode : 5 sum_costs : -446.68 Avg Reward : -399.32
+Episode : 6 sum_costs : -138.67 Avg Reward : -355.88
+Episode : 7 sum_costs : -308.39 Avg Reward : -349.09
+Episode : 8 sum_costs : -205.60 Avg Reward : -331.16
+Episode : 9 sum_costs : -133.93 Avg Reward : -309.24
+Episode : 10 sum_costs : -181.34 Avg Reward : -296.45
+Episode : 11 sum_costs : -345.66 Avg Reward : -300.93
+Episode : 12 sum_costs : -176.47 Avg Reward : -290.56
+Episode : 13 sum_costs : -188.38 Avg Reward : -282.70
+Episode : 14 sum_costs : -234.92 Avg Reward : -279.28
+Episode : 15 sum_costs : -165.70 Avg Reward : -271.71
+Episode : 16 sum_costs : -519.44 Avg Reward : -287.19
+Episode : 17 sum_costs : -587.93 Avg Reward : -304.88
+Episode : 18 sum_costs : -464.28 Avg Reward : -313.74
+Episode : 19 sum_costs : -134.86 Avg Reward : -304.32
+Episode : 20 sum_costs : -160.31 Avg Reward : -297.12
+Episode : 21 sum_costs : -237.15 Avg Reward : -294.27
+Episode : 22 sum_costs : -249.45 Avg Reward : -292.23
+Episode : 23 sum_costs : -212.47 Avg Reward : -288.76
+Episode : 24 sum_costs : -159.25 Avg Reward : -283.37
+Episode : 25 sum_costs : -107.15 Avg Reward : -276.32
+Episode : 26 sum_costs : -119.56 Avg Reward : -270.29
+Episode : 27 sum_costs : -226.16 Avg Reward : -268.65
+Episode : 28 sum_costs : -108.27 Avg Reward : -262.93
+Episode : 29 sum_costs : -147.25 Avg Reward : -258.94
+Episode : 30 sum_costs : -198.55 Avg Reward : -256.92
+Episode : 31 sum_costs : -237.34 Avg Reward : -256.29
+Episode : 32 sum_costs : -343.20 Avg Reward : -259.01
+Episode : 33 sum_costs : -183.32 Avg Reward : -256.71
+Episode : 34 sum_costs : -161.07 Avg Reward : -253.90
+Episode : 35 sum_costs : -198.33 Avg Reward : -252.31
+Episode : 36 sum_costs : -178.96 Avg Reward : -250.28
+Episode : 37 sum_costs : -133.32 Avg Reward : -247.11
+Episode : 38 sum_costs : -176.20 Avg Reward : -245.25
+Episode : 39 sum_costs : -267.36 Avg Reward : -245.82
+Episode : 40 sum_costs : -301.30 Avg Reward : -247.20
+Episode : 41 sum_costs : -116.79 Avg Reward : -244.02
+Episode : 42 sum_costs : -200.49 Avg Reward : -242.99
+Episode : 43 sum_costs : -111.74 Avg Reward : -239.93
+Episode : 44 sum_costs : -200.11 Avg Reward : -239.03
+Episode : 45 sum_costs : -85.59 Avg Reward : -235.62
+Episode : 46 sum_costs : -132.48 Avg Reward : -233.38
+Episode : 47 sum_costs : -412.96 Avg Reward : -237.20
+Episode : 48 sum_costs : -183.47 Avg Reward : -236.08
+Episode : 49 sum_costs : -132.40 Avg Reward : -233.96
+Episode : 50 sum_costs : -226.32 Avg Reward : -233.81
+Episode : 51 sum_costs : -123.08 Avg Reward : -231.64
+Episode : 52 sum_costs : -187.10 Avg Reward : -230.78
+Episode : 53 sum_costs : -118.39 Avg Reward : -228.66
+Episode : 54 sum_costs : -209.17 Avg Reward : -228.30
+Episode : 55 sum_costs : -425.04 Avg Reward : -231.88
+Episode : 56 sum_costs : -130.51 Avg Reward : -230.07
+Episode : 57 sum_costs : -125.38 Avg Reward : -228.23
+Episode : 58 sum_costs : -289.63 Avg Reward : -229.29
+Episode : 59 sum_costs : -179.92 Avg Reward : -228.45
+Episode : 60 sum_costs : -181.73 Avg Reward : -227.67
+Episode : 61 sum_costs : -258.28 Avg Reward : -228.18
+Episode : 62 sum_costs : -164.36 Avg Reward : -227.15
+Episode : 63 sum_costs : -219.18 Avg Reward : -227.02
+Episode : 64 sum_costs : -121.95 Avg Reward : -225.38
+Episode : 65 sum_costs : -122.91 Avg Reward : -223.80
+Episode : 66 sum_costs : -172.75 Avg Reward : -223.03
+Episode : 67 sum_costs : -99.28 Avg Reward : -221.18
+Episode : 68 sum_costs : -162.98 Avg Reward : -220.32
+Episode : 69 sum_costs : -190.85 Avg Reward : -219.90
+Episode : 70 sum_costs : -131.22 Avg Reward : -218.63
+Episode : 71 sum_costs : -301.26 Avg Reward : -219.79
+Episode : 72 sum_costs : -178.58 Avg Reward : -219.22
+Episode : 73 sum_costs : -113.78 Avg Reward : -217.78
+Episode : 74 sum_costs : -241.31 Avg Reward : -218.10
+Episode : 75 sum_costs : -434.25 Avg Reward : -220.98
+Episode : 76 sum_costs : -142.35 Avg Reward : -219.94
+Episode : 77 sum_costs : -153.24 Avg Reward : -219.08
+Episode : 78 sum_costs : -138.34 Avg Reward : -218.04
+Episode : 79 sum_costs : -235.09 Avg Reward : -218.26
+Episode : 80 sum_costs : -120.57 Avg Reward : -217.04
+Episode : 81 sum_costs : -499.17 Avg Reward : -220.52
+Episode : 82 sum_costs : -170.96 Avg Reward : -219.92
+Episode : 83 sum_costs : -207.98 Avg Reward : -219.77
+Episode : 84 sum_costs : -124.65 Avg Reward : -218.64
+Episode : 85 sum_costs : -142.84 Avg Reward : -217.75
+Episode : 86 sum_costs : -162.78 Avg Reward : -217.11
+Episode : 87 sum_costs : -113.59 Avg Reward : -215.92
+Episode : 88 sum_costs : -249.02 Avg Reward : -216.29
+Episode : 89 sum_costs : -272.84 Avg Reward : -216.93
+Episode : 90 sum_costs : -190.80 Avg Reward : -216.64
+Episode : 91 sum_costs : -140.15 Avg Reward : -215.80
+Episode : 92 sum_costs : -294.00 Avg Reward : -216.65
+Episode : 93 sum_costs : -165.07 Avg Reward : -216.09
+Episode : 94 sum_costs : -111.52 Avg Reward : -214.98
+Episode : 95 sum_costs : -177.18 Avg Reward : -214.58
+Episode : 96 sum_costs : -211.91 Avg Reward : -214.56
+Episode : 97 sum_costs : -130.63 Avg Reward : -213.69
+Episode : 98 sum_costs : -108.45 Avg Reward : -212.62
+Episode : 99 sum_costs : -336.58 Avg Reward : -213.87
+Episode : 100 sum_costs : -206.82 Avg Reward : -213.80
+Shape Q weights layer 0 (2, 16)
+Shape Q weights layer 1 (16,)
+Shape Q weights layer 2 (16, 32)
+Shape Q weights layer 3 (32,)
+Shape Q weights layer 4 (32, 64)
+Shape Q weights layer 5 (64,)
+Shape Q weights layer 6 (64, 64)
+Shape Q weights layer 7 (64,)
+Shape Q weights layer 8 (64, 11)
+Shape Q weights layer 9 (11,)
+Norm Q weights layer 0 2.1804903
+Norm Q weights layer 1 0.0
+Norm Q weights layer 2 4.6900907
+Norm Q weights layer 3 0.0
+Norm Q weights layer 4 6.5680323
+Norm Q weights layer 5 0.0
+Norm Q weights layer 6 7.9826155
+Norm Q weights layer 7 0.0
+Norm Q weights layer 8 4.3203173
+Norm Q weights layer 9 0.0
+Double the weights
+Norm Q weights layer 0 4.3609805
+Norm Q weights layer 1 0.0
+Norm Q weights layer 2 9.380181
+Norm Q weights layer 3 0.0
+Norm Q weights layer 4 13.136065
+Norm Q weights layer 5 0.0
+Norm Q weights layer 6 15.965231
+Norm Q weights layer 7 0.0
+Norm Q weights layer 8 8.640635
+Norm Q weights layer 9 0.0
+Save NN weights to file (in HDF5)
+Load NN weights from file
+Norm Q weights layer 0 4.3609805
+Norm Q weights layer 1 0.0
+Norm Q weights layer 2 9.380181
+Norm Q weights layer 3 0.0
+Norm Q weights layer 4 13.136065
+Norm Q weights layer 5 0.0
+Norm Q weights layer 6 15.965231
+Norm Q weights layer 7 0.0
+Norm Q weights layer 8 8.640635
+Norm Q weights layer 9 0.0

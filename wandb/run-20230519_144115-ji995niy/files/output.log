@@ -1,0 +1,22 @@
+self.nx:  2
+len(x0):  2
+Traceback (most recent call last):
+  File "DQN template.py", line 319, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 209, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 7262, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__GatherV2_device_/job:localhost/replica:0/task:0/device:CPU:0}} indices[63] = 704 is not in [0, 704) [Op:GatherV2]
+Traceback (most recent call last):
+  File "DQN template.py", line 319, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 209, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 7262, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__GatherV2_device_/job:localhost/replica:0/task:0/device:CPU:0}} indices[63] = 704 is not in [0, 704) [Op:GatherV2]
