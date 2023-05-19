@@ -1,0 +1,285 @@
+stack shape:  (2, 1)
+[[1.43793496]]
+[[1.41437845]]
+[[1.52315481]]
+[[1.99441556]]
+[[1.63176445]]
+[[2.34997034]]
+[[1.76429322]]
+[[2.95118029]]
+[[1.92440319]]
+[[3.45321851]]
+[[2.11097024]]
+[[4.0094635]]
+[[2.32270918]]
+[[4.46009417]]
+[[2.55442645]]
+[[4.80859666]]
+[[2.80176331]]
+[[5.08487781]]
+[[3.05983075]]
+[[5.23781972]]
+[[3.322074]]
+[[5.25191011]]
+[[-2.70797595]]
+[[4.87350413]]
+[[-2.47693467]]
+[[4.3681471]]
+[[-2.27370001]]
+[[3.76123938]]
+[[-2.10263383]]
+[[3.08140785]]
+[[-1.96116245]]
+[[2.57744719]]
+[[-1.84213382]]
+[[2.18369823]]
+[[-1.746682]]
+[[1.63437468]]
+[[-1.67883205]]
+[[1.07962325]]
+[[-1.63869634]]
+[[0.52580489]]
+[[-1.62614576]]
+[[-0.02378154]]
+[[-1.64093237]]
+[[-0.56768269]]
+[[-1.68275031]]
+[[-1.10503521]]
+[[-1.74567927]]
+[[-1.41212295]]
+[[-1.82931033]]
+[[-1.93311976]]
+[[-1.93651827]]
+[[-2.35519748]]
+[[-2.0656534]]
+[[-2.81020771]]
+[[-2.21529033]]
+[[-3.1752698]]
+[[-2.38198035]]
+[[-3.4923308]]
+[[-2.56292619]]
+[[-3.74550279]]
+[[-2.75939031]]
+[[-4.11306206]]
+[[-2.97176032]]
+[[-4.38173831]]
+[[-3.19471072]]
+[[-4.53627775]]
+[[2.86086639]]
+[[-4.56805005]]
+[[2.63472987]]
+[[-4.47741086]]
+[[2.41593935]]
+[[-4.27420987]]
+[[2.21245802]]
+[[-3.86504341]]
+[[2.03119449]]
+[[-3.38549773]]
+[[1.87506633]]
+[[-2.85962885]]
+[[1.74587837]]
+[[-2.30788928]]
+[[1.64454169]]
+[[-1.74557788]]
+[[1.56578009]]
+[[-1.40488608]]
+[[1.50955087]]
+[[-0.8442831]]
+[[1.48117069]]
+[[-0.290924]]
+[[1.48027561]]
+[[0.25512103]]
+[[1.50653001]]
+[[0.79505501]]
+[[1.55965879]]
+[[1.33009598]]
+[[1.63941827]]
+[[1.86028334]]
+[[1.74550863]]
+[[2.38333083]]
+[[1.88298627]]
+[[3.11577484]]
+[[2.05087593]]
+[[3.59981158]]
+[[2.24195136]]
+[[4.04320587]]
+[[2.45365834]]
+[[4.42507297]]
+[[2.68441722]]
+[[4.80528259]]
+[[2.92936084]]
+[[4.99246194]]
+[[3.17907825]]
+[[4.99623456]]
+[[-2.85202713]]
+[[5.08696265]]
+[[-2.60367691]]
+[[4.84704601]]
+[[-2.36756841]]
+[[4.59729406]]
+[[-2.14642153]]
+[[4.24858119]]
+[[-1.94451866]]
+[[3.82753365]]
+[[-1.76480638]]
+[[3.36095755]]
+[[-1.60897815]]
+[[2.87217165]]
+[[-1.47769913]]
+[[2.37898918]]
+[[-1.37089316]]
+[[1.89324938]]
+[[-1.28802693]]
+[[1.42139984]]
+[[-1.22557456]]
+[[1.07669486]]
+[[-1.18694337]]
+[[0.46855301]]
+[[-1.17141825]]
+[[0.15245172]]
+[[-1.17152965]]
+[[-0.15690788]]
+[[-1.18980147]]
+[[-0.57396487]]
+[[-1.22612719]]
+[[-0.8790639]]
+[[-1.27779877]]
+[[-1.18779916]]
+[[-1.345042]]
+[[-1.50193036]]
+[[-1.43508393]]
+[[-2.09974649]]
+[[-1.55854326]]
+[[-2.83862703]]
+[[-1.71886564]]
+[[-3.57426804]]
+[[-1.91561766]]
+[[-4.29581265]]
+[[-2.14759354]]
+[[-4.98322267]]
+[[-2.41234666]]
+[[-5.60690214]]
+[[-2.70576829]]
+[[-6.12996308]]
+[[-3.02187113]]
+[[-6.51415063]]
+[[-3.35086871]]
+[[-6.64575253]]
+[[2.60123341]]
+[[-6.59757499]]
+[[2.2767244]]
+[[-6.38278546]]
+[[1.96625465]]
+[[-6.03600417]]
+[[1.67523232]]
+[[-5.60488939]]
+[[1.4066233]]
+[[-5.13947116]]
+[[1.16104695]]
+[[-4.68358296]]
+[[0.93719371]]
+[[-4.27054676]]
+[[0.73930524]]
+[[-3.64499196]]
+[[0.57072054]]
+[[-3.09839595]]
+[[0.42749438]]
+[[-2.63065044]]
+[[0.30581363]]
+[[-2.23657948]]
+[[0.20287466]]
+[[-1.88097924]]
+[[0.11556566]]
+[[-1.61138079]]
+[[0.04048753]]
+[[-1.39174448]]
+[[-0.02468938]]
+[[-1.21533209]]
+[[-0.08059364]]
+[[-1.0208383]]
+[[-0.12897667]]
+[[-0.91448276]]
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 216, in train_dqn
+    q_target_pred = Q_target(np.array(next_states))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/layers/core/dense.py", line 255, in call
+    outputs = self.activation(outputs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/activations.py", line 317, in relu
+    return backend.relu(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/backend.py", line 5396, in relu
+    x = tf.nn.relu(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 11115, in relu
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 216, in train_dqn
+    q_target_pred = Q_target(np.array(next_states))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/layers/core/dense.py", line 255, in call
+    outputs = self.activation(outputs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/activations.py", line 317, in relu
+    return backend.relu(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/backend.py", line 5396, in relu
+    x = tf.nn.relu(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 11115, in relu
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

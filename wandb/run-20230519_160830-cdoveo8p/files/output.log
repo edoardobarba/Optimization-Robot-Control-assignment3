@@ -1,0 +1,296 @@
+stack shape:  (2, 1)
+concatenate shape:  (2,)
+[0.34760549]
+[0.20517473]
+[0.36522633]
+[0.499659]
+[0.39771458]
+[0.79987093]
+[0.44554085]
+[1.1131798]
+[0.50954004]
+[1.44678781]
+[0.59090127]
+[1.80766129]
+[0.68976171]
+[2.14675651]
+[0.80447909]
+[2.44193848]
+[0.93501965]
+[2.77968392]
+[1.08350008]
+[3.15953362]
+[1.25194375]
+[3.57821306]
+[1.44210425]
+[4.02820703]
+[1.65799132]
+[4.60727568]
+[1.8999541]
+[5.07123546]
+[2.16430629]
+[5.50285225]
+[2.44852078]
+[5.86572727]
+[2.74818839]
+[6.12097707]
+[3.05706546]
+[6.23410593]
+[3.36749493]
+[6.18307279]
+[-2.61408384]
+[5.8811886]
+[-2.33129444]
+[5.43038756]
+[-2.07393249]
+[4.86409026]
+[-1.84679341]
+[4.22147299]
+[-1.65277952]
+[3.53908271]
+[-1.49316547]
+[2.84547897]
+[-1.36804368]
+[2.15939284]
+[-1.27610311]
+[1.51823003]
+[-1.20809542]
+[1.20207728]
+[-1.1555085]
+[0.90139972]
+[-1.11760022]
+[0.61493127]
+[-1.09371851]
+[0.34033741]
+[-1.08334426]
+[0.07463251]
+[-1.08611589]
+[-0.18549788]
+[-1.10183943]
+[-0.44344359]
+[-1.13048692]
+[-0.70245613]
+[-1.18190672]
+[-1.35433554]
+[-1.26185492]
+[-1.84359257]
+[-1.36650238]
+[-2.34230571]
+[-1.49630868]
+[-2.84994653]
+[-1.65160158]
+[-3.36176921]
+[-1.83233675]
+[-3.86763791]
+[-2.03780596]
+[-4.35113024]
+[-2.26562539]
+[-4.7616472]
+[-2.51632352]
+[-5.26627782]
+[-2.7896217]
+[-5.66564946]
+[-3.07255536]
+[-5.6516969]
+[-3.3579824]
+[-5.7653846]
+[2.63798831]
+[-5.72319945]
+[2.35652112]
+[-5.53548812]
+[2.08744331]
+[-5.22762429]
+[1.83588866]
+[-4.83456167]
+[1.60518034]
+[-4.39377098]
+[1.39685701]
+[-3.93916233]
+[1.21094029]
+[-3.49750643]
+[1.04631656]
+[-3.08744274]
+[0.90112342]
+[-2.72028312]
+[0.77307501]
+[-2.40165315]
+[0.65970213]
+[-2.13326196]
+[0.55850989]
+[-1.91442752]
+[0.46567939]
+[-1.79879245]
+[0.37749636]
+[-1.72852899]
+[0.29934993]
+[-1.39732812]
+[0.22902856]
+[-1.41552669]
+[0.15687762]
+[-1.47051086]
+[0.08102814]
+[-1.56346825]
+[-0.00046928]
+[-1.69642879]
+[-0.089687]
+[-1.87227979]
+[-0.18886237]
+[-2.09473503]
+[-0.30043634]
+[-2.36822382]
+[-0.42708294]
+[-2.69764035]
+[-0.57172044]
+[-3.08785957]
+[-0.737489]
+[-3.54288289]
+[-0.927672]
+[-4.06443713]
+[-1.14552904]
+[-4.64984434]
+[-1.39191881]
+[-5.20574655]
+[-1.66763992]
+[-5.8230978]
+[-1.96796066]
+[-6.18973191]
+[-2.28551456]
+[-6.51242405]
+[-2.61683964]
+[-6.74057914]
+[-2.95604455]
+[-6.82761731]
+[-3.29595914]
+[-6.76896602]
+[2.65344748]
+[-6.5821815]
+[2.33533454]
+[-6.14233631]
+[2.0425349]
+[-5.56964938]
+[1.7805142]
+[-4.91117841]
+[1.55450708]
+[-4.12910644]
+[1.36004415]
+[-3.64941089]
+[1.18913308]
+[-3.18703175]
+[1.03983919]
+[-2.78472388]
+[0.91312568]
+[-2.28381657]
+[0.80688009]
+[-1.96600677]
+[0.7154927]
+[-1.68948894]
+[0.63764764]
+[-1.42431374]
+[0.57910531]
+[-0.91737907]
+[0.53747559]
+[-0.74780979]
+[0.50379619]
+[-0.5993665]
+[0.47709965]
+[-0.46849508]
+[0.45728392]
+[-0.32413416]
+[0.44440508]
+[-0.19101935]
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 231, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 170, in update_step
+    alpha = lr * tf.sqrt(1 - beta_2_power) / (1 - beta_1_power)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1459, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1642, in truediv
+    return _truediv_python3(x, y, name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1563, in _truediv_python3
+    with ops.name_scope(name, "truediv", [x, y]) as name:
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 6792, in name_scope
+    if not context.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2220, in executing_eagerly
+    ctx = context_safe()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2138, in context_safe
+    return _context
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 231, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 170, in update_step
+    alpha = lr * tf.sqrt(1 - beta_2_power) / (1 - beta_1_power)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1459, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1642, in truediv
+    return _truediv_python3(x, y, name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1563, in _truediv_python3
+    with ops.name_scope(name, "truediv", [x, y]) as name:
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 6792, in name_scope
+    if not context.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2220, in executing_eagerly
+    ctx = context_safe()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2138, in context_safe
+    return _context
+KeyboardInterrupt

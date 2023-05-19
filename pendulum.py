@@ -249,7 +249,7 @@ class Pendulum:
 
 # Simulate the pendulum using the RK4 method
 if __name__ == "__main__":
-    env = Pendulum(1)
+    env = Pendulum(2)
     env.reset()
     env.render()
 

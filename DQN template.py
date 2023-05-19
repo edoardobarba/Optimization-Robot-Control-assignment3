@@ -100,13 +100,13 @@ class DQN:
         for i in range(100):
             index = self.scrolling_index % self.max_size
             x0 = env.reset()          
-            x0 = [x0[0][0], x0[1][0]]
+            x0 = [x0[0], x0[1]]
 
             idx_u = np.random.choice(self.size_action_space)
             print("idx_u: ", idx_u)
             u = self.actions[idx_u]
             next_x, cost = env.step(u)
-            next_x = [next_x[0][0], next_x[1][0]]
+            next_x = [next_x[0], next_x[1]]
             is_last = False
             t = (x0, idx_u, cost, next_x, is_last)
             self.replay_memory[index] = t
@@ -167,12 +167,12 @@ def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pe
         sum_costs = 0 
         for t in range(1,n_steps+1):
             x = env.x
-            x = [x[0][0], x[1][0]]
+            x = [x[0], x[1]]
             idx_u = dqn.get_epsilon_action(x)
             u = dqn.actions[idx_u]
             next_x, cost = env.step(u)
             # TODO: usa metodo flatten()
-            next_x = [next_x[0][0], next_x[1][0]]
+            next_x = [next_x[0], next_x[1]]
 
             is_last = False
             if t==n_steps:
@@ -311,7 +311,7 @@ nu = 1
 QVALUE_LEARNING_RATE = 1e-3
 DISCOUNT = 0.99
 
-env = Pendulum(1)
+env = Pendulum(2)
 # Create critic and target NNs
 dqn = DQN(nx,nu)
 
@@ -319,8 +319,8 @@ critic_optimizer = tf.keras.optimizers.Adam(QVALUE_LEARNING_RATE)
 
 save_dir = "models/single_pendulum/q_reward/200_epochs_100_steps"
 
-#train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
-test_dqn(env, episodes, save_dir )
+train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+#test_dqn(env, episodes, save_dir )
 
 
 
