@@ -31,7 +31,7 @@ class DQN:
 
         self.umin = -2
         self.umax = 2
-        self.size_action_space = 17
+        self.size_action_space = 11
         self.actions = np.linspace(self.umin, self.umax, self.size_action_space)
 
         self.Q = self.get_critic(self.nx, self.nu)
@@ -99,16 +99,19 @@ class DQN:
     def fill_replay_memory(self, env):
         for i in range(100):
             index = self.scrolling_index % self.max_size
-            x0 = env.reset()          
-            x0 = [x0[0], x0[1]]
+            x = env.reset()
+            # print(x)  
+            # print(len(x))        
+            #x = [x[0], x[1]]
 
             idx_u = np.random.choice(self.size_action_space)
-            print("idx_u: ", idx_u)
+            #print("idx_u: ", idx_u)
             u = self.actions[idx_u]
+            # print("u: ", u)
             next_x, cost = env.step(u)
-            next_x = [next_x[0], next_x[1]]
+            #next_x = [next_x[0], next_x[1]]
             is_last = False
-            t = (x0, idx_u, cost, next_x, is_last)
+            t = (x, idx_u, cost, next_x, is_last)
             self.replay_memory[index] = t
             self.scrolling_index += 1
             if self.memory_counter != self.max_size:
@@ -130,7 +133,7 @@ def tf2np(y):
 
 
 
-def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pendulum/q_reward"):
+def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pendulum/q_reward", constrained = False):
     Q = dqn.Q
     Q_target = dqn.target_Q
 
@@ -167,12 +170,14 @@ def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pe
         sum_costs = 0 
         for t in range(1,n_steps+1):
             x = env.x
-            x = [x[0], x[1]]
+            #print(x)
+            #x = [x[0], x[1]]
+            #print(x)
             idx_u = dqn.get_epsilon_action(x)
             u = dqn.actions[idx_u]
-            next_x, cost = env.step(u)
+            next_x, cost = env.step(u, constrained = constrained)
             # TODO: usa metodo flatten()
-            next_x = [next_x[0], next_x[1]]
+            # next_x = [next_x[0], next_x[1]]
 
             is_last = False
             if t==n_steps:
@@ -264,36 +269,43 @@ def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pe
     
 
 
-def test_dqn(env,episodes, save_dir = "models/single_pendulum/q_reward"):
-    Q = tf.keras.models.load_model('models/single_pendulum/q_reward')
-
+def test_dqn(env, episodes, save_dir = "models/single_pendulum/q_reward"):
+    Q = tf.keras.models.load_model(save_dir)
+    # Run your code.
+    wandb.init(project="DQN_pendulum", entity="bru0x11") #, configuration=new_configuration, save_code=True)
     total_reward_hist = []
     avg_reward_hist = []
 
     for episode in range(1, episodes+1):
+        print("Episode: ", episode)
         env.reset()
         n_steps = 100
         tot_reward = 0 
         last_reward = None
         for t in range(1,n_steps+1):
             x = env.x
-            x = [x[0][0], x[1][0]]
+            #x = [x[0][0], x[1][0]]
             
             input = np.expand_dims(np.array(x), axis=0)
             q_values = Q(input)
             idx_u = np.argmax(q_values)
             u = dqn.actions[idx_u]
+            #print("u: ", u)
             next_x, reward = env.step(u)
             tot_reward += reward
             if(t==n_steps):
                 last_reward = reward
+            
+            if episode == 10:
+                wandb.log({'time_step': t, 'u': u, 'q':x[0], 'v':x[1]})
 
         #wandb.log({'episode': episode, 'reward': total_reward})
+        
         total_reward_hist.append(tot_reward)
         avg_reward = np.average(total_reward_hist[-100:])
         avg_reward_hist.append(avg_reward)
         print("Episode :", episode, "total_reward : {:.2f}".format(tot_reward), "Avg Reward : {:.2f}".format(avg_reward))
-
+    wandb.finish()
 
 
 
@@ -304,23 +316,39 @@ os.environ["WANDB__EXECUTABLE"] = "/usr/bin/python3"
 
 wandb.login(key='a7aed9a97c681f536c60ae5e32e94d32c57cbb1d')
 # wandb.init(project="pendulum_DQN")
-episodes = 200
 
-nx = 2
-nu = 1
+save_dir = "models/"
+njoints = 1
+episodes = 100
 QVALUE_LEARNING_RATE = 1e-3
 DISCOUNT = 0.99
 
-env = Pendulum(2)
+
+if njoints == 1:
+    save_dir += "single_pendulum/"
+else:
+    save_dir += "double_pendulum/"
+save_dir += f"{episodes}_episodes"
+
+
+
+env = Pendulum(njoints)
 # Create critic and target NNs
+if njoints == 1:
+    nx = 2
+    nu = 1
+else:
+    nx = 4
+    nu = 2
+
 dqn = DQN(nx,nu)
 
 critic_optimizer = tf.keras.optimizers.Adam(QVALUE_LEARNING_RATE)
 
-save_dir = "models/single_pendulum/q_reward/200_epochs_100_steps"
+#save_dir = "models/double_pendulum/q_prof/600_episodes"
 
 train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
-#test_dqn(env, episodes, save_dir )
+#test_dqn(env, episodes, save_dir)
 
 
 

@@ -1,0 +1,75 @@
+
+Episode : 1 sum_costs : -460.84 Avg Reward : -460.84
+Episode : 2 sum_costs : -546.85 Avg Reward : -503.84
+Episode : 3 sum_costs : -402.83 Avg Reward : -470.17
+Episode : 4 sum_costs : -735.40 Avg Reward : -536.48
+Episode : 5 sum_costs : -350.11 Avg Reward : -499.21
+Episode : 6 sum_costs : -490.31 Avg Reward : -497.72
+Episode : 7 sum_costs : -335.90 Avg Reward : -474.61
+Episode : 8 sum_costs : -483.83 Avg Reward : -475.76
+Episode : 9 sum_costs : -500.06 Avg Reward : -478.46
+Episode : 10 sum_costs : -425.43 Avg Reward : -473.16
+Episode : 11 sum_costs : -446.57 Avg Reward : -470.74
+Episode : 12 sum_costs : -513.93 Avg Reward : -474.34
+Episode : 13 sum_costs : -268.54 Avg Reward : -458.51
+Episode : 14 sum_costs : -227.57 Avg Reward : -442.01
+Episode : 15 sum_costs : -363.68 Avg Reward : -436.79
+Episode : 16 sum_costs : -469.76 Avg Reward : -438.85
+Episode : 17 sum_costs : -461.16 Avg Reward : -440.16
+Episode : 18 sum_costs : -718.20 Avg Reward : -455.61
+Episode : 19 sum_costs : -583.72 Avg Reward : -462.35
+Episode : 20 sum_costs : -555.25 Avg Reward : -467.00
+Episode : 21 sum_costs : -254.30 Avg Reward : -456.87
+Episode : 22 sum_costs : -323.30 Avg Reward : -450.80
+Episode : 23 sum_costs : -355.12 Avg Reward : -446.64
+Episode : 24 sum_costs : -439.26 Avg Reward : -446.33
+Episode : 25 sum_costs : -252.76 Avg Reward : -438.59
+Episode : 26 sum_costs : -784.68 Avg Reward : -451.90
+Episode : 27 sum_costs : -307.01 Avg Reward : -446.53
+Episode : 28 sum_costs : -361.72 Avg Reward : -443.50
+Episode : 29 sum_costs : -329.32 Avg Reward : -439.57
+Episode : 30 sum_costs : -302.38 Avg Reward : -434.99
+Episode : 31 sum_costs : -278.99 Avg Reward : -429.96
+Episode : 32 sum_costs : -285.12 Avg Reward : -425.43
+Episode : 33 sum_costs : -271.64 Avg Reward : -420.77
+Episode : 34 sum_costs : -426.48 Avg Reward : -420.94
+Episode : 35 sum_costs : -294.22 Avg Reward : -417.32
+Episode : 36 sum_costs : -530.27 Avg Reward : -420.46
+Episode : 37 sum_costs : -712.43 Avg Reward : -428.35
+Episode : 38 sum_costs : -289.19 Avg Reward : -424.69
+Episode : 39 sum_costs : -301.18 Avg Reward : -421.52
+Episode : 40 sum_costs : -259.99 Avg Reward : -417.48
+Episode : 41 sum_costs : -387.61 Avg Reward : -416.75
+Episode : 42 sum_costs : -529.12 Avg Reward : -419.43
+Episode : 43 sum_costs : -217.55 Avg Reward : -414.73
+Episode : 44 sum_costs : -245.67 Avg Reward : -410.89
+Episode : 45 sum_costs : -293.86 Avg Reward : -408.29
+Episode : 46 sum_costs : -591.30 Avg Reward : -412.27
+Episode : 47 sum_costs : -476.92 Avg Reward : -413.65
+Episode : 48 sum_costs : -268.21 Avg Reward : -410.62
+Episode : 49 sum_costs : -356.75 Avg Reward : -409.52
+Episode : 50 sum_costs : -333.58 Avg Reward : -408.00
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 229, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1044, in gradient
+    if not backprop_util.IsTrainable(t):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop_util.py", line 65, in IsTrainable
+    return dtype.base_dtype in trainable_dtypes
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 239, in __eq__
+    if type(other) != DType:  # pylint: disable=unidiomatic-typecheck
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 229, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1044, in gradient
+    if not backprop_util.IsTrainable(t):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop_util.py", line 65, in IsTrainable
+    return dtype.base_dtype in trainable_dtypes
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 239, in __eq__
+    if type(other) != DType:  # pylint: disable=unidiomatic-typecheck
+KeyboardInterrupt

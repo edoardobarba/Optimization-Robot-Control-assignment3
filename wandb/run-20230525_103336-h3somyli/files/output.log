@@ -1,0 +1,24 @@
+[ 1.16537129 -0.4128374  -0.37741028 -0.36498548]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+Traceback (most recent call last):
+  File "DQN template.py", line 326, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 216, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/input_spec.py", line 298, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 2), found shape=(64, 4)
+Traceback (most recent call last):
+  File "DQN template.py", line 326, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 216, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/input_spec.py", line 298, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 2), found shape=(64, 4)

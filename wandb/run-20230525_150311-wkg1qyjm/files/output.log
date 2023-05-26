@@ -1,0 +1,40 @@
+
+Episode : 1 sum_costs : -1005.87 Avg Reward : -1005.87
+Episode : 2 sum_costs : -1341.95 Avg Reward : -1173.91
+Episode : 3 sum_costs : -2062.10 Avg Reward : -1469.97
+Traceback (most recent call last):
+  File "DQN template.py", line 342, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 177, in train_dqn
+    next_x, cost = env.step(u, constrained = constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 150, in step
+    _,self.r = self.dynamics(self.x, u, constrained=constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 224, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA._omni_sys_exc: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+Traceback (most recent call last):
+  File "DQN template.py", line 342, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 177, in train_dqn
+    next_x, cost = env.step(u, constrained = constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 150, in step
+    _,self.r = self.dynamics(self.x, u, constrained=constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 224, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA.TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)

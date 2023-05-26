@@ -1,0 +1,35 @@
+
+Episode : 1 sum_costs : -690.38 Avg Reward : -690.38
+Episode : 2 sum_costs : -581.92 Avg Reward : -636.15
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 229, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_grad.py", line 1736, in _MatMulGrad
+    grad_a = gen_math_ops.mat_mul(grad, b, transpose_b=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6013, in mat_mul
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 229, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_grad.py", line 1736, in _MatMulGrad
+    grad_a = gen_math_ops.mat_mul(grad, b, transpose_b=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6013, in mat_mul
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

@@ -1,0 +1,414 @@
+[2.55337993 0.31596356]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[2.57526162 0.55930418]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[2.60899293 0.78994817]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[2.65380045 1.00235262]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[2.70516426 1.05219974]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[2.76185244 1.21532749]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[2.82594284 1.34828846]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[2.89582351 1.44693859]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[2.97108351 1.56346131]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[3.05460645 1.77745626]
+self.nu:  1
+np.array(u):  -0.5
+reshape:  [-0.5]
+[-3.14040498  1.74949891]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-3.04995996  1.86830164]
+self.nu:  1
+np.array(u):  -1.5
+reshape:  [-1.5]
+[-2.96247727  1.6310061 ]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.88033522  1.65467595]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.79810811  1.63440849]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.71795796  1.57159756]
+self.nu:  1
+np.array(u):  -0.75
+reshape:  [-0.75]
+[-2.64749888  1.24676531]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.58849616  1.11334372]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.53682356  0.95356024]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.493685   0.7719822]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.46005106  0.57337544]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.43665296  0.3625484 ]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.42398286  0.14425557]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.42229754 -0.07684265]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.431623   -0.29617569]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.45175821 -0.50923283]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.48227725 -0.71152897]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.52253018 -0.89858806]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.57164396 -1.06596303]
+self.nu:  1
+np.array(u):  1.25
+reshape:  [1.25]
+[-2.62852568 -1.20930603]
+self.nu:  1
+np.array(u):  0.5
+reshape:  [0.5]
+[-2.69395403 -1.40782788]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[-2.77540734 -1.85030429]
+self.nu:  1
+np.array(u):  1.75
+reshape:  [1.75]
+[-2.86742598 -1.83044158]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[-2.96768406 -2.17988149]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[-3.08398575 -2.47218596]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[ 3.06993697 -2.69831785]
+self.nu:  1
+np.array(u):  1.0
+reshape:  [1.]
+[ 2.93952386 -2.51820649]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.81704752 -2.38084685]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.70301124 -2.18060465]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.60037266 -1.92493842]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.5116798  -1.62277602]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.43901791 -1.28369966]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.38399377 -0.9172656 ]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.3477481  -0.53256119]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[ 2.33098334 -0.13802942]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[2.33399435 0.25846964]
+self.nu:  1
+np.array(u):  0.0
+reshape:  [0.]
+[2.35669185 0.64943063]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.39305697 0.80517399]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.43680917 0.94491419]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.48706406 1.06528148]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.54277137 1.1630108 ]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.60272329 1.23506597]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.66556985 1.27879621]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.72984251 1.29211019]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.79398645 1.27364771]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.85640082 1.2229271 ]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[2.9154852  1.14044793]
+self.nu:  1
+np.array(u):  -1.5
+reshape:  [-1.5]
+[2.97107867 1.08329087]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[3.02169875 0.94151253]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[3.06458694 0.7740148 ]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[3.09856528 0.58511906]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[3.12268922 0.3798382 ]
+self.nu:  1
+np.array(u):  -0.75
+reshape:  [-0.75]
+[3.13974983 0.3025862 ]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[-3.13322623  0.10578403]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[-3.13363596 -0.12217322]
+self.nu:  1
+np.array(u):  -2.0
+reshape:  [-2.]
+[ 3.13781066 -0.34737432]
+self.nu:  1
+np.array(u):  -1.0
+reshape:  [-1.]
+[ 3.11781219 -0.45256453]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[ 3.09077254 -0.62902135]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[ 3.05532722 -0.78879163]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[ 3.01241955 -0.92751535]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[ 2.9631954  -1.04145034]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+[ 2.90896886 -1.12761151]
+self.nu:  1
+np.array(u):  -1.75
+reshape:  [-1.75]
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/m/dense_1/bias:0' shape=(32,) dtype=float32, numpy=
+array([-1.0696399e-02, -5.4581702e-01, -1.7453617e+00, -1.0549675e+00,
+        2.6213644e-02, -6.8067837e-01, -7.3290014e-01, -4.6281777e-03,
+       -1.8530351e-01, -6.3584638e-01, -2.0315452e-01, -4.7818422e-03,
+       -2.6064175e-01, -1.5986017e+00, -8.8137102e-01, -1.3649607e+00,
+       -1.1038401e+00,  4.7577363e-03,  3.0635044e-06, -1.1490439e+00,
+        1.6065843e-03, -8.5618734e-01, -7.6476866e-01, -4.2821360e-01,
+       -1.3159188e+00, -7.4645925e-01, -1.0306820e+00, -4.1263193e-01,
+       -4.8091602e-01, -3.7656409e-01, -1.1311256e+00, -2.6280007e-01],
+      dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1493, in r_binary_op_wrapper
+    y, x = maybe_promote_tensors(y, x, force_same_dtype=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1429, in maybe_promote_tensors
+    *[_maybe_get_dtype(x) for x in nest.flatten(tensors)])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/m/dense_1/bias:0' shape=(32,) dtype=float32, numpy=
+array([-1.0696399e-02, -5.4581702e-01, -1.7453617e+00, -1.0549675e+00,
+        2.6213644e-02, -6.8067837e-01, -7.3290014e-01, -4.6281777e-03,
+       -1.8530351e-01, -6.3584638e-01, -2.0315452e-01, -4.7818422e-03,
+       -2.6064175e-01, -1.5986017e+00, -8.8137102e-01, -1.3649607e+00,
+       -1.1038401e+00,  4.7577363e-03,  3.0635044e-06, -1.1490439e+00,
+        1.6065843e-03, -8.5618734e-01, -7.6476866e-01, -4.2821360e-01,
+       -1.3159188e+00, -7.4645925e-01, -1.0306820e+00, -4.1263193e-01,
+       -4.8091602e-01, -3.7656409e-01, -1.1311256e+00, -2.6280007e-01],
+      dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1493, in r_binary_op_wrapper
+    y, x = maybe_promote_tensors(y, x, force_same_dtype=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1429, in maybe_promote_tensors
+    *[_maybe_get_dtype(x) for x in nest.flatten(tensors)])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt

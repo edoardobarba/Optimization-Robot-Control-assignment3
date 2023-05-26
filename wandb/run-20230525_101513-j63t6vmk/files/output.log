@@ -1,0 +1,69 @@
+[-2.17174125 -0.13239009]
+[-2.19233968 -0.69154713]
+[-2.24057958 -1.23804889]
+[-2.3155973  -1.76266006]
+[-2.41673031 -2.28266027]
+[-2.54273529 -2.75753893]
+[-2.69169332 -3.20078225]
+[-2.86093516 -3.56889149]
+[-3.046329   -3.84686198]
+[ 3.04081356 -3.99484816]
+[ 2.84146829 -3.97896261]
+[ 2.64209795 -3.99585087]
+[ 2.44785816 -3.77374065]
+[ 2.26684806 -3.46666347]
+[ 2.10285006 -3.09325635]
+[ 1.95870473 -2.67255715]
+[ 1.84120972 -2.02724324]
+[ 1.75145722 -1.56285664]
+[ 1.68506844 -1.09269469]
+[ 1.64219003 -0.62244144]
+[ 1.62274782 -0.15524712]
+Traceback (most recent call last):
+  File "DQN template.py", line 323, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 232, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2634, in update
+    fn = autograph.tf_convert(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 582, in tf_convert
+    wrapper = wrapper_factory(f)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 598, in call_with_unspecified_conversion_status
+    wrapper = functools.update_wrapper(wrapper, func)
+  File "/usr/lib/python3.8/functools.py", line 49, in update_wrapper
+    for attr in assigned:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 323, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 232, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2634, in update
+    fn = autograph.tf_convert(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 582, in tf_convert
+    wrapper = wrapper_factory(f)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 598, in call_with_unspecified_conversion_status
+    wrapper = functools.update_wrapper(wrapper, func)
+  File "/usr/lib/python3.8/functools.py", line 49, in update_wrapper
+    for attr in assigned:
+KeyboardInterrupt

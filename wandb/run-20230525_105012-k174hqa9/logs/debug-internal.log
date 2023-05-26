@@ -1,0 +1,17 @@
+2023-05-25 10:50:12,506 INFO    StreamThr :672012 [internal.py:wandb_internal():86] W&B internal server running at pid: 672012, started at: 2023-05-25 10:50:12.506211
+2023-05-25 10:50:12,508 DEBUG   HandlerThread:672012 [handler.py:handle_request():144] handle_request: status
+2023-05-25 10:50:12,731 INFO    WriterThread:672012 [datastore.py:open_for_write():85] open: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_105012-k174hqa9/run-k174hqa9.wandb
+2023-05-25 10:50:12,732 DEBUG   SenderThread:672012 [sender.py:send():375] send: header
+2023-05-25 10:50:12,768 DEBUG   SenderThread:672012 [sender.py:send():375] send: run
+2023-05-25 10:50:13,236 DEBUG   HandlerThread:672012 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-25 10:50:13,236 INFO    HandlerThread:672012 [handler.py:finish():842] shutting down handler
+2023-05-25 10:50:13,270 INFO    SenderThread:672012 [dir_watcher.py:__init__():219] watching files in: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_105012-k174hqa9/files
+2023-05-25 10:50:13,270 INFO    SenderThread:672012 [sender.py:_start_run_threads():1124] run started: k174hqa9 with start time 1685004612.721316
+2023-05-25 10:50:13,270 INFO    SenderThread:672012 [sender.py:finish():1550] shutting down sender
+2023-05-25 10:50:13,270 INFO    SenderThread:672012 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-25 10:50:13,768 INFO    WriterThread:672012 [datastore.py:close():298] close: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_105012-k174hqa9/run-k174hqa9.wandb
+2023-05-25 10:50:14,270 INFO    SenderThread:672012 [dir_watcher.py:finish():395] scan: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_105012-k174hqa9/files
+2023-05-25 10:50:14,270 INFO    SenderThread:672012 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_105012-k174hqa9/files/config.yaml config.yaml
+2023-05-25 10:50:14,270 INFO    SenderThread:672012 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-25 10:50:14,270 INFO    SenderThread:672012 [file_pusher.py:join():172] waiting for file pusher
+2023-05-25 10:50:14,746 INFO    wandb-upload_0:672012 [upload_job.py:push():137] Uploaded file /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_105012-k174hqa9/files/config.yaml

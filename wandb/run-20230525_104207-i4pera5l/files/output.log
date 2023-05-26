@@ -1,0 +1,444 @@
+[ 0.06206596  1.89915199  0.54471814 -0.20899607]
+self.nu:  2
+np.array(u):  [-0.75  0.  ]
+reshape:  [-0.75  0.  ]
+[0.09084899 1.89997709 0.60660302 0.24200014]
+self.nu:  2
+np.array(u):  [-0.75  0.  ]
+reshape:  [-0.75  0.  ]
+[0.12335839 1.92257043 0.69377305 0.66173338]
+self.nu:  2
+np.array(u):  [-0.75  0.  ]
+reshape:  [-0.75  0.  ]
+[0.16118811 1.96502299 0.81941558 1.03636926]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[0.20633945 2.02487305 0.98663803 1.35763293]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[0.2613762  2.09899825 1.21483209 1.607375  ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[0.32953688 2.18347953 1.51159511 1.7718765 ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[0.41432706 2.27367099 1.88001216 1.83578194]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[0.52052143 2.36373941 2.36776246 1.76695459]
+self.nu:  2
+np.array(u):  [-1.5  0. ]
+reshape:  [-1.5  0. ]
+[0.65073272 2.4471355  2.84068902 1.56888904]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[0.80736545 2.51643258 3.42462036 1.20299432]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[0.99348994 2.56277162 4.02035906 0.65056722]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[ 1.20888544  2.57634479  4.59546118 -0.10764061]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[ 1.45156014  2.54630956  5.11152664 -1.09376861]
+self.nu:  2
+np.array(u):  [1.5 0. ]
+reshape:  [1.5 0. ]
+[ 1.71879119  2.46035149  5.57771538 -2.34455422]
+self.nu:  2
+np.array(u):  [-0.25  0.  ]
+reshape:  [-0.25  0.  ]
+[ 2.00317693  2.30407721  5.79771416 -3.90641692]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[ 2.29474945  2.06220063  5.86518659 -5.76864617]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[ 2.58806132  1.72044758  5.86728853 -7.90147583]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[ 2.88596329  1.2639758   6.0487902  -8.        ]
+self.nu:  2
+np.array(u):  [0.25 0.  ]
+reshape:  [0.25 0.  ]
+[-3.08463731  0.79267886  6.45459802 -8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.74980544  0.32191489  6.93867663 -8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.39940533 -0.11305824  7.0773279  -8.        ]
+self.nu:  2
+np.array(u):  [1. 0.]
+reshape:  [1. 0.]
+[-2.06123149 -0.47798769  6.44962586 -6.59717813]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.7667124  -0.73160889  5.33113762 -3.54766995]
+self.nu:  2
+np.array(u):  [1. 0.]
+reshape:  [1. 0.]
+[-1.52323616 -0.84764514  4.40791204 -1.09377992]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.32696507 -0.84942754  3.44293141  1.02248381]
+self.nu:  2
+np.array(u):  [-1.25  0.  ]
+reshape:  [-1.25  0.  ]
+[-1.1791311  -0.7552738   2.47042735  2.74366593]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.07903376 -0.58340271  1.53346638  4.1311777 ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.02380594 -0.34842762  0.67564651  5.26782599]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.00780979 -0.06327932 -0.0358007   6.13810572]
+self.nu:  2
+np.array(u):  [1.5 0. ]
+reshape:  [1.5 0. ]
+[-1.01803296  0.24774661 -0.37312622  6.30293157]
+self.nu:  2
+np.array(u):  [-1.25  0.  ]
+reshape:  [-1.25  0.  ]
+[-1.04264145  0.56397109 -0.61121334  6.34604783]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.07487894  0.87620909 -0.67828611  6.14347226]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.10934021  1.1794321  -0.70016484  5.98544798]
+self.nu:  2
+np.array(u):  [0. 0.]
+reshape:  [0. 0.]
+[-1.14379351  1.47657656 -0.67796715  5.90033022]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.17790101  1.77400047 -0.68633259  5.99662632]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.21194151  2.0789604  -0.67528731  6.20177073]
+self.nu:  2
+np.array(u):  [0. 0.]
+reshape:  [0. 0.]
+[-1.24397072  2.39636358 -0.60588147  6.49435671]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.27365735  2.73126996 -0.58158361  6.90189839]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-1.30548458  3.08774623 -0.69150548  7.35715227]
+self.nu:  2
+np.array(u):  [-1.25  0.  ]
+reshape:  [-1.25  0.  ]
+[-1.35255813 -2.81770794 -1.19143667  7.75209335]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+[-1.43641903 -2.42125338 -2.1629993   8.        ]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+[-1.57041638 -2.00598291 -3.19689448  8.        ]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+[-1.75180709 -1.57814085 -4.05873418  8.        ]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+[-1.97454345 -1.13529481 -4.85072003  8.        ]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+[-2.23863065 -0.67666706 -5.71276825  8.        ]
+self.nu:  2
+np.array(u):  [0.5 0. ]
+reshape:  [0.5 0. ]
+[-2.54508863 -0.21470697 -6.54555079  8.        ]
+self.nu:  2
+np.array(u):  [-2.  0.]
+reshape:  [-2.  0.]
+[-2.88750683  0.22225003 -7.15117731  8.        ]
+self.nu:  2
+np.array(u):  [-1.25  0.  ]
+reshape:  [-1.25  0.  ]
+[ 3.04633868  0.58099756 -6.82241463  6.3499012 ]
+self.nu:  2
+np.array(u):  [-0.75  0.  ]
+reshape:  [-0.75  0.  ]
+[ 2.72477031  0.81717355 -6.04031997  3.09713851]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 2.44516541  0.88945688 -5.14387594 -0.20580525]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 2.21682532  0.79901985 -3.98972783 -3.41167592]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 2.05401534  0.55015122 -2.5226713  -6.54306917]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.96633911  0.15228661 -0.98437777 -8.        ]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.9351742  -0.27194604 -0.26221883 -8.        ]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.91833624 -0.64841536 -0.41129957 -7.05877299]
+self.nu:  2
+np.array(u):  [-1.75  0.  ]
+reshape:  [-1.75  0.  ]
+[ 1.8860939  -0.96421957 -0.87839384 -5.57339531]
+self.nu:  2
+np.array(u):  [0.5 0. ]
+reshape:  [0.5 0. ]
+[ 1.83615901 -1.21977997 -1.11900196 -4.64902056]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 1.77636285 -1.43611465 -1.27284437 -4.00436669]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.71220841 -1.62785526 -1.2933332  -3.66525782]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.64897408 -1.80797422 -1.23603986 -3.5395006 ]
+self.nu:  2
+np.array(u):  [-1.5  0. ]
+reshape:  [-1.5  0. ]
+[ 1.58888024 -1.98532299 -1.16771385 -3.55445024]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.53358261 -2.167292   -1.04419134 -3.72431027]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.48454244 -2.3604792  -0.91741545 -4.00317771]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.44177565 -2.56982386 -0.79325637 -4.37060845]
+self.nu:  2
+np.array(u):  [-0.5  0. ]
+reshape:  [-0.5  0. ]
+[ 1.40559703 -2.79920717 -0.65388839 -4.80472399]
+self.nu:  2
+np.array(u):  [-1.25  0.  ]
+reshape:  [-1.25  0.  ]
+[ 1.37730725 -3.05111569 -0.47770252 -5.27161691]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 1.36268753  2.95741635 -0.10708663 -5.71451363]
+self.nu:  2
+np.array(u):  [0.5 0. ]
+reshape:  [0.5 0. ]
+[ 1.37528393  2.6623423   0.61094303 -6.08844831]
+self.nu:  2
+np.array(u):  [1.5 0. ]
+reshape:  [1.5 0. ]
+[ 1.42918916  2.34840438  1.5452658  -6.46906864]
+self.nu:  2
+np.array(u):  [1.5 0. ]
+reshape:  [1.5 0. ]
+[ 1.52926725  2.01126163  2.45785783 -7.01664141]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 1.67096075  1.63960249  3.20988217 -7.84972405]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 1.85121324  1.21448012  4.00021774 -8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 2.0710166   0.76944313  4.79191644 -8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 2.33080037  0.31721782  5.59943431 -8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 2.62535986 -0.11767576  6.18294525 -8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[ 2.9318559  -0.49557317  6.07689636 -7.11589628]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-3.06206464 -0.78733734  5.49369435 -4.55467044]
+self.nu:  2
+np.array(u):  [0.5 0. ]
+reshape:  [0.5 0. ]
+[-2.80147218 -0.95010677  4.93000425 -1.95610678]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.57331995 -0.98189834  4.19608474  0.68444403]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.38782603 -0.88274115  3.22367222  3.28184324]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.25769674 -0.65369253  1.98149937  5.88010184]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.19308823 -0.2962459   0.60284102  8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.18824624  0.14559578 -0.40916129  8.        ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.21185126  0.53781025 -0.53503963  7.68857883]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.23067821  0.89085981 -0.21803864  6.4334037 ]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.23461356  1.18559496  0.06062487  5.35600224]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.22836161  1.43552525  0.18945305  4.64120924]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.21892773  1.65658594  0.18790234  4.20121853]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.21214647  1.86053158  0.08334802  3.95660723]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.21264755  2.05574751 -0.10339147  3.85202965]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.22418711  2.24820742 -0.35819072  3.84636691]
+self.nu:  2
+np.array(u):  [-1.  0.]
+reshape:  [-1.  0.]
+[-2.24995528  2.44203145 -0.67253596  3.90659431]
+self.nu:  2
+np.array(u):  [0. 0.]
+reshape:  [0. 0.]
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1459, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1814, in _mul_dispatch
+    if isinstance(y, sparse_tensor.SparseTensor):  # Case: Dense * Sparse.
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1459, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1814, in _mul_dispatch
+    if isinstance(y, sparse_tensor.SparseTensor):  # Case: Dense * Sparse.
+KeyboardInterrupt

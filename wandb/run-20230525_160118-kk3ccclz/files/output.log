@@ -1,0 +1,128 @@
+[2.26530234 0.93343894]
+[0.4]
+[2.32329515 1.38627346]
+[1.2]
+[2.4055031  1.90204465]
+[1.2]
+[2.51255808 2.38015444]
+[1.2]
+[2.64225445 2.80770021]
+[1.2]
+[2.79171713 3.17080721]
+[-1.2]
+[2.95071377 3.18905826]
+[-1.2]
+[3.10853246 3.12368938]
+[0.4]
+[-3.0177746   3.15144069]
+[-0.8]
+[-2.8649829   2.96022724]
+[-0.8]
+[-2.72373697  2.6896097 ]
+[-0.8]
+[-2.59775487  2.3496744 ]
+[-0.8]
+[-2.49019596  1.952682  ]
+[-0.8]
+[-2.4035873  1.5116644]
+[-0.8]
+[-2.3398133   1.03929583]
+[-0.8]
+[-2.30015027  0.54722513]
+[-0.8]
+[-2.28532211  0.04590119]
+[-0.8]
+[-2.29555441 -0.45519292]
+[2.]
+[-2.32283255 -0.63593261]
+[-0.8]
+[-2.36662508 -1.11576874]
+[-0.8]
+[-2.43385912 -1.57359284]
+[-0.8]
+[-2.52318167 -1.99930911]
+[0.]
+[-2.63049073 -2.2930535 ]
+[0.]
+[-2.75117096 -2.53415569]
+[0.]
+[-2.88236019 -2.71341363]
+[0.]
+[-3.02076977 -2.8229692 ]
+[2.]
+[ 3.12596459 -2.63506904]
+[-1.6]
+[ 2.99071158 -2.77505132]
+[-1.6]
+[ 2.85033338 -2.84007665]
+[-1.6]
+[ 2.70858655 -2.82979653]
+[-1.6]
+[ 2.5691554  -2.74744938]
+[-1.6]
+[ 2.43548209 -2.59948305]
+[-1.6]
+[ 2.31062655 -2.3947385 ]
+[-1.2]
+[ 2.19828469 -2.09893587]
+[-1.6]
+[ 2.10050599 -1.81221209]
+[-1.6]
+[ 2.01771208 -1.49954436]
+[2.]
+[ 1.96099377 -0.76918806]
+[0.]
+[ 1.93534889 -0.25660701]
+[-1.6]
+[1.93087499 0.07765085]
+[-1.6]
+[1.94304273 0.40905895]
+[0.4]
+[1.97718503 0.95663269]
+[-1.6]
+[2.03282179 1.26883777]
+[-1.6]
+[2.10366322 1.56481935]
+[-1.6]
+Traceback (most recent call last):
+  File "DQN template.py", line 349, in <module>
+  File "DQN template.py", line 173, in train_dqn
+    print(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 1592, in _array_str_implementation
+    return array2string(a, max_line_width, precision, suppress_small, ' ', "")
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 736, in array2string
+    return _array2string(a, options, separator, prefix)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 513, in wrapper
+    return f(self, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 539, in _array2string
+    format_function = _get_format_function(data, **options)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 472, in _get_format_function
+    return formatdict['float']()
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 411, in <lambda>
+    'float': lambda: FloatingFormat(
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 932, in __init__
+    self.fillFormat(data)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 981, in fillFormat
+    trim, unique = '.', True
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 349, in <module>
+  File "DQN template.py", line 173, in train_dqn
+    print(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 1592, in _array_str_implementation
+    return array2string(a, max_line_width, precision, suppress_small, ' ', "")
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 736, in array2string
+    return _array2string(a, options, separator, prefix)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 513, in wrapper
+    return f(self, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 539, in _array2string
+    format_function = _get_format_function(data, **options)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 472, in _get_format_function
+    return formatdict['float']()
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 411, in <lambda>
+    'float': lambda: FloatingFormat(
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 932, in __init__
+    self.fillFormat(data)
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/arrayprint.py", line 981, in fillFormat
+    trim, unique = '.', True
+KeyboardInterrupt

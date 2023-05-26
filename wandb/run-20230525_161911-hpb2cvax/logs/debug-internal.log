@@ -1,0 +1,17 @@
+2023-05-25 16:19:11,970 INFO    StreamThr :717335 [internal.py:wandb_internal():86] W&B internal server running at pid: 717335, started at: 2023-05-25 16:19:11.969491
+2023-05-25 16:19:11,972 DEBUG   HandlerThread:717335 [handler.py:handle_request():144] handle_request: status
+2023-05-25 16:19:12,119 INFO    WriterThread:717335 [datastore.py:open_for_write():85] open: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_161911-hpb2cvax/run-hpb2cvax.wandb
+2023-05-25 16:19:12,120 DEBUG   SenderThread:717335 [sender.py:send():375] send: header
+2023-05-25 16:19:12,143 DEBUG   SenderThread:717335 [sender.py:send():375] send: run
+2023-05-25 16:19:12,346 DEBUG   HandlerThread:717335 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-25 16:19:12,347 INFO    HandlerThread:717335 [handler.py:finish():842] shutting down handler
+2023-05-25 16:19:12,718 INFO    SenderThread:717335 [dir_watcher.py:__init__():219] watching files in: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_161911-hpb2cvax/files
+2023-05-25 16:19:12,718 INFO    SenderThread:717335 [sender.py:_start_run_threads():1124] run started: hpb2cvax with start time 1685024352.112455
+2023-05-25 16:19:12,718 INFO    SenderThread:717335 [sender.py:finish():1550] shutting down sender
+2023-05-25 16:19:12,718 INFO    SenderThread:717335 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-25 16:19:13,143 INFO    WriterThread:717335 [datastore.py:close():298] close: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_161911-hpb2cvax/run-hpb2cvax.wandb
+2023-05-25 16:19:13,719 INFO    SenderThread:717335 [dir_watcher.py:finish():395] scan: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_161911-hpb2cvax/files
+2023-05-25 16:19:13,719 INFO    SenderThread:717335 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_161911-hpb2cvax/files/config.yaml config.yaml
+2023-05-25 16:19:13,719 INFO    SenderThread:717335 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-25 16:19:13,719 INFO    SenderThread:717335 [file_pusher.py:join():172] waiting for file pusher
+2023-05-25 16:19:14,193 INFO    wandb-upload_0:717335 [upload_job.py:push():137] Uploaded file /home/edo/Desktop/orc/03_assignment/wandb/run-20230525_161911-hpb2cvax/files/config.yaml

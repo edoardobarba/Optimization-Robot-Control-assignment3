@@ -1,0 +1,63 @@
+
+Episode : 1 sum_costs : -638.45 Avg Reward : -638.45
+Episode : 2 sum_costs : -1198.19 Avg Reward : -918.32
+Traceback (most recent call last):
+  File "DQN template.py", line 342, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 220, in train_dqn
+    q_target_pred = Q_target(np.array(next_states))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1140, in __call__
+    inputs = self._maybe_cast_inputs(inputs, input_list)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 2748, in _maybe_cast_inputs
+    if should_autocast and any(
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 2760, in _should_cast_single_input
+    and x.dtype != self._compute_dtype_object
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1134, in dtype
+    return dtypes._INTERN_TABLE[self._datatype_enum()]  # pylint: disable=protected-access
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 342, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 220, in train_dqn
+    q_target_pred = Q_target(np.array(next_states))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1140, in __call__
+    inputs = self._maybe_cast_inputs(inputs, input_list)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 2748, in _maybe_cast_inputs
+    if should_autocast and any(
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 2760, in _should_cast_single_input
+    and x.dtype != self._compute_dtype_object
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1134, in dtype
+    return dtypes._INTERN_TABLE[self._datatype_enum()]  # pylint: disable=protected-access
+KeyboardInterrupt

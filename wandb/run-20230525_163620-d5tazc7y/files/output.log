@@ -1,0 +1,155 @@
+Episode:  1
+Episode : 1 total_reward : -408.20 Avg Reward : -408.20
+Episode:  2
+Episode : 2 total_reward : -777.52 Avg Reward : -592.86
+Episode:  3
+Episode : 3 total_reward : -459.07 Avg Reward : -548.26
+Episode:  4
+Episode : 4 total_reward : -296.56 Avg Reward : -485.34
+Episode:  5
+Episode : 5 total_reward : -746.15 Avg Reward : -537.50
+Episode:  6
+Episode : 6 total_reward : -656.26 Avg Reward : -557.29
+Episode:  7
+Episode : 7 total_reward : -461.97 Avg Reward : -543.68
+Episode:  8
+Episode : 8 total_reward : -477.67 Avg Reward : -535.43
+Episode:  9
+Episode : 9 total_reward : -763.12 Avg Reward : -560.72
+Episode:  10
+Episode : 10 total_reward : -382.42 Avg Reward : -542.89
+Episode:  11
+Episode : 11 total_reward : -758.43 Avg Reward : -562.49
+Episode:  12
+Episode : 12 total_reward : -465.64 Avg Reward : -554.42
+Episode:  13
+Episode : 13 total_reward : -512.13 Avg Reward : -551.17
+Episode:  14
+Episode : 14 total_reward : -363.86 Avg Reward : -537.79
+Episode:  15
+Episode : 15 total_reward : -369.06 Avg Reward : -526.54
+Episode:  16
+Episode : 16 total_reward : -598.64 Avg Reward : -531.04
+Episode:  17
+Episode : 17 total_reward : -480.38 Avg Reward : -528.06
+Episode:  18
+Episode : 18 total_reward : -404.10 Avg Reward : -521.18
+Episode:  19
+Episode : 19 total_reward : -517.47 Avg Reward : -520.98
+Episode:  20
+Episode : 20 total_reward : -440.70 Avg Reward : -516.97
+Episode:  21
+Episode : 21 total_reward : -761.05 Avg Reward : -528.59
+Episode:  22
+Episode : 22 total_reward : -733.01 Avg Reward : -537.88
+Episode:  23
+Episode : 23 total_reward : -384.31 Avg Reward : -531.21
+Episode:  24
+Episode : 24 total_reward : -738.27 Avg Reward : -539.83
+Episode:  25
+Episode : 25 total_reward : -449.14 Avg Reward : -536.21
+Episode:  26
+Episode : 26 total_reward : -438.82 Avg Reward : -532.46
+Episode:  27
+Episode : 27 total_reward : -405.08 Avg Reward : -527.74
+Episode:  28
+Episode : 28 total_reward : -535.89 Avg Reward : -528.03
+Episode:  29
+Episode : 29 total_reward : -607.14 Avg Reward : -530.76
+Episode:  30
+Episode : 30 total_reward : -502.07 Avg Reward : -529.80
+Episode:  31
+Episode : 31 total_reward : -804.30 Avg Reward : -538.66
+Episode:  32
+Episode : 32 total_reward : -323.98 Avg Reward : -531.95
+Episode:  33
+Episode : 33 total_reward : -672.04 Avg Reward : -536.20
+Episode:  34
+Episode : 34 total_reward : -477.61 Avg Reward : -534.47
+Episode:  35
+Episode : 35 total_reward : -426.63 Avg Reward : -531.39
+Episode:  36
+Traceback (most recent call last):
+  File "DQN template.py", line 351, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 290, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/layers/core/dense.py", line 255, in call
+    outputs = self.activation(outputs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/activations.py", line 317, in relu
+    return backend.relu(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/backend.py", line 5396, in relu
+    x = tf.nn.relu(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 11113, in relu
+    if tld.is_eager:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 351, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 290, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/layers/core/dense.py", line 255, in call
+    outputs = self.activation(outputs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/activations.py", line 317, in relu
+    return backend.relu(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/backend.py", line 5396, in relu
+    x = tf.nn.relu(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 11113, in relu
+    if tld.is_eager:
+KeyboardInterrupt

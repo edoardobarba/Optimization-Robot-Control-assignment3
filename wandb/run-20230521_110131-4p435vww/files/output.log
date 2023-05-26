@@ -1,0 +1,84 @@
+stack shape:  (2, 1)
+concatenate shape:  (2,)
+Episode : 1 sum_costs : -269.04 Avg Reward : -269.04
+stack shape:  (2, 1)
+concatenate shape:  (2,)
+Episode : 2 sum_costs : -487.50 Avg Reward : -378.27
+stack shape:  (2, 1)
+concatenate shape:  (2,)
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 212, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1771, in _slice_helper
+    [shape_tensor[:axis], [-1], shape_tensor[axis + len(dims):]],
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1601, in _slice_helper
+    array_ops.stack(end),
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1484, in stack
+    return ops.convert_to_tensor(values, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1642, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1594, in _autopacking_conversion_function
+    def _autopacking_conversion_function(v, dtype=None, name=None, as_ref=False):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 212, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1771, in _slice_helper
+    [shape_tensor[:axis], [-1], shape_tensor[axis + len(dims):]],
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1601, in _slice_helper
+    array_ops.stack(end),
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1484, in stack
+    return ops.convert_to_tensor(values, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1642, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1594, in _autopacking_conversion_function
+    def _autopacking_conversion_function(v, dtype=None, name=None, as_ref=False):
+KeyboardInterrupt

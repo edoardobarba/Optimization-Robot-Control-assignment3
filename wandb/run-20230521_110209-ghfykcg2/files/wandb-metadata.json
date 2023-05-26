@@ -1,0 +1,77 @@
+{
+    "os": "Linux-5.15.0-71-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-05-21T09:02:10.432608",
+    "startedAt": "2023-05-21T09:02:09.286907",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "DQN template.py",
+    "codePath": "DQN template.py",
+    "git": {
+        "remote": "https://github.com/edoardobarba/Optimization-Robot-Control-assignment3.git",
+        "commit": "74ffb4ed93ce5f0370be73f09c832f32db7ad7f0"
+    },
+    "email": "104260638+edoardobarba@users.noreply.github.com",
+    "root": "/home/edo/Desktop/orc/03_assignment",
+    "host": "edo-Lenovo-ideapad-320-15IKB",
+    "username": "edo",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3247.514875,
+        "min": 400.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3247.856,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3266.929,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3273.667,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3299.908,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3300.084,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3300.0,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3300.075,
+            "min": 400.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3300.194,
+            "min": 400.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "total": 91.42811965942383,
+        "used": 84.97282791137695
+    },
+    "memory": {
+        "total": 15.41324234008789
+    }
+}

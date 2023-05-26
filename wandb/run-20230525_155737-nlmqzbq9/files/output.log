@@ -1,0 +1,354 @@
+clip:
+-1.2
+[-1.2]
+clip:
+-1.2
+[-1.2]
+clip:
+-1.2
+[-1.2]
+clip:
+0.0
+[0.]
+clip:
+0.0
+[0.]
+clip:
+0.0
+[0.]
+clip:
+0.0
+[0.]
+clip:
+0.0
+[0.]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+-0.3999999999999999
+[-0.4]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+1.6
+[1.6]
+clip:
+0.8000000000000003
+[0.8]
+clip:
+1.6
+[1.6]
+clip:
+-1.2
+[-1.2]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+-1.2
+[-1.2]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+-1.6
+[-1.6]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+0.40000000000000036
+[0.4]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.3999999999999999
+[-0.4]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-1.2
+[-1.2]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.3999999999999999
+[-0.4]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+2.0
+[2.]
+clip:
+0.0
+[0.]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.3999999999999999
+[-0.4]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+2.0
+[2.]
+clip:
+0.0
+[0.]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+2.0
+[2.]
+clip:
+0.8000000000000003
+[0.8]
+clip:
+-0.7999999999999998
+[-0.8]
+clip:
+0.8000000000000003
+[0.8]
+clip:
+0.8000000000000003
+[0.8]
+clip:
+0.8000000000000003
+[0.8]
+clip:
+1.2000000000000002
+[1.2]
+clip:
+1.2000000000000002
+[1.2]
+clip:
+1.2000000000000002
+[1.2]
+clip:
+1.2000000000000002
+[1.2]
+clip:
+1.2000000000000002
+[1.2]
+Traceback (most recent call last):
+  File "DQN template.py", line 349, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 912, in assign_sub
+    assign_sub_op = gen_resource_variable_ops.assign_sub_variable_op(
+  File "/usr/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 251, in _handle_graph
+    yield
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 349, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 912, in assign_sub
+    assign_sub_op = gen_resource_variable_ops.assign_sub_variable_op(
+  File "/usr/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 251, in _handle_graph
+    yield
+KeyboardInterrupt

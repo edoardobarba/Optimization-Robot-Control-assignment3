@@ -131,10 +131,10 @@ class Pendulum:
         if x0 is None: 
             q0 = np.pi*(np.random.rand(self.nq)*2-1)
             v0 = np.random.rand(self.nv)*2-1
-            x0 = np.vstack([q0,v0])
-            print("stack shape: ", np.shape(x0))
+            #x0 = np.vstack([q0,v0])
+            #print("stack shape: ", np.shape(x0))
             x0 = np.concatenate((q0,v0))
-            print("concatenate shape: ", np.shape(x0))
+            #print("concatenate shape: ", np.shape(x0))
 
         # print("self.nx: ", self.nx)
         # print("len(x0): ", len(x0))
@@ -144,10 +144,10 @@ class Pendulum:
         return self.obs(self.x)
     
 
-    def step(self, u):
+    def step(self, u, constrained=False):
         ''' Simulate one time step '''
         #assert(len(u)==self.nu)
-        _,self.r = self.dynamics(self.x, u)
+        _,self.r = self.dynamics(self.x, u, constrained=constrained)
         return self.obs(self.x), self.r
 
     def obs(self, x):
@@ -162,7 +162,7 @@ class Pendulum:
         pin.framesKinematics(self.model, self.data,q)
         return self.data.oMf[1].translation[2,0]
 
-    def dynamics(self, x, u, display=True):
+    def dynamics(self, x, u, constrained = False, display=True):
         '''
         Dynamic function: x,u -> xnext=f(x,y).
         Put the result in x (the initial value is destroyed). 
@@ -176,6 +176,9 @@ class Pendulum:
         cost = 0.0
         q = modulePi(x[:self.nq])
         v = x[self.nq:]
+        if self.nu == 2: 
+             u = [u, 0]
+        
         u = np.clip(np.reshape(np.array(u),self.nu),-self.umax,self.umax)
 
         DT = self.DT/self.NDT
@@ -191,25 +194,39 @@ class Pendulum:
             q    += (v+0.5*DT*a)*DT
             v    += a*DT
             q_goal = 0
-            print(q)
-            print(v)
-            delta_q = sumsq(q_goal-abs(q))
+    
+            # print(v)
+            delta_q = 0
+            delta_q += sumsq(q_goal-abs(q[0]))
+            #print("delta_q: ", delta_q)
+
+            # print("q: ", q)
+            # print("q[0]: ", q[0])
+
+            if len(q)==2:
+                q2_vertical = q[0] + q[1]
+                delta_q += sumsq(q_goal-abs(q2_vertical))
+
+                
+            
             Wq = 0.9
             Wv = 1-Wq
 
-
-            # print("q: ", q)
-            # print("v: ", v)
-            
             #cost += (sumsq(q) + 1e-1*sumsq(v) + 1e-3*sumsq(u))*DT # cost function
 
-            #cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
-            #print(f"delta_q: {delta_q},  np.exp(-delta_q/2): {np.exp(-delta_q/2)}, np.sum(v): {np.sum(v)}, np.exp(-delta_q/2) * np.sum(v) {np.exp(-delta_q/2) * np.sum(v)}")
-            cost += delta_q
+            cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+            #cost += delta_q
+
+            # if constrained:
+            #     if abs(q[1]) < (np.pi/4): 
+            #         print("penalizzo constraint")
+            #         print("cost before: ", cost)
+            #         cost += 100*q[1]
+            #         print("cost after: ", cost)
 
             if display:
                 self.display(q)
-                time.sleep(1e-2)
+                time.sleep(1e-9)
 
         x[:self.nq] = modulePi(q)
         x[self.nq:] = np.clip(v,-self.vmax,self.vmax)
@@ -223,39 +240,26 @@ class Pendulum:
 
 
 
-
-# # Define the RK4 method
-# def rk4_step(theta, omega, dt):
-#     g=9.81
-#     L=1
-#     k1_theta = omega
-#     k1_omega = -(g/L)*np.sin(theta)
-    
-#     k2_theta = omega + 0.5*dt*k1_omega
-#     k2_omega = -(g/L)*np.sin(theta + 0.5*dt*k1_theta)
-    
-#     k3_theta = omega + 0.5*dt*k2_omega
-#     k3_omega = -(g/L)*np.sin(theta + 0.5*dt*k2_theta)
-    
-#     k4_theta = omega + dt*k3_omega
-#     k4_omega = -(g/L)*np.sin(theta + dt*k3_theta)
-    
-#     theta_new = theta + (dt/6.0)*(k1_theta + 2*k2_theta + 2*k3_theta + k4_theta)
-#     omega_new = omega + (dt/6.0)*(k1_omega + 2*k2_omega + 2*k3_omega + k4_omega)
-    
-#     return theta_new, omega_new
-
-
-
 # Simulate the pendulum using the RK4 method
 if __name__ == "__main__":
     env = Pendulum(2)
-    env.reset()
+    x = env.reset()
+    print(x)
+    q1 = x[0]
+    q2 = x[1]
+    print("q1: ", q1)
+    print("q2: ", q2)
+    q2_vertical = q1 + q2
+    print("q1: ", q1)
+    print("q2_vertical: ", q2_vertical)
     env.render()
+    time.sleep(20)
 
-    for i in range(10000):
-        env.step(np.zeros(env.nu))
-        env.render()
+    # for i in range(1):
+    #     x, _ = env.step([0,0])
+    #     print(x)
+    #     env.render()
+    #     time.sleep(500)
 
 
 

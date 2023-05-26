@@ -1,0 +1,26 @@
+
+[-1.70613865  0.31802468  0.62918955 -0.28873325]
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 175, in train_dqn
+    idx_u = dqn.get_epsilon_action(x)
+  File "DQN template.py", line 94, in get_epsilon_action
+    q_values = self.Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/input_spec.py", line 298, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 4), found shape=(1, 2)
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 175, in train_dqn
+    idx_u = dqn.get_epsilon_action(x)
+  File "DQN template.py", line 94, in get_epsilon_action
+    q_values = self.Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/input_spec.py", line 298, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 4), found shape=(1, 2)

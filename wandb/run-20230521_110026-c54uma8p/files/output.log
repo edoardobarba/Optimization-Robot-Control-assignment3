@@ -1,0 +1,160 @@
+stack shape:  (2, 1)
+concatenate shape:  (2,)
+[-0.35722228]
+[0.15797563]
+[-0.34857613]
+[0.18787066]
+[-0.33833298]
+[0.22185528]
+[-0.32626863]
+[0.26071875]
+[-0.31211651]
+[0.30536574]
+[-0.29556137]
+[0.35683991]
+[-0.27623159]
+[0.41635132]
+[-0.2536901]
+[0.48530845]
+[-0.22811794]
+[0.53757776]
+[-0.19891405]
+[0.63057808]
+[-0.16469711]
+[0.7380992]
+[-0.12467549]
+[0.86276564]
+[-0.07791562]
+[1.00762933]
+[-0.02331902]
+[1.17623461]
+[0.04040384]
+[1.37267984]
+[0.11476244]
+[1.60166417]
+[0.20151651]
+[1.86849845]
+[0.30270508]
+[2.17904426]
+[0.42066921]
+[2.53952122]
+[0.55805947]
+[2.95608896]
+[0.71781333]
+[3.43406564]
+[0.90307996]
+[3.97659941]
+[1.11705974]
+[4.58259175]
+[1.3627183]
+[5.24375076]
+[1.6423359]
+[5.9409533]
+[1.94715678]
+[6.25188201]
+[2.27624117]
+[6.91149349]
+[2.63582457]
+[7.47184248]
+[3.01949777]
+[7.87508556]
+[3.41827949]
+[8.07618334]
+[-2.46598887]
+[7.9566779]
+[-2.07333025]
+[7.74966671]
+[-1.70063452]
+[7.15816265]
+[-1.35405841]
+[6.70488152]
+[-1.03120526]
+[6.20924469]
+[-0.73137918]
+[5.78379841]
+[-0.45636818]
+[5.21664138]
+[-0.20021182]
+[5.02961328]
+[0.04993981]
+[4.97645187]
+[0.30083798]
+[5.05947496]
+[0.55852702]
+[5.24808666]
+[0.83086062]
+[5.64525727]
+[1.12439536]
+[6.09613229]
+[1.44257622]
+[6.63110226]
+[1.78858029]
+[7.20906058]
+[2.16311174]
+[7.77219739]
+[2.56364443]
+[8.24911013]
+[2.97164341]
+[8.31995929]
+[3.3745034]
+[8.11439934]
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 231, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 164, in update_step
+    beta_2_power = tf.pow(tf.cast(self.beta_2, variable.dtype), local_step)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 322, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 231, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 164, in update_step
+    beta_2_power = tf.pow(tf.cast(self.beta_2, variable.dtype), local_step)
+KeyboardInterrupt

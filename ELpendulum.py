@@ -180,6 +180,7 @@ class Pendulum:
             for i in range(self.nq):
                 cost += ((discount**i)*sumsq(q[i]) + (discount**i)*1e-1*sumsq(v[i]) + (discount**i)*1e-3*sumsq(u[i]))*DT # cost function
 
+                
             if display:
                 self.display(q)
                 time.sleep(1e-4)

@@ -1,0 +1,173 @@
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+Episode : 1 sum_costs : -505.00 Avg Reward : -505.00
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+len q:  1
+Traceback (most recent call last):
+  File "DQN template.py", line 350, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 178, in train_dqn
+    next_x, cost = env.step(u, constrained = constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 150, in step
+    _,self.r = self.dynamics(self.x, u, constrained=constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 226, in dynamics
+    cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+  File "<__array_function__ internals>", line 180, in sum
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2298, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 69, in _wrapreduction
+    def _wrapreduction(obj, ufunc, method, axis, dtype, out, **kwargs):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 350, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 178, in train_dqn
+    next_x, cost = env.step(u, constrained = constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 150, in step
+    _,self.r = self.dynamics(self.x, u, constrained=constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 226, in dynamics
+    cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+  File "<__array_function__ internals>", line 180, in sum
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2298, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/home/edo/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 69, in _wrapreduction
+    def _wrapreduction(obj, ufunc, method, axis, dtype, out, **kwargs):
+KeyboardInterrupt
+len q:  1
+len q:  1
+len q:  1
+len q:  1

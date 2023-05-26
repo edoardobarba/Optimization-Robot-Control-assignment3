@@ -1,0 +1,156 @@
+[-2.19160477 -2.24306569]
+[-0.85897767  1.20412093]
+[-2.24216793 -2.16694387]
+[-1.16354876  1.84075163]
+[-2.30754876 -2.05814882]
+[-1.45168426  2.51105044]
+[-2.38703633 -1.91458191]
+[-1.72781873  3.23162607]
+[-2.48032165 -1.73319058]
+[-2.00359393  4.02402705]
+[-2.58788725 -1.50958139]
+[-2.29902987  4.92034067]
+[-2.71143222 -1.23729706]
+[-2.64276904  5.97103235]
+[-2.85424252 -0.90684329]
+[-3.06964286  7.24711867]
+[-3.02093663 -0.50602429]
+[-3.5981215   8.78564139]
+[-3.21116248 -0.07406009]
+[-4.01091273  9.27856789]
+[2.87425351 0.32146852]
+[-3.89985987  7.82114424]
+[2.6931832 0.674342 ]
+[-3.34295262  6.29379516]
+[2.54429089 0.94044076]
+[-2.6127398   4.35015519]
+[2.42856987 1.11981226]
+[-2.01610099  2.82470467]
+[2.34112164 1.22996576]
+[-1.4818283   1.58143552]
+[2.27757632 1.28558729]
+[-1.05998431  0.64342567]
+[2.23612307 1.29535164]
+[-0.59814566 -0.25285188]
+[2.21575251 1.26470385]
+[-0.21667691 -0.9730594 ]
+[2.2147977  1.19854314]
+[ 0.17848444 -1.67336916]
+[2.23627264 1.0940183 ]
+[ 0.68051342 -2.50762438]
+[2.28334488 0.94650725]
+[ 1.2023763  -3.39281766]
+[2.35714267 0.75241564]
+[ 1.74953509 -4.37084686]
+[2.45835458 0.507742  ]
+[ 2.29894146 -5.41609853]
+[2.58398924 0.21618689]
+[ 2.72644478 -6.24610607]
+[ 2.73029815 -0.11286075]
+[ 3.1259117  -6.91579946]
+[ 2.88758656 -0.45047113]
+[ 3.16562457 -6.58861557]
+[ 3.03946635 -0.75038322]
+[ 2.90956719 -5.40786825]
+[ 3.17787587 -0.98818421]
+[ 2.62681357 -4.10417149]
+[-2.98215137 -1.1599674 ]
+[ 2.29950901 -2.76715587]
+[-2.87433023 -1.26902565]
+[ 2.01333665 -1.59517418]
+[-2.77887539 -1.32455459]
+[ 1.804857   -0.62598335]
+[-2.69491976 -1.33212612]
+[1.55336824 0.323122  ]
+[-2.62689018 -1.2900842 ]
+[1.16781469 1.358555  ]
+[-2.57823614 -1.1984426 ]
+[0.77834697 2.3071089 ]
+[-2.55308083 -1.05553618]
+[0.22786555 3.40914805]
+[-2.55733151 -0.85561938]
+[-0.39789291  4.58752378]
+[-2.59449289 -0.59385196]
+[-1.08856221  5.88317301]
+[-2.66668392 -0.26564942]
+[-1.7990789   7.24492849]
+[-2.77020239  0.12104186]
+[-2.34165973  8.22272276]
+[-2.88782     0.51258288]
+[-2.36304499  7.66164082]
+[-2.99656616  0.86176989]
+[-1.9868013   6.30583957]
+[-3.0871551   1.14455224]
+[-1.6367564   5.00545428]
+[-3.16336449  1.36913853]
+[-1.41161906  3.97799764]
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 942, in assign_add
+    return self._lazy_read(assign_add_op)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 947, in _lazy_read
+    return _UnreadVariable(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 332, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 942, in assign_add
+    return self._lazy_read(assign_add_op)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 947, in _lazy_read
+    return _UnreadVariable(
+KeyboardInterrupt
+[3.05242484 1.54704179]
+[-1.28422012  3.1381327 ]

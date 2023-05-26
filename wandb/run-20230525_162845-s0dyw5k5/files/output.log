@@ -1,0 +1,196 @@
+q:  [-2.37243931]
+q[0]:  -2.3724393121749663
+q:  [-2.36925307]
+q[0]:  -2.3692530651647914
+q:  [-2.38064204]
+q[0]:  -2.3806420354717734
+q:  [-2.40414144]
+q[0]:  -2.4041414350532215
+q:  [-2.44482606]
+q[0]:  -2.4448260558073076
+q:  [-2.50185274]
+q[0]:  -2.5018527371451267
+q:  [-2.57734568]
+q[0]:  -2.5773456811491724
+q:  [-2.67853124]
+q[0]:  -2.678531243997612
+q:  [-2.80307615]
+q[0]:  -2.803076147303469
+q:  [-2.94795917]
+q[0]:  -2.9479591710061186
+q:  [-3.10504555]
+q[0]:  -3.1050455517632294
+q:  [-3.26572839]
+q[0]:  -3.26572839457898
+q:  [2.86085971]
+q[0]:  2.8608597113554817
+q:  [2.71590887]
+q[0]:  2.7159088745383486
+q:  [2.58641435]
+q[0]:  2.5864143461631417
+q:  [2.47561111]
+q[0]:  2.4756111144776987
+q:  [2.38608309]
+q[0]:  2.3860830918276905
+q:  [2.31197656]
+q[0]:  2.3119765552181204
+q:  [2.25475299]
+q[0]:  2.2547529885090922
+q:  [2.2221098]
+q[0]:  2.222109804211639
+q:  [2.21344779]
+q[0]:  2.213447793616834
+q:  [2.22773588]
+q[0]:  2.227735882490713
+q:  [2.26467243]
+q[0]:  2.2646724276129904
+q:  [2.32468448]
+q[0]:  2.3246844800716793
+q:  [2.40554845]
+q[0]:  2.4055484494553037
+q:  [2.5045943]
+q[0]:  2.5045943045554697
+q:  [2.62090201]
+q[0]:  2.620902008088149
+q:  [2.74857729]
+q[0]:  2.7485772856371526
+q:  [2.88460793]
+q[0]:  2.8846079261210607
+q:  [3.03003038]
+q[0]:  3.030030384509832
+q:  [3.18103915]
+q[0]:  3.1810391491806507
+q:  [-2.94961348]
+q[0]:  -2.9496134806177174
+q:  [-2.79969039]
+q[0]:  -2.7996903860115365
+q:  [-2.65637875]
+q[0]:  -2.6563787477693186
+q:  [-2.52336009]
+q[0]:  -2.5233600940319474
+q:  [-2.40384886]
+q[0]:  -2.403848862616049
+q:  [-2.30717142]
+q[0]:  -2.307171418892076
+q:  [-2.23527193]
+q[0]:  -2.235271932304028
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/v/dense/bias:0' shape=(16,) dtype=float32, numpy=
+array([0.00039527, 0.00330455, 0.00208865, 0.0097377 , 0.0038996 ,
+       0.01188779, 0.00287815, 0.00129339, 0.00446441, 0.00118566,
+       0.00016991, 0.00053754, 0.00070362, 0.0061746 , 0.01992274,
+       0.00074344], dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 350, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 236, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 195, in update_step
+    v.assign_add((tf.square(gradient) - v) * (1 - self.beta_2))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 592, in value
+    return self._read_variable_op()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 753, in _read_variable_op
+    result = read_and_set_handle(no_copy)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 743, in read_and_set_handle
+    result = gen_resource_variable_ops.read_variable_op(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_resource_variable_ops.py", line 524, in read_variable_op
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/v/dense/bias:0' shape=(16,) dtype=float32, numpy=
+array([0.00039527, 0.00330455, 0.00208865, 0.0097377 , 0.0038996 ,
+       0.01188779, 0.00287815, 0.00129339, 0.00446441, 0.00118566,
+       0.00016991, 0.00053754, 0.00070362, 0.0061746 , 0.01992274,
+       0.00074344], dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 350, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 236, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 195, in update_step
+    v.assign_add((tf.square(gradient) - v) * (1 - self.beta_2))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 592, in value
+    return self._read_variable_op()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 753, in _read_variable_op
+    result = read_and_set_handle(no_copy)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 743, in read_and_set_handle
+    result = gen_resource_variable_ops.read_variable_op(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_resource_variable_ops.py", line 524, in read_variable_op
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+q:  [-2.1805479]
+q[0]:  -2.1805479035795514
+q:  [-2.14388327]
+q[0]:  -2.1438832666285585

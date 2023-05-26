@@ -1,0 +1,126 @@
+
+Episode : 1 sum_costs : -502.43 Avg Reward : -502.43
+Episode : 2 sum_costs : -308.10 Avg Reward : -405.26
+Episode : 3 sum_costs : -253.36 Avg Reward : -354.63
+Episode : 4 sum_costs : -572.46 Avg Reward : -409.09
+Episode : 5 sum_costs : -501.46 Avg Reward : -427.56
+Episode : 6 sum_costs : -276.91 Avg Reward : -402.45
+Episode : 7 sum_costs : -588.36 Avg Reward : -429.01
+Episode : 8 sum_costs : -536.37 Avg Reward : -442.43
+Episode : 9 sum_costs : -734.72 Avg Reward : -474.91
+Episode : 10 sum_costs : -475.70 Avg Reward : -474.99
+Episode : 11 sum_costs : -472.53 Avg Reward : -474.76
+Episode : 12 sum_costs : -318.16 Avg Reward : -461.71
+Episode : 13 sum_costs : -462.07 Avg Reward : -461.74
+Episode : 14 sum_costs : -437.13 Avg Reward : -459.98
+Episode : 15 sum_costs : -706.47 Avg Reward : -476.41
+Episode : 16 sum_costs : -887.57 Avg Reward : -502.11
+Episode : 17 sum_costs : -871.24 Avg Reward : -523.82
+Episode : 18 sum_costs : -612.24 Avg Reward : -528.74
+Episode : 19 sum_costs : -280.81 Avg Reward : -515.69
+Episode : 20 sum_costs : -192.67 Avg Reward : -499.54
+Episode : 21 sum_costs : -405.68 Avg Reward : -495.07
+Episode : 22 sum_costs : -820.14 Avg Reward : -509.84
+Episode : 23 sum_costs : -383.24 Avg Reward : -504.34
+Episode : 24 sum_costs : -490.61 Avg Reward : -503.77
+Episode : 25 sum_costs : -376.52 Avg Reward : -498.68
+Episode : 26 sum_costs : -375.99 Avg Reward : -493.96
+Episode : 27 sum_costs : -539.54 Avg Reward : -495.65
+Episode : 28 sum_costs : -887.65 Avg Reward : -509.65
+Episode : 29 sum_costs : -298.66 Avg Reward : -502.37
+Episode : 30 sum_costs : -684.32 Avg Reward : -508.44
+Episode : 31 sum_costs : -373.24 Avg Reward : -504.08
+Episode : 32 sum_costs : -387.09 Avg Reward : -500.42
+Episode : 33 sum_costs : -677.42 Avg Reward : -505.78
+Episode : 34 sum_costs : -534.63 Avg Reward : -506.63
+Episode : 35 sum_costs : -381.20 Avg Reward : -503.05
+Episode : 36 sum_costs : -401.65 Avg Reward : -500.23
+Episode : 37 sum_costs : -715.71 Avg Reward : -506.06
+Traceback (most recent call last):
+  File "DQN template.py", line 349, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1429, in maybe_promote_tensors
+    *[_maybe_get_dtype(x) for x in nest.flatten(tensors)])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1429, in <listcomp>
+    *[_maybe_get_dtype(x) for x in nest.flatten(tensors)])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1386, in _maybe_get_dtype
+    return x.dtype.as_numpy_dtype
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 101, in as_numpy_dtype
+    @property
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 349, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir)
+  File "DQN template.py", line 235, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1429, in maybe_promote_tensors
+    *[_maybe_get_dtype(x) for x in nest.flatten(tensors)])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1429, in <listcomp>
+    *[_maybe_get_dtype(x) for x in nest.flatten(tensors)])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1386, in _maybe_get_dtype
+    return x.dtype.as_numpy_dtype
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 101, in as_numpy_dtype
+    @property
+KeyboardInterrupt
