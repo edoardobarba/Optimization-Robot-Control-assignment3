@@ -1,0 +1,169 @@
+Episode:  1
+Episode : 1 total_reward : -246.47 Avg Reward : -246.47
+Episode:  2
+Episode : 2 total_reward : -190.82 Avg Reward : -218.65
+Episode:  3
+Episode : 3 total_reward : -89.91 Avg Reward : -175.73
+Episode:  4
+Episode : 4 total_reward : -87.10 Avg Reward : -153.58
+Episode:  5
+Episode : 5 total_reward : -195.97 Avg Reward : -162.05
+Episode:  6
+Episode : 6 total_reward : -83.61 Avg Reward : -148.98
+Episode:  7
+Episode : 7 total_reward : -8.92 Avg Reward : -128.97
+Episode:  8
+Episode : 8 total_reward : -87.06 Avg Reward : -123.73
+Episode:  9
+Episode : 9 total_reward : -11.18 Avg Reward : -111.23
+Episode:  10
+Episode : 10 total_reward : -9.51 Avg Reward : -101.06
+Episode:  11
+Episode : 11 total_reward : -362.75 Avg Reward : -124.85
+Episode:  12
+Episode : 12 total_reward : -319.94 Avg Reward : -141.10
+Episode:  13
+Episode : 13 total_reward : -203.42 Avg Reward : -145.90
+Episode:  14
+Episode : 14 total_reward : -9.75 Avg Reward : -136.17
+Episode:  15
+Episode : 15 total_reward : -88.46 Avg Reward : -132.99
+Episode:  16
+Episode : 16 total_reward : -102.94 Avg Reward : -131.11
+Episode:  17
+Episode : 17 total_reward : -7.88 Avg Reward : -123.86
+Episode:  18
+Episode : 18 total_reward : -91.68 Avg Reward : -122.08
+Episode:  19
+Episode : 19 total_reward : -82.53 Avg Reward : -119.99
+Episode:  20
+Episode : 20 total_reward : -195.08 Avg Reward : -123.75
+Episode:  21
+Episode : 21 total_reward : -95.43 Avg Reward : -122.40
+Episode:  22
+Episode : 22 total_reward : -222.63 Avg Reward : -126.96
+Episode:  23
+Episode : 23 total_reward : -111.39 Avg Reward : -126.28
+Episode:  24
+Episode : 24 total_reward : -90.45 Avg Reward : -124.79
+Episode:  25
+Episode : 25 total_reward : -85.20 Avg Reward : -123.20
+Episode:  26
+Episode : 26 total_reward : -104.96 Avg Reward : -122.50
+Episode:  27
+Episode : 27 total_reward : -99.81 Avg Reward : -121.66
+Episode:  28
+Episode : 28 total_reward : -9.49 Avg Reward : -117.65
+Episode:  29
+Episode : 29 total_reward : -7.91 Avg Reward : -113.87
+Episode:  30
+Episode : 30 total_reward : -334.33 Avg Reward : -121.22
+Episode:  31
+Episode : 31 total_reward : -9.46 Avg Reward : -117.61
+Episode:  32
+Episode : 32 total_reward : -103.53 Avg Reward : -117.17
+Episode:  33
+Episode : 33 total_reward : -216.66 Avg Reward : -120.19
+Episode:  34
+Episode : 34 total_reward : -86.76 Avg Reward : -119.21
+Episode:  35
+Episode : 35 total_reward : -96.46 Avg Reward : -118.56
+Episode:  36
+Episode : 36 total_reward : -95.72 Avg Reward : -117.92
+Episode:  37
+Episode : 37 total_reward : -102.39 Avg Reward : -117.50
+Episode:  38
+Episode : 38 total_reward : -105.37 Avg Reward : -117.18
+Episode:  39
+Episode : 39 total_reward : -278.19 Avg Reward : -121.31
+Episode:  40
+Episode : 40 total_reward : -105.04 Avg Reward : -120.90
+Episode:  41
+Episode : 41 total_reward : -93.79 Avg Reward : -120.24
+Episode:  42
+Episode : 42 total_reward : -85.87 Avg Reward : -119.42
+Episode:  43
+Episode : 43 total_reward : -96.68 Avg Reward : -118.90
+Episode:  44
+Episode : 44 total_reward : -215.11 Avg Reward : -121.08
+Episode:  45
+Episode : 45 total_reward : -185.69 Avg Reward : -122.52
+Episode:  46
+Episode : 46 total_reward : -87.76 Avg Reward : -121.76
+Episode:  47
+Episode : 47 total_reward : -83.68 Avg Reward : -120.95
+Episode:  48
+Episode : 48 total_reward : -83.25 Avg Reward : -120.17
+Episode:  49
+Traceback (most recent call last):
+  File "DQN template.py", line 346, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 287, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/layers/core/dense.py", line 252, in call
+    outputs = tf.nn.bias_add(outputs, self.bias)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/nn_ops.py", line 3554, in bias_add
+    return gen_nn_ops.bias_add(value, bias, data_format=data_format, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 849, in bias_add
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 346, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 287, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/layers/core/dense.py", line 252, in call
+    outputs = tf.nn.bias_add(outputs, self.bias)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/nn_ops.py", line 3554, in bias_add
+    return gen_nn_ops.bias_add(value, bias, data_format=data_format, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 849, in bias_add
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

@@ -1,0 +1,95 @@
+Episode:  1
+Episode : 1 total_reward : -203.49 Avg Reward : -203.49
+Episode:  2
+Episode : 2 total_reward : -243.31 Avg Reward : -223.40
+Episode:  3
+Episode : 3 total_reward : -200.41 Avg Reward : -215.73
+Episode:  4
+Episode : 4 total_reward : -223.84 Avg Reward : -217.76
+Episode:  5
+Episode : 5 total_reward : -246.17 Avg Reward : -223.44
+Episode:  6
+Episode : 6 total_reward : -122.72 Avg Reward : -206.66
+Episode:  7
+Episode : 7 total_reward : -88.68 Avg Reward : -189.80
+Episode:  8
+Episode : 8 total_reward : -193.67 Avg Reward : -190.29
+Episode:  9
+Episode : 9 total_reward : -201.15 Avg Reward : -191.49
+Episode:  10
+Episode : 10 total_reward : -175.32 Avg Reward : -189.88
+Episode:  11
+Episode : 11 total_reward : -170.67 Avg Reward : -188.13
+Episode:  12
+Episode : 12 total_reward : -188.93 Avg Reward : -188.20
+Episode:  13
+Episode : 13 total_reward : -213.33 Avg Reward : -190.13
+Episode:  14
+Episode : 14 total_reward : -400.92 Avg Reward : -205.19
+Episode:  15
+Episode : 15 total_reward : -345.46 Avg Reward : -214.54
+Episode:  16
+Episode : 16 total_reward : -386.70 Avg Reward : -225.30
+Episode:  17
+Episode : 17 total_reward : -340.47 Avg Reward : -232.07
+Episode:  18
+Episode : 18 total_reward : -450.44 Avg Reward : -244.20
+Episode:  19
+Episode : 19 total_reward : -185.91 Avg Reward : -241.14
+Episode:  20
+Episode : 20 total_reward : -317.53 Avg Reward : -244.96
+Episode:  21
+Episode : 21 total_reward : -201.12 Avg Reward : -242.87
+Episode:  22
+Episode : 22 total_reward : -250.29 Avg Reward : -243.21
+Episode:  23
+Episode : 23 total_reward : -300.78 Avg Reward : -245.71
+Episode:  24
+Episode : 24 total_reward : -177.50 Avg Reward : -242.87
+Episode:  25
+Episode : 25 total_reward : -223.51 Avg Reward : -242.09
+Episode:  26
+Episode : 26 total_reward : -306.44 Avg Reward : -244.57
+Episode:  27
+Episode : 27 total_reward : -196.31 Avg Reward : -242.78
+Episode:  28
+Episode : 28 total_reward : -166.49 Avg Reward : -240.06
+Episode:  29
+Episode : 29 total_reward : -251.42 Avg Reward : -240.45
+Episode:  30
+Episode : 30 total_reward : -197.12 Avg Reward : -239.00
+Episode:  31
+Episode : 31 total_reward : -159.37 Avg Reward : -236.43
+Episode:  32
+Episode : 32 total_reward : -198.07 Avg Reward : -235.24
+Episode:  33
+Episode : 33 total_reward : -176.93 Avg Reward : -233.47
+Episode:  34
+Episode : 34 total_reward : -260.86 Avg Reward : -234.27
+Episode:  35
+Episode : 35 total_reward : -207.25 Avg Reward : -233.50
+Episode:  36
+Episode : 36 total_reward : -265.64 Avg Reward : -234.40
+Episode:  37
+Episode : 37 total_reward : -215.78 Avg Reward : -233.89
+Episode:  38
+Traceback (most recent call last):
+  File "DQN template.py", line 335, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 280, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 150, in step
+    _,self.r = self.dynamics(self.x, u, constrained=constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 224, in dynamics
+    time.sleep(1e-3)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 335, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 280, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 150, in step
+    _,self.r = self.dynamics(self.x, u, constrained=constrained)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 224, in dynamics
+    time.sleep(1e-3)
+KeyboardInterrupt
