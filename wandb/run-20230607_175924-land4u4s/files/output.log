@@ -1,0 +1,14 @@
+
+Episode:  1
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 299, in test_dqn
+    input = x.reshape((2,1))
+ValueError: cannot reshape array of size 4 into shape (2,1)
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 299, in test_dqn
+    input = x.reshape((2,1))
+ValueError: cannot reshape array of size 4 into shape (2,1)

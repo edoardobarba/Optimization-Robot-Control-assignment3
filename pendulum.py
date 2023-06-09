@@ -71,7 +71,7 @@ class Pendulum:
         self.NDT        = 1      # Number of Euler steps per integration (internal)
         self.Kf         = .10    # Friction coefficient
         self.vmax       = 8.0    # Max velocity (clipped if larger)
-        self.umax       = 2.0    # Max torque   (clipped if larger)
+        self.umax       = 6.0    # Max torque   (clipped if larger)
         self.withSinCos = False  # If true, state is [cos(q),sin(q),qdot], else [q,qdot]
 
     def createPendulum(self, nbJoint, rootId=0, prefix='', jointPlacement=None):
@@ -131,9 +131,20 @@ class Pendulum:
         if x0 is None: 
             q0 = np.pi*(np.random.rand(self.nq)*2-1)
             v0 = np.random.rand(self.nv)*2-1
-
-            x0 = np.vstack([q0,v0])
-            #x0 = np.concatenate((q0,v0))
+            # print("Reset")
+            # print("q0: ")
+            # print(q0)
+            # print("v0: ")
+            # print(v0)
+            #if self.nx == 2: 
+            #x0 = np.vstack([q0,v0])
+            # print("x0: ")
+            # print(x0)
+            #print("stack x0: ", x0)
+            #else:
+            x0 = np.concatenate((q0,v0))
+            # print("concatenate x0: ", x0)
+            
             #x0 = x0.reshape((2, 1))
 
             # print("concatenate shape: ", np.shape(x0))
@@ -180,24 +191,58 @@ class Pendulum:
         sumsq    = lambda x : np.sum(np.square(x))
 
         cost = 0.0
+        # print("x:")
+        # print(x)
+        # print("")
+
         q = modulePi(x[:self.nq])
         v = x[self.nq:]
-        
+        # print("q:")
+        # print(q)
+        # print("")
+
+        # print("v:")
+        # print(v)
+        # print("")
+
         if self.nu == 2: 
              u = [u, 0]
        
+
+        # print("q: ", q)
+        # print("v: ", v)
         #print("before: ", u)
         u = np.clip(np.reshape(np.array(u),self.nu),-self.umax,self.umax)
+
         #print("after: ", u)
         DT = self.DT/self.NDT
         for i in range(self.NDT):
-            pin.computeAllTerms(self.model,self.data,q,v)
+            pin.computeAllTerms(self.model, self.data, q, v)
             M   = self.data.M
             b   = self.data.nle
 
-            a   = inv(M)*(u-self.Kf*v-b)
-            #print("old a: ", a)
-            #a   = np.dot(inv(M),(u-self.Kf*v-b))
+            # print("u")
+            # print(u)
+            # print("self.Kf*v")
+            # print(self.Kf*v)
+            # print("u-self.Kf*v-b")
+            # print(u-self.Kf*v-b)
+            
+            # print("M")
+            # print(M)
+            # print("b")
+            # print(b)
+            #if self.nx == 2: 
+            #a   = inv(M)*(u-self.Kf*v-b)
+
+            #else:
+   
+            a   = np.dot(inv(M),(u-self.Kf*v-b))
+
+            #print("a")
+            #a = np.linalg.solve(M, u - self.Kf * v - b)
+            #print(a)
+            
             #print("new a: ", a)
 
             a   = a.reshape(self.nv) + np.random.randn(self.nv)*self.noise_stddev
@@ -205,27 +250,36 @@ class Pendulum:
             #print("after reshape: ", a)
             q    += (v+0.5*DT*a)*DT
             v    += a*DT
+
+            #print(q)
+            q_first = q[0]
+
+
             q_goal = 0
-            #print("q: ", q)
-            #print("v: ", v)
     
             delta_q = 0
-            delta_q += sumsq(q_goal-abs(q))
-            #print(delta_q)
-
+            delta_q += sumsq(q_goal-abs(q_first))
+            #print(q)
             if len(q)==2:
-                q2_vertical = q[0] + q[1]
+                q_second = q[1]
+                q2_vertical = q_first + q_second
                 delta_q += sumsq(q_goal-abs(q2_vertical))
                 
             
-            Wq = 0.9
-            Wv = 1-Wq
+            # Wq = 0.9
+            # Wv = 1-Wq
 
             #cost += (sumsq(q) + 1e-1*sumsq(v) + 1e-3*sumsq(u))*DT # cost function
 
             #cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
             cost += delta_q
-            #print(cost)
+            # print("q_first")
+            # print(q_first)
+            # print("delta_q")
+            # print(delta_q)
+            # print("COST")
+            # print(cost)
+            # time.sleep(0.5)
 
             # if constrained:
             #     if abs(q[1]) < (np.pi/4): 
@@ -236,7 +290,7 @@ class Pendulum:
 
             if display:
                 self.display(q)
-                time.sleep(1e-3)
+                time.sleep(1e-9)
 
         x[:self.nq] = modulePi(q)
         x[self.nq:] = np.clip(v,-self.vmax,self.vmax)
@@ -254,15 +308,18 @@ class Pendulum:
 if __name__ == "__main__":
     env = Pendulum(2)
     x = env.reset()
-    print(x)
-    q1 = x[0]
-    q2 = x[1]
-    print("q1: ", q1)
-    print("q2: ", q2)
-    q2_vertical = q1 + q2
-    print("q1: ", q1)
-    print("q2_vertical: ", q2_vertical)
+    # print(x)
+    # q1 = x[0]
+    # q2 = x[1]
+    # print("q1: ", q1)
+    # print("q2: ", q2)
+    # q2_vertical = q1 + q2
+    # print("q1: ", q1)
+    # print("q2_vertical: ", q2_vertical)
     env.render()
+    for i in range(10000):
+        x, _ = env.step(6)
+        env.render()
     time.sleep(20)
 
     # for i in range(1):

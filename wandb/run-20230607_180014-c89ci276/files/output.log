@@ -1,0 +1,93 @@
+Episode:  1
+Episode : 1 total_reward : -1891.63 Avg Reward : -1891.63
+Episode:  2
+Episode : 2 total_reward : -1777.75 Avg Reward : -1834.69
+Episode:  3
+Episode : 3 total_reward : -1899.63 Avg Reward : -1856.34
+Episode:  4
+Episode : 4 total_reward : -1087.09 Avg Reward : -1664.02
+Episode:  5
+Episode : 5 total_reward : -1051.38 Avg Reward : -1541.50
+Episode:  6
+Episode : 6 total_reward : -1222.55 Avg Reward : -1488.34
+Episode:  7
+Episode : 7 total_reward : -1104.21 Avg Reward : -1433.46
+Episode:  8
+Episode : 8 total_reward : -1593.34 Avg Reward : -1453.45
+Episode:  9
+Episode : 9 total_reward : -1117.16 Avg Reward : -1416.08
+Episode:  10
+Episode : 10 total_reward : -1334.15 Avg Reward : -1407.89
+Episode:  11
+Episode : 11 total_reward : -1432.48 Avg Reward : -1410.12
+Episode:  12
+Episode : 12 total_reward : -872.91 Avg Reward : -1365.36
+Episode:  13
+Episode : 13 total_reward : -1151.66 Avg Reward : -1348.92
+Episode:  14
+Episode : 14 total_reward : -1625.12 Avg Reward : -1368.65
+Episode:  15
+Episode : 15 total_reward : -1617.78 Avg Reward : -1385.26
+Episode:  16
+Episode : 16 total_reward : -1910.87 Avg Reward : -1418.11
+Episode:  17
+Episode : 17 total_reward : -1382.25 Avg Reward : -1416.00
+Episode:  18
+Episode : 18 total_reward : -1837.66 Avg Reward : -1439.42
+Episode:  19
+Episode : 19 total_reward : -1567.07 Avg Reward : -1446.14
+Episode:  20
+Episode : 20 total_reward : -2024.15 Avg Reward : -1475.04
+Episode:  21
+Episode : 21 total_reward : -1284.78 Avg Reward : -1465.98
+Episode:  22
+Episode : 22 total_reward : -1480.74 Avg Reward : -1466.65
+Episode:  23
+Episode : 23 total_reward : -1266.43 Avg Reward : -1457.95
+Episode:  24
+Episode : 24 total_reward : -1861.98 Avg Reward : -1474.78
+Episode:  25
+Episode : 25 total_reward : -972.93 Avg Reward : -1454.71
+Episode:  26
+Episode : 26 total_reward : -1356.56 Avg Reward : -1450.93
+Episode:  27
+Episode : 27 total_reward : -872.73 Avg Reward : -1429.52
+Episode:  28
+Episode : 28 total_reward : -1601.59 Avg Reward : -1435.66
+Episode:  29
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 305, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 158, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 246, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA._omni_sys_exc: CORBA.OBJECT_NOT_EXIST(omniORB.OBJECT_NOT_EXIST_NoMatch, CORBA.COMPLETED_NO)
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 305, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 158, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 246, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA.OBJECT_NOT_EXIST: CORBA.OBJECT_NOT_EXIST(omniORB.OBJECT_NOT_EXIST_NoMatch, CORBA.COMPLETED_NO)

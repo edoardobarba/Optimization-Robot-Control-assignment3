@@ -1,0 +1,83 @@
+Episode:  1
+Episode : 1 total_reward : -383.36 Avg Reward : -383.36
+Episode:  2
+Episode : 2 total_reward : -632.47 Avg Reward : -507.92
+Episode:  3
+Episode : 3 total_reward : -524.02 Avg Reward : -513.28
+Episode:  4
+Episode : 4 total_reward : -514.88 Avg Reward : -513.68
+Episode:  5
+Episode : 5 total_reward : -331.14 Avg Reward : -477.18
+Episode:  6
+Episode : 6 total_reward : -704.68 Avg Reward : -515.09
+Episode:  7
+Episode : 7 total_reward : -720.26 Avg Reward : -544.40
+Episode:  8
+Episode : 8 total_reward : -544.18 Avg Reward : -544.37
+Episode:  9
+Episode : 9 total_reward : -653.42 Avg Reward : -556.49
+Episode:  10
+Episode : 10 total_reward : -324.53 Avg Reward : -533.29
+Episode:  11
+Episode : 11 total_reward : -431.98 Avg Reward : -524.08
+Episode:  12
+Episode : 12 total_reward : -392.97 Avg Reward : -513.16
+Episode:  13
+Episode : 13 total_reward : -254.63 Avg Reward : -493.27
+Episode:  14
+Episode : 14 total_reward : -344.25 Avg Reward : -482.63
+Episode:  15
+Episode : 15 total_reward : -298.50 Avg Reward : -470.35
+Episode:  16
+Episode : 16 total_reward : -452.74 Avg Reward : -469.25
+Episode:  17
+Episode : 17 total_reward : -681.84 Avg Reward : -481.76
+Episode:  18
+Episode : 18 total_reward : -303.70 Avg Reward : -471.86
+Episode:  19
+Episode : 19 total_reward : -288.38 Avg Reward : -462.21
+Episode:  20
+Episode : 20 total_reward : -283.34 Avg Reward : -453.26
+Episode:  21
+Episode : 21 total_reward : -366.09 Avg Reward : -449.11
+Episode:  22
+Episode : 22 total_reward : -259.87 Avg Reward : -440.51
+Episode:  23
+Episode : 23 total_reward : -599.63 Avg Reward : -447.43
+Episode:  24
+Traceback (most recent call last):
+  File "DQN template.py", line 361, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 306, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 167, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 286, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA._omni_sys_exc: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+Traceback (most recent call last):
+  File "DQN template.py", line 361, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 306, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 167, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 286, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA.TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)

@@ -1,0 +1,14 @@
+
+Episode:  1
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 295, in test_dqn
+    if self.nx == 2:
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 295, in test_dqn
+    if self.nx == 2:
+NameError: name 'self' is not defined

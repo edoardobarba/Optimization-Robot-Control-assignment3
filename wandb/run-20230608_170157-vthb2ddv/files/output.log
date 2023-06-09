@@ -1,0 +1,63 @@
+Episode:  1
+Episode : 1 total_reward : -323.25 Avg Reward : -323.25
+Episode:  2
+Episode : 2 total_reward : -325.34 Avg Reward : -324.30
+Episode:  3
+Episode : 3 total_reward : -529.92 Avg Reward : -392.84
+Episode:  4
+Episode : 4 total_reward : -417.67 Avg Reward : -399.05
+Episode:  5
+Episode : 5 total_reward : -442.17 Avg Reward : -407.67
+Episode:  6
+Episode : 6 total_reward : -515.56 Avg Reward : -425.65
+Episode:  7
+Episode : 7 total_reward : -495.71 Avg Reward : -435.66
+Episode:  8
+Episode : 8 total_reward : -361.42 Avg Reward : -426.38
+Episode:  9
+Episode : 9 total_reward : -339.93 Avg Reward : -416.78
+Episode:  10
+Episode : 10 total_reward : -314.85 Avg Reward : -406.58
+Episode:  11
+Episode : 11 total_reward : -395.33 Avg Reward : -405.56
+Episode:  12
+Episode : 12 total_reward : -786.04 Avg Reward : -437.27
+Episode:  13
+Episode : 13 total_reward : -501.70 Avg Reward : -442.22
+Episode:  14
+Traceback (most recent call last):
+  File "DQN template.py", line 361, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 306, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 167, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 286, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA._omni_sys_exc: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)
+Traceback (most recent call last):
+  File "DQN template.py", line 361, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 306, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 167, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 286, in dynamics
+    self.display(q)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 110, in display
+    visual.place( self.viewer, self.data.oMi[visual.jointParent] )
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 46, in place
+    display.place(self.name,oMbody,False)
+  File "/home/edo/Desktop/orc/03_assignment/display.py", line 57, in place
+    self.viewer.gui.applyConfiguration(objName,
+  File "/opt/openrobots/lib/python3.8/site-packages/gepetto/corbaserver/graphical_interface_idl.py", line 599, in applyConfiguration
+    return self._obj.invoke("applyConfiguration", _0_gepetto.corbaserver.GraphicalInterface._d_applyConfiguration, args)
+omniORB.CORBA.TRANSIENT: CORBA.TRANSIENT(omniORB.TRANSIENT_ConnectFailed, CORBA.COMPLETED_NO)

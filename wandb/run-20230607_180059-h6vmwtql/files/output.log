@@ -1,0 +1,53 @@
+Episode:  1
+Episode : 1 total_reward : -323.63 Avg Reward : -323.63
+Episode:  2
+Episode : 2 total_reward : -353.95 Avg Reward : -338.79
+Episode:  3
+Episode : 3 total_reward : -702.81 Avg Reward : -460.13
+Episode:  4
+Episode : 4 total_reward : -604.52 Avg Reward : -496.23
+Episode:  5
+Episode : 5 total_reward : -445.38 Avg Reward : -486.06
+Episode:  6
+Episode : 6 total_reward : -740.66 Avg Reward : -528.49
+Episode:  7
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 301, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1102, in __call__
+    self._clear_losses()
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 2400, in _clear_losses
+    for layer in self._flatten_layers():
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 3302, in _flatten_layers
+    for m in self._flatten_modules(
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 3344, in _flatten_modules
+    deque.extendleft(reversed(subtrackables))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 360, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 301, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1102, in __call__
+    self._clear_losses()
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 2400, in _clear_losses
+    for layer in self._flatten_layers():
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 3302, in _flatten_layers
+    for m in self._flatten_modules(
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 3344, in _flatten_modules
+    deque.extendleft(reversed(subtrackables))
+KeyboardInterrupt
