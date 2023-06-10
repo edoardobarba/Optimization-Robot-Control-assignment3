@@ -1,0 +1,20 @@
+Warning: window 'pinocchio' already created.
+The previously created objects will not be destroyed and do not have to be created again.
+[-6.  -5.4 -4.8 -4.2 -3.6 -3.  -2.4 -1.8 -1.2 -0.6  0.   0.6  1.2  1.8
+  2.4  3.   3.6  4.2  4.8  5.4  6. ]
+save_dir:  models/double_pendulum/3000_episodes
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________

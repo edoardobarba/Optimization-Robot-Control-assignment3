@@ -105,7 +105,7 @@ class DQN:
         return idx_u
     
     def fill_replay_memory(self, env):
-        for i in range(100):
+        for i in range(1000):
             index = self.scrolling_index % self.max_size
             x = env.reset()
             #print(x)  
@@ -186,7 +186,7 @@ def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pe
     #     )
 
     # Run your code.
-    #wandb.init(project="DQN_pendulum", entity="bru0x11") #, configuration=new_configuration, save_code=True)
+    wandb.init(project="DQN_pendulum", entity="bru0x11") #, configuration=new_configuration, save_code=True)
 
     for episode in range(1, episodes+1):
         env.reset()
@@ -257,7 +257,7 @@ def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pe
             if(is_last):
                 break
             
-            if((dqn.update_counter % 300) == 0):
+            if((dqn.update_counter % 500) == 0):
                 Q_target.set_weights(Q.get_weights())
 
             dqn.update_counter += 1
@@ -265,13 +265,18 @@ def train_dqn(dqn, env, episodes, critic_optimizer, save_dir = "models/single_pe
         total_reward_hist.append(sum_costs)
         avg_reward = np.average(total_reward_hist[:])
         avg_reward_hist.append(avg_reward)
-        #wandb.log({'episode': episode, 'total_reward': sum_costs, 'avg_reward': avg_reward})
+        wandb.log({'episode': episode, 'total_reward': sum_costs, 'avg_reward': avg_reward})
+
+        if episode%500 == 0:
+            temp_save_dir = save_dir + f"{episode}_episode"
+            print("Saving model...")
+            Q.save(temp_save_dir)
 
         print("Episode :", episode, "sum_costs : {:.2f}".format(sum_costs), "Avg Reward : {:.2f}".format(avg_reward))
  
 
     Q.save(save_dir)
-    #wandb.finish()
+    wandb.finish()
     fig, ax = plt.subplots()
     t = np.arange(episodes)
     ax.plot(t, total_reward_hist, label="Total Reward")
@@ -303,7 +308,7 @@ def test_dqn(env, episodes, save_dir = "models/single_pendulum/q_reward"):
                 x = [x[0][0], x[1][0]]
             #print(x)
             input = np.expand_dims(np.array(x), axis=0)
-            print(input)
+            #print(input)
             #input = x.reshape((2,1))
             #print(input)
             q_values = Q(input)
@@ -333,8 +338,8 @@ def test_dqn(env, episodes, save_dir = "models/single_pendulum/q_reward"):
 # Set the WANDB__EXECUTABLE environment variable to the path to a valid Python interpreter.
 os.environ["WANDB__EXECUTABLE"] = "/usr/bin/python3"
 
-#wandb.login(key='a7aed9a97c681f536c60ae5e32e94d32c57cbb1d')
-# wandb.init(project="pendulum_DQN")
+wandb.login(key='a7aed9a97c681f536c60ae5e32e94d32c57cbb1d')
+wandb.init(project="pendulum_DQN")
 
 save_dir = "models/"
 njoints = 2

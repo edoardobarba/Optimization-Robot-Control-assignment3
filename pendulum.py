@@ -258,12 +258,20 @@ class Pendulum:
             q_goal = 0
     
             delta_q = 0
-            delta_q += sumsq(q_goal-abs(q_first))
+            delta_q += 0.7*sumsq(q_goal-abs(q_first))
             #print(q)
             if len(q)==2:
                 q_second = q[1]
+                #q2_vertical = q_first + q_second
+                #delta_q += sumsq(q_goal-abs(q2_vertical))
+                delta_q += 0.15*sumsq(q_goal-abs(q_second))
+                
                 q2_vertical = q_first + q_second
-                delta_q += sumsq(q_goal-abs(q2_vertical))
+                if (q2_vertical > np.pi):
+                    q2_vertical = -(2*np.pi-q2_vertical)
+
+                delta_q += 0.15*sumsq(q_goal-abs(q2_vertical))
+            
                 
             
             # Wq = 0.9
@@ -307,19 +315,27 @@ class Pendulum:
 # Simulate the pendulum using the RK4 method
 if __name__ == "__main__":
     env = Pendulum(2)
-    x = env.reset()
+    x = env.reset(np.array([0.,0.,0.,0.]))
     # print(x)
-    # q1 = x[0]
-    # q2 = x[1]
-    # print("q1: ", q1)
-    # print("q2: ", q2)
-    # q2_vertical = q1 + q2
-    # print("q1: ", q1)
-    # print("q2_vertical: ", q2_vertical)
+    q1 = x[0]
+    q2 = x[1]
+    print("q1: ", q1)
+    print("q2: ", q2)
+    q2_vertical = q1 + q2
+    if (q2_vertical>np.pi):
+         q2_vertical = -(2*np.pi-q2_vertical)
+    print("q2_vertical: ", q2_vertical)
+    print(type(env.x))
+    print(env.x)
     env.render()
+    #time.sleep(20)
+
     for i in range(10000):
-        x, _ = env.step(6)
+        x, reward = env.step()
+        print(reward)
         env.render()
+        time.sleep(2)
+        
     time.sleep(20)
 
     # for i in range(1):
