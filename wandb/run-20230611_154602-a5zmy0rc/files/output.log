@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "DQN template.py", line 388, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 202, in train_dqn
+    env.reset(np.array[[np.pi, 0.],[0.,0.]])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+Traceback (most recent call last):
+  File "DQN template.py", line 388, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 202, in train_dqn
+    env.reset(np.array[[np.pi, 0.],[0.,0.]])
+TypeError: 'builtin_function_or_method' object is not subscriptable

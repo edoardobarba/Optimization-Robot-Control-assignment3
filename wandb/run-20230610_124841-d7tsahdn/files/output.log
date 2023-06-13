@@ -1,0 +1,84 @@
+Warning: window 'pinocchio' already created.
+The previously created objects will not be destroyed and do not have to be created again.
+[-6.  -5.4 -4.8 -4.2 -3.6 -3.  -2.4 -1.8 -1.2 -0.6  0.   0.6  1.2  1.8
+  2.4  3.   3.6  4.2  4.8  5.4  6. ]
+save_dir:  models/double_pendulum/3000_episodes
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2594.13 Avg Reward : -2594.13
+Episode : 2 sum_costs : -2643.55 Avg Reward : -2618.84
+Episode : 3 sum_costs : -2430.83 Avg Reward : -2556.17
+Episode : 4 sum_costs : -2299.64 Avg Reward : -2492.04
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+Saving model...
+Episode : 5 sum_costs : -2214.82 Avg Reward : -2436.59
+Episode : 6 sum_costs : -1803.17 Avg Reward : -2331.02
+Traceback (most recent call last):
+  File "DQN template.py", line 372, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 253, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2636, in update
+    with self._container_strategy().scope():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3619, in __enter__
+    if distribution_strategy_context.has_strategy():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribution_strategy_context.py", line 266, in has_strategy
+    return get_strategy() is not _get_default_strategy()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribution_strategy_context.py", line 250, in get_strategy
+    return _get_per_thread_mode().strategy
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribution_strategy_context.py", line 78, in _get_per_thread_mode
+    return ops.get_default_graph()._distribution_strategy_stack[-1]  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 6387, in get_default_graph
+    return _default_graph_stack.get_default()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 372, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 253, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2636, in update
+    with self._container_strategy().scope():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3619, in __enter__
+    if distribution_strategy_context.has_strategy():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribution_strategy_context.py", line 266, in has_strategy
+    return get_strategy() is not _get_default_strategy()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribution_strategy_context.py", line 250, in get_strategy
+    return _get_per_thread_mode().strategy
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribution_strategy_context.py", line 78, in _get_per_thread_mode
+    return ops.get_default_graph()._distribution_strategy_stack[-1]  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 6387, in get_default_graph
+    return _default_graph_stack.get_default()
+KeyboardInterrupt

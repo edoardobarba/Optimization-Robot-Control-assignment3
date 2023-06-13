@@ -1,0 +1,204 @@
+2023-06-11 00:46:33,052 INFO    StreamThr :412519 [internal.py:wandb_internal():86] W&B internal server running at pid: 412519, started at: 2023-06-11 00:46:33.052042
+2023-06-11 00:46:33,056 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status
+2023-06-11 00:46:33,058 INFO    WriterThread:412519 [datastore.py:open_for_write():85] open: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/run-cagbilip.wandb
+2023-06-11 00:46:33,059 DEBUG   SenderThread:412519 [sender.py:send():375] send: header
+2023-06-11 00:46:33,082 DEBUG   SenderThread:412519 [sender.py:send():375] send: run
+2023-06-11 00:46:34,193 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: check_version
+2023-06-11 00:46:34,194 INFO    SenderThread:412519 [dir_watcher.py:__init__():219] watching files in: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files
+2023-06-11 00:46:34,194 INFO    SenderThread:412519 [sender.py:_start_run_threads():1124] run started: cagbilip with start time 1686437193.050972
+2023-06-11 00:46:34,195 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: summary_record
+2023-06-11 00:46:34,196 INFO    SenderThread:412519 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-11 00:46:34,196 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: check_version
+2023-06-11 00:46:35,199 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_created():278] file/dir created: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/wandb-summary.json
+2023-06-11 00:46:37,291 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: run_start
+2023-06-11 00:46:37,294 DEBUG   HandlerThread:412519 [system_info.py:__init__():31] System info init
+2023-06-11 00:46:37,294 DEBUG   HandlerThread:412519 [system_info.py:__init__():46] System info init done
+2023-06-11 00:46:37,295 INFO    HandlerThread:412519 [system_monitor.py:start():181] Starting system monitor
+2023-06-11 00:46:37,295 INFO    SystemMonitor:412519 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-11 00:46:37,297 INFO    HandlerThread:412519 [system_monitor.py:probe():201] Collecting system info
+2023-06-11 00:46:37,298 INFO    SystemMonitor:412519 [interfaces.py:start():190] Started cpu monitoring
+2023-06-11 00:46:37,299 INFO    SystemMonitor:412519 [interfaces.py:start():190] Started disk monitoring
+2023-06-11 00:46:37,302 INFO    SystemMonitor:412519 [interfaces.py:start():190] Started memory monitoring
+2023-06-11 00:46:37,303 INFO    SystemMonitor:412519 [interfaces.py:start():190] Started network monitoring
+2023-06-11 00:46:37,429 DEBUG   HandlerThread:412519 [system_info.py:probe():195] Probing system
+2023-06-11 00:46:37,444 DEBUG   HandlerThread:412519 [system_info.py:_probe_git():180] Probing git
+2023-06-11 00:46:37,475 DEBUG   HandlerThread:412519 [system_info.py:_probe_git():188] Probing git done
+2023-06-11 00:46:37,475 DEBUG   HandlerThread:412519 [system_info.py:probe():240] Probing system done
+2023-06-11 00:46:37,476 DEBUG   HandlerThread:412519 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-72-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-06-10T22:46:37.430090', 'startedAt': '2023-06-10T22:46:33.040274', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'DQN template.py', 'codePath': 'DQN template.py', 'git': {'remote': 'https://github.com/edoardobarba/Optimization-Robot-Control-assignment3.git', 'commit': '26a5e2c0351d346c0282d310bf4673f2cbc1206c'}, 'email': '104260638+edoardobarba@users.noreply.github.com', 'root': '/home/edo/Desktop/orc/03_assignment', 'host': 'edo-Lenovo-ideapad-320-15IKB', 'username': 'edo', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 932.260875, 'min': 400.0, 'max': 2075.0}, 'cpu_freq_per_core': [{'current': 931.731, 'min': 400.0, 'max': 4000.0}, {'current': 920.651, 'min': 400.0, 'max': 1800.0}, {'current': 1047.412, 'min': 400.0, 'max': 1800.0}, {'current': 1043.86, 'min': 400.0, 'max': 1800.0}, {'current': 1004.261, 'min': 400.0, 'max': 1800.0}, {'current': 1089.16, 'min': 400.0, 'max': 1800.0}, {'current': 911.005, 'min': 400.0, 'max': 1800.0}, {'current': 1147.893, 'min': 400.0, 'max': 1800.0}], 'disk': {'total': 91.42811965942383, 'used': 76.39735794067383}, 'memory': {'total': 15.41324234008789}}
+2023-06-11 00:46:37,476 INFO    HandlerThread:412519 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-11 00:46:37,476 INFO    HandlerThread:412519 [system_monitor.py:probe():214] Publishing system info
+2023-06-11 00:46:37,476 DEBUG   HandlerThread:412519 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-11 00:46:37,477 DEBUG   HandlerThread:412519 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-11 00:46:37,478 INFO    HandlerThread:412519 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-11 00:46:37,487 DEBUG   SenderThread:412519 [sender.py:send():375] send: files
+2023-06-11 00:46:37,487 INFO    SenderThread:412519 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-11 00:46:37,499 DEBUG   SenderThread:412519 [sender.py:send():375] send: telemetry
+2023-06-11 00:46:37,499 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-11 00:46:37,500 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: stop_status
+2023-06-11 00:46:38,203 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_created():278] file/dir created: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/requirements.txt
+2023-06-11 00:46:38,204 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_created():278] file/dir created: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/wandb-metadata.json
+2023-06-11 00:46:39,269 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:46:39,664 INFO    wandb-upload_0:412519 [upload_job.py:push():137] Uploaded file /tmp/tmp96vw1sqfwandb/zxbi1xqj-wandb-metadata.json
+2023-06-11 00:46:40,204 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_created():278] file/dir created: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:40,577 DEBUG   SenderThread:412519 [sender.py:send():375] send: telemetry
+2023-06-11 00:46:42,205 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:44,206 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:44,422 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:46:46,207 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:48,208 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:49,519 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:46:50,209 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:52,210 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:52,495 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-11 00:46:52,495 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: stop_status
+2023-06-11 00:46:54,211 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:54,580 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:46:56,212 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:58,213 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:46:59,810 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:47:00,213 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:02,214 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:04,215 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:04,977 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:47:05,216 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/config.yaml
+2023-06-11 00:47:06,216 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:07,495 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-11 00:47:07,496 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: stop_status
+2023-06-11 00:47:08,217 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:10,218 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:10,257 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:47:12,219 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:14,220 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:15,292 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:47:16,222 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:18,223 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:20,223 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:20,324 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:47:20,852 DEBUG   SenderThread:412519 [sender.py:send():375] send: exit
+2023-06-11 00:47:20,852 INFO    SenderThread:412519 [sender.py:send_exit():598] handling exit code: 255
+2023-06-11 00:47:20,852 INFO    SenderThread:412519 [sender.py:send_exit():600] handling runtime: 43
+2023-06-11 00:47:20,853 INFO    SenderThread:412519 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-11 00:47:20,854 INFO    SenderThread:412519 [sender.py:send_exit():606] send defer
+2023-06-11 00:47:20,854 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,855 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-11 00:47:20,856 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,856 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-11 00:47:20,856 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 1
+2023-06-11 00:47:20,856 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,856 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-11 00:47:20,856 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,856 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-11 00:47:20,856 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 2
+2023-06-11 00:47:20,857 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,857 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-11 00:47:20,857 INFO    HandlerThread:412519 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-11 00:47:20,857 DEBUG   SystemMonitor:412519 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-11 00:47:20,857 DEBUG   SystemMonitor:412519 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-11 00:47:20,857 DEBUG   SystemMonitor:412519 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-11 00:47:20,858 INFO    HandlerThread:412519 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-11 00:47:20,858 INFO    HandlerThread:412519 [interfaces.py:finish():202] Joined disk monitor
+2023-06-11 00:47:20,859 INFO    HandlerThread:412519 [interfaces.py:finish():202] Joined memory monitor
+2023-06-11 00:47:20,859 INFO    HandlerThread:412519 [interfaces.py:finish():202] Joined network monitor
+2023-06-11 00:47:20,859 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,859 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-11 00:47:20,859 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 3
+2023-06-11 00:47:20,859 DEBUG   SenderThread:412519 [sender.py:send():375] send: stats
+2023-06-11 00:47:20,860 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,860 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-11 00:47:20,860 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,860 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-11 00:47:20,860 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 4
+2023-06-11 00:47:20,861 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,861 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-11 00:47:20,861 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,861 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-11 00:47:20,861 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 5
+2023-06-11 00:47:20,861 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,861 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-11 00:47:20,862 DEBUG   SenderThread:412519 [sender.py:send():375] send: summary
+2023-06-11 00:47:20,862 INFO    SenderThread:412519 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-11 00:47:20,862 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,862 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-11 00:47:20,863 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 6
+2023-06-11 00:47:20,863 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,863 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-11 00:47:20,863 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,863 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-11 00:47:20,863 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 7
+2023-06-11 00:47:20,863 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: status_report
+2023-06-11 00:47:20,863 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:20,864 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-11 00:47:20,864 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:20,864 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-11 00:47:21,225 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/wandb-summary.json
+2023-06-11 00:47:21,853 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-11 00:47:22,226 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:22,875 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 8
+2023-06-11 00:47:22,876 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: poll_exit
+2023-06-11 00:47:22,877 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:22,877 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-11 00:47:22,878 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:22,878 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-11 00:47:22,897 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 9
+2023-06-11 00:47:22,898 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:22,898 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-11 00:47:22,898 DEBUG   SenderThread:412519 [sender.py:send():375] send: artifact
+2023-06-11 00:47:23,227 INFO    Thread-12 :412519 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:23,815 INFO    SenderThread:412519 [sender.py:send_artifact():1474] sent artifact job-https___github.com_edoardobarba_Optimization-Robot-Control-assignment3.git_DQN_template.py - {'id': 'QXJ0aWZhY3Q6NDgzODkwOTY0', 'digest': 'f550f67befeb352cfd0e114425582dd4', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_edoardobarba_Optimization-Robot-Control-assignment3.git_DQN_template.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_edoardobarba_Optimization-Robot-Control-assignment3.git_DQN_template.py', 'alias': 'v3'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1ODQ2MzU5', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgzODkwOTY0', 'versionIndex': 3}}, 'version': 'v3'}
+2023-06-11 00:47:23,816 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:23,816 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-11 00:47:23,816 INFO    SenderThread:412519 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-11 00:47:24,229 INFO    SenderThread:412519 [dir_watcher.py:finish():395] scan: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files
+2023-06-11 00:47:24,230 INFO    SenderThread:412519 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/wandb-metadata.json wandb-metadata.json
+2023-06-11 00:47:24,230 INFO    SenderThread:412519 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log output.log
+2023-06-11 00:47:24,231 INFO    SenderThread:412519 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/config.yaml config.yaml
+2023-06-11 00:47:24,237 INFO    SenderThread:412519 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/requirements.txt requirements.txt
+2023-06-11 00:47:24,242 INFO    SenderThread:412519 [dir_watcher.py:finish():409] scan save: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/wandb-summary.json wandb-summary.json
+2023-06-11 00:47:24,264 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 10
+2023-06-11 00:47:24,265 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:24,266 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-11 00:47:24,267 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:24,273 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-11 00:47:24,278 INFO    SenderThread:412519 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-11 00:47:24,742 INFO    wandb-upload_0:412519 [upload_job.py:push():137] Uploaded file /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/output.log
+2023-06-11 00:47:24,867 INFO    wandb-upload_1:412519 [upload_job.py:push():137] Uploaded file /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/config.yaml
+2023-06-11 00:47:24,907 INFO    wandb-upload_2:412519 [upload_job.py:push():137] Uploaded file /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/requirements.txt
+2023-06-11 00:47:24,909 INFO    wandb-upload_3:412519 [upload_job.py:push():137] Uploaded file /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/files/wandb-summary.json
+2023-06-11 00:47:25,112 INFO    Thread-11 :412519 [sender.py:transition_state():626] send defer: 11
+2023-06-11 00:47:25,113 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:25,113 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-11 00:47:25,115 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:25,115 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-11 00:47:25,115 INFO    SenderThread:412519 [file_pusher.py:join():172] waiting for file pusher
+2023-06-11 00:47:25,116 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 12
+2023-06-11 00:47:25,116 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:25,116 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-11 00:47:25,117 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:25,118 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-11 00:47:25,308 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 13
+2023-06-11 00:47:25,308 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:25,308 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-11 00:47:25,309 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:25,309 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-11 00:47:25,309 INFO    SenderThread:412519 [sender.py:transition_state():626] send defer: 14
+2023-06-11 00:47:25,309 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: defer
+2023-06-11 00:47:25,310 INFO    HandlerThread:412519 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-11 00:47:25,310 DEBUG   SenderThread:412519 [sender.py:send():375] send: final
+2023-06-11 00:47:25,310 DEBUG   SenderThread:412519 [sender.py:send():375] send: footer
+2023-06-11 00:47:25,311 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: defer
+2023-06-11 00:47:25,311 INFO    SenderThread:412519 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-11 00:47:25,311 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-11 00:47:25,312 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: poll_exit
+2023-06-11 00:47:25,313 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: server_info
+2023-06-11 00:47:25,313 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-11 00:47:25,313 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-11 00:47:25,314 DEBUG   SenderThread:412519 [sender.py:send_request():402] send_request: server_info
+2023-06-11 00:47:25,477 INFO    MainThread:412519 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-11 00:47:25,477 INFO    MainThread:412519 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-11 00:47:25,477 INFO    MainThread:412519 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-06-11 00:47:25,478 DEBUG   HandlerThread:412519 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-11 00:47:25,478 INFO    HandlerThread:412519 [handler.py:finish():842] shutting down handler
+2023-06-11 00:47:26,314 INFO    WriterThread:412519 [datastore.py:close():298] close: /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_004633-cagbilip/run-cagbilip.wandb
+2023-06-11 00:47:26,477 INFO    SenderThread:412519 [sender.py:finish():1550] shutting down sender
+2023-06-11 00:47:26,477 INFO    SenderThread:412519 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-11 00:47:26,478 INFO    SenderThread:412519 [file_pusher.py:join():172] waiting for file pusher

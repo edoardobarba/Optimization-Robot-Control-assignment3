@@ -1,0 +1,101 @@
+
+Episode : 1 sum_costs : -312.98 Avg Reward : -312.98
+Episode : 2 sum_costs : -530.23 Avg Reward : -421.61
+Episode : 3 sum_costs : -546.83 Avg Reward : -463.35
+Episode : 4 sum_costs : -693.89 Avg Reward : -520.98
+Episode : 5 sum_costs : -403.22 Avg Reward : -497.43
+Episode : 6 sum_costs : -457.75 Avg Reward : -490.82
+Episode : 7 sum_costs : -653.10 Avg Reward : -514.00
+Episode : 8 sum_costs : -436.98 Avg Reward : -504.37
+Episode : 9 sum_costs : -507.55 Avg Reward : -504.73
+Episode : 10 sum_costs : -423.98 Avg Reward : -496.65
+Episode : 11 sum_costs : -491.58 Avg Reward : -496.19
+Episode : 12 sum_costs : -689.08 Avg Reward : -512.26
+Episode : 13 sum_costs : -683.75 Avg Reward : -525.45
+Episode : 14 sum_costs : -428.01 Avg Reward : -518.49
+Episode : 15 sum_costs : -501.87 Avg Reward : -517.39
+Episode : 16 sum_costs : -638.41 Avg Reward : -524.95
+Episode : 17 sum_costs : -728.81 Avg Reward : -536.94
+Episode : 18 sum_costs : -704.13 Avg Reward : -546.23
+Episode : 19 sum_costs : -687.90 Avg Reward : -553.69
+Episode : 20 sum_costs : -759.73 Avg Reward : -563.99
+Traceback (most recent call last):
+  File "DQN template.py", line 388, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 269, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 592, in value
+    return self._read_variable_op()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 755, in _read_variable_op
+    if not context.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2220, in executing_eagerly
+    ctx = context_safe()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2136, in context_safe
+    def context_safe():
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 388, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 269, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 592, in value
+    return self._read_variable_op()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 755, in _read_variable_op
+    if not context.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2220, in executing_eagerly
+    ctx = context_safe()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2136, in context_safe
+    def context_safe():
+KeyboardInterrupt

@@ -1,0 +1,1487 @@
+Warning: window 'pinocchio' already created.
+The previously created objects will not be destroyed and do not have to be created again.
+[-6.  -5.4 -4.8 -4.2 -3.6 -3.  -2.4 -1.8 -1.2 -0.6  0.   0.6  1.2  1.8
+  2.4  3.   3.6  4.2  4.8  5.4  6. ]
+save_dir:  models/double_pendulum/3000_episodes
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________
+6
+-2.4000000000000004
+15
+3.0
+16
+3.5999999999999996
+0.5999999999999996
+10
+0.0
+0
+-6.0
+11
+0.5999999999999996
+1
+-5.4
+4
+-3.6
+5
+-3.0
+4
+-3.6
+7
+-1.7999999999999998
+6
+-2.4000000000000004
+-1.2000000000000002
+9
+-0.6000000000000005
+4
+-3.6
+1
+-5.4
+15
+3.0
+5
+-3.0
+4
+-3.6
+15
+3.0
+12
+1.1999999999999993
+8
+-1.2000000000000002
+0.5999999999999996
+5
+-3.0
+0.5999999999999996
+0.5999999999999996
+9
+-0.6000000000000005
+7
+-1.7999999999999998
+16
+3.5999999999999996
+3
+-4.2
+-2.4000000000000004
+15
+3.0
+3
+-4.2
+19
+5.4
+2
+-4.8
+-2.4000000000000004
+12
+1.1999999999999993
+-2.4000000000000004
+18
+4.799999999999999
+4
+-3.6
+7
+-1.7999999999999998
+5
+-3.0
+17
+4.199999999999999
+18
+4.799999999999999
+-2.4000000000000004
+5
+-3.0
+5
+-3.0
+12
+1.1999999999999993
+17
+4.199999999999999
+15
+3.0
+6
+-2.4000000000000004
+1
+-5.4
+-2.4000000000000004
+-2.4000000000000004
+-2.4000000000000004
+8
+-1.2000000000000002
+15
+3.0
+12
+1.1999999999999993
+0
+-6.0
+15
+3.0
+8
+-1.2000000000000002
+1
+-5.4
+-2.4000000000000004
+-2.4000000000000004
+12
+1.1999999999999993
+2
+-4.8
+-2.4000000000000004
+14
+2.4000000000000004
+4
+-3.6
+18
+4.799999999999999
+19
+5.4
+-2.4000000000000004
+10
+0.0
+13
+1.7999999999999998
+16
+3.5999999999999996
+-2.4000000000000004
+11
+0.5999999999999996
+6
+-2.4000000000000004
+20
+6.0
+14
+2.4000000000000004
+20
+6.0
+13
+1.7999999999999998
+7
+-1.7999999999999998
+20
+6.0
+9
+-0.6000000000000005
+10
+0.0
+16
+3.5999999999999996
+13
+1.7999999999999998
+6
+-2.4000000000000004
+9
+-0.6000000000000005
+3
+-4.2
+0
+-6.0
+6
+-2.4000000000000004
+-1.7999999999999998
+10
+0.0
+15
+3.0
+19
+5.4
+-6.0
+10
+0.0
+-6.0
+4
+-3.6
+1
+-5.4
+-6.0
+-6.0
+8
+-1.2000000000000002
+8
+-1.2000000000000002
+14
+2.4000000000000004
+19
+5.4
+12
+1.1999999999999993
+4.799999999999999
+16
+3.5999999999999996
+17
+4.199999999999999
+4.799999999999999
+13
+1.7999999999999998
+4.799999999999999
+4.799999999999999
+16
+3.5999999999999996
+4
+-3.6
+18
+4.799999999999999
+3
+-4.2
+0
+-6.0
+12
+1.1999999999999993
+0
+-6.0
+8
+-1.2000000000000002
+10
+0.0
+13
+1.7999999999999998
+4.799999999999999
+6
+-2.4000000000000004
+18
+4.799999999999999
+-6.0
+3
+-4.2
+9
+-0.6000000000000005
+10
+0.0
+18
+4.799999999999999
+6
+-2.4000000000000004
+12
+1.1999999999999993
+1.1999999999999993
+2
+-4.8
+18
+4.799999999999999
+1.1999999999999993
+14
+2.4000000000000004
+11
+0.5999999999999996
+0
+-6.0
+18
+4.799999999999999
+20
+6.0
+14
+2.4000000000000004
+11
+0.5999999999999996
+7
+-1.7999999999999998
+18
+4.799999999999999
+5
+-3.0
+13
+1.7999999999999998
+8
+-1.2000000000000002
+16
+3.5999999999999996
+6
+-2.4000000000000004
+3
+-4.2
+13
+1.7999999999999998
+11
+0.5999999999999996
+13
+1.7999999999999998
+9
+-0.6000000000000005
+10
+0.0
+14
+2.4000000000000004
+4
+-3.6
+0
+-6.0
+7
+-1.7999999999999998
+6
+-2.4000000000000004
+8
+-1.2000000000000002
+1
+-5.4
+0
+-6.0
+1
+-5.4
+9
+-0.6000000000000005
+1
+-5.4
+14
+2.4000000000000004
+-3.6
+-3.6
+17
+4.199999999999999
+1.7999999999999998
+1
+-5.4
+5
+-3.0
+1.7999999999999998
+10
+0.0
+12
+1.1999999999999993
+6.0
+20
+6.0
+2
+-4.8
+1
+-5.4
+1
+-5.4
+0
+-6.0
+17
+4.199999999999999
+6.0
+6.0
+12
+1.1999999999999993
+3
+-4.2
+16
+3.5999999999999996
+2
+-4.8
+2
+-4.8
+2
+-4.8
+3
+-4.2
+16
+3.5999999999999996
+3
+-4.2
+15
+3.0
+14
+2.4000000000000004
+16
+3.5999999999999996
+2
+-4.8
+1
+-5.4
+1
+-5.4
+-4.8
+4
+-3.6
+2
+-4.8
+2
+-4.8
+16
+3.5999999999999996
+15
+3.0
+8
+-1.2000000000000002
+4
+-3.6
+-6.0
+5.4
+10
+0.0
+12
+1.1999999999999993
+5.4
+12
+1.1999999999999993
+18
+4.799999999999999
+17
+4.199999999999999
+20
+6.0
+3
+-4.2
+7
+-1.7999999999999998
+5.4
+18
+4.799999999999999
+8
+-1.2000000000000002
+20
+6.0
+4
+-3.6
+3
+-4.2
+10
+0.0
+18
+4.799999999999999
+14
+2.4000000000000004
+18
+4.799999999999999
+3
+-4.2
+19
+5.4
+19
+5.4
+7
+-1.7999999999999998
+9
+-0.6000000000000005
+17
+4.199999999999999
+0.0
+16
+3.5999999999999996
+-1.2000000000000002
+12
+1.1999999999999993
+-1.2000000000000002
+2
+-4.8
+14
+2.4000000000000004
+7
+-1.7999999999999998
+1
+-5.4
+17
+4.199999999999999
+2
+-4.8
+12
+1.1999999999999993
+5
+-3.0
+20
+6.0
+1
+-5.4
+-1.2000000000000002
+-1.2000000000000002
+2
+-4.8
+1
+-5.4
+-4.8
+15
+3.0
+3
+-4.2
+4
+-3.6
+-4.8
+5
+-3.0
+0
+-6.0
+6
+-2.4000000000000004
+-4.8
+0
+-6.0
+2.4000000000000004
+16
+3.5999999999999996
+0
+-6.0
+9
+-0.6000000000000005
+7
+-1.7999999999999998
+2
+-4.8
+6
+-2.4000000000000004
+17
+4.199999999999999
+5.4
+17
+4.199999999999999
+5.4
+5.4
+5
+-3.0
+15
+3.0
+5
+-3.0
+6
+-2.4000000000000004
+11
+0.5999999999999996
+16
+3.5999999999999996
+16
+3.5999999999999996
+1.7999999999999998
+0.0
+0.0
+10
+0.0
+3
+-4.2
+7
+-1.7999999999999998
+12
+1.1999999999999993
+1.7999999999999998
+9
+-0.6000000000000005
+13
+1.7999999999999998
+9
+-0.6000000000000005
+4.799999999999999
+8
+-1.2000000000000002
+7
+-1.7999999999999998
+12
+1.1999999999999993
+7
+-1.7999999999999998
+17
+4.199999999999999
+11
+0.5999999999999996
+15
+3.0
+17
+4.199999999999999
+17
+4.199999999999999
+0
+-6.0
+4.199999999999999
+18
+4.799999999999999
+16
+3.5999999999999996
+4.199999999999999
+7
+-1.7999999999999998
+19
+5.4
+8
+-1.2000000000000002
+2
+-4.8
+7
+-1.7999999999999998
+-4.8
+3
+-4.2
+-4.8
+-4.8
+4
+-3.6
+14
+2.4000000000000004
+8
+-1.2000000000000002
+8
+-1.2000000000000002
+9
+-0.6000000000000005
+-4.8
+9
+-0.6000000000000005
+7
+-1.7999999999999998
+-0.6000000000000005
+-0.6000000000000005
+14
+2.4000000000000004
+0.5999999999999996
+5
+-3.0
+9
+-0.6000000000000005
+20
+6.0
+0.5999999999999996
+1
+-5.4
+10
+0.0
+18
+4.799999999999999
+5
+-3.0
+15
+3.0
+12
+1.1999999999999993
+16
+3.5999999999999996
+10
+0.0
+16
+3.5999999999999996
+-1.2000000000000002
+9
+-0.6000000000000005
+16
+3.5999999999999996
+-1.2000000000000002
+10
+0.0
+4
+-3.6
+-1.2000000000000002
+-1.2000000000000002
+3
+-4.2
+-1.2000000000000002
+19
+5.4
+5
+-3.0
+5
+-3.0
+1
+-5.4
+12
+1.1999999999999993
+7
+-1.7999999999999998
+0
+-6.0
+-1.2000000000000002
+0
+-6.0
+0
+-6.0
+3
+-4.2
+18
+4.799999999999999
+8
+-1.2000000000000002
+18
+4.799999999999999
+20
+6.0
+8
+-1.2000000000000002
+19
+5.4
+1.1999999999999993
+20
+6.0
+5
+-3.0
+20
+6.0
+9
+-0.6000000000000005
+0.0
+15
+3.0
+5.4
+5
+-3.0
+5.4
+5.4
+13
+1.7999999999999998
+4
+-3.6
+13
+1.7999999999999998
+12
+1.1999999999999993
+3
+-4.2
+5
+-3.0
+1.1999999999999993
+0
+-6.0
+0
+-6.0
+1.1999999999999993
+18
+4.799999999999999
+1.1999999999999993
+9
+-0.6000000000000005
+Episode : 1 sum_costs : -2553.51 Avg Reward : -2553.51
+5.4
+10
+0.0
+17
+4.199999999999999
+1.1999999999999993
+9
+-0.6000000000000005
+7
+-1.7999999999999998
+14
+2.4000000000000004
+6.0
+20
+6.0
+15
+3.0
+10
+0.0
+5
+-3.0
+2
+-4.8
+5
+-3.0
+15
+3.0
+17
+4.199999999999999
+6.0
+17
+4.199999999999999
+4.199999999999999
+6
+-2.4000000000000004
+18
+4.799999999999999
+4.199999999999999
+15
+3.0
+19
+5.4
+19
+5.4
+-4.8
+-4.8
+9
+-0.6000000000000005
+0
+-6.0
+2
+-4.8
+-4.8
+0
+-6.0
+12
+1.1999999999999993
+0
+-6.0
+-4.8
+6
+-2.4000000000000004
+16
+3.5999999999999996
+9
+-0.6000000000000005
+12
+1.1999999999999993
+-0.6000000000000005
+3
+-4.2
+5
+-3.0
+-0.6000000000000005
+-0.6000000000000005
+18
+4.799999999999999
+1
+-5.4
+5.4
+5.4
+0
+-6.0
+6
+-2.4000000000000004
+-0.6000000000000005
+18
+4.799999999999999
+-0.6000000000000005
+15
+3.0
+-0.6000000000000005
+17
+4.199999999999999
+13
+1.7999999999999998
+-0.6000000000000005
+4
+-3.6
+13
+1.7999999999999998
+5
+-3.0
+16
+3.5999999999999996
+-4.8
+17
+4.199999999999999
+12
+1.1999999999999993
+17
+4.199999999999999
+4
+-3.6
+14
+2.4000000000000004
+11
+0.5999999999999996
+18
+4.799999999999999
+18
+4.799999999999999
+15
+3.0
+2
+-4.8
+19
+5.4
+12
+1.1999999999999993
+9
+-0.6000000000000005
+8
+-1.2000000000000002
+11
+0.5999999999999996
+16
+3.5999999999999996
+9
+-0.6000000000000005
+2
+-4.8
+16
+3.5999999999999996
+2
+-4.8
+15
+3.0
+2.4000000000000004
+2.4000000000000004
+18
+4.799999999999999
+2
+-4.8
+-4.8
+-4.8
+3
+-4.2
+17
+4.199999999999999
+11
+0.5999999999999996
+-3.6
+5
+-3.0
+12
+1.1999999999999993
+-1.7999999999999998
+9
+-0.6000000000000005
+6
+-2.4000000000000004
+5.4
+15
+3.0
+15
+3.0
+6
+-2.4000000000000004
+1
+-5.4
+6.0
+0
+-6.0
+1
+-5.4
+3
+-4.2
+7
+-1.7999999999999998
+6.0
+6.0
+1
+-5.4
+8
+-1.2000000000000002
+3
+-4.2
+15
+3.0
+2
+-4.8
+6.0
+8
+-1.2000000000000002
+11
+0.5999999999999996
+6.0
+16
+3.5999999999999996
+-3.0
+6
+-2.4000000000000004
+3
+-4.2
+-3.0
+8
+-1.2000000000000002
+16
+3.5999999999999996
+-1.2000000000000002
+-1.2000000000000002
+5
+-3.0
+7
+-1.7999999999999998
+6
+-2.4000000000000004
+20
+6.0
+7
+-1.7999999999999998
+17
+4.199999999999999
+12
+1.1999999999999993
+13
+1.7999999999999998
+-0.6000000000000005
+19
+5.4
+8
+-1.2000000000000002
+-0.6000000000000005
+8
+-1.2000000000000002
+18
+4.799999999999999
+18
+4.799999999999999
+20
+6.0
+5
+-3.0
+-0.6000000000000005
+1
+-5.4
+18
+4.799999999999999
+18
+4.799999999999999
+-0.6000000000000005
+3
+-4.2
+7
+-1.7999999999999998
+15
+3.0
+15
+3.0
+5
+-3.0
+4
+-3.6
+10
+0.0
+3
+-4.2
+17
+4.199999999999999
+11
+0.5999999999999996
+15
+3.0
+7
+-1.7999999999999998
+14
+2.4000000000000004
+17
+4.199999999999999
+10
+0.0
+6
+-2.4000000000000004
+5.4
+19
+5.4
+5.4
+5.4
+5.4
+5
+-3.0
+12
+1.1999999999999993
+11
+0.5999999999999996
+7
+-1.7999999999999998
+-1.7999999999999998
+19
+5.4
+-1.7999999999999998
+-1.7999999999999998
+0
+-6.0
+20
+6.0
+5.4
+5.4
+12
+1.1999999999999993
+5.4
+18
+4.799999999999999
+13
+1.7999999999999998
+20
+6.0
+14
+2.4000000000000004
+2
+-4.8
+9
+-0.6000000000000005
+19
+5.4
+15
+3.0
+12
+1.1999999999999993
+12
+1.1999999999999993
+7
+-1.7999999999999998
+11
+0.5999999999999996
+5.4
+5.4
+3
+-4.2
+-0.6000000000000005
+18
+4.799999999999999
+1
+-5.4
+9
+-0.6000000000000005
+12
+1.1999999999999993
+-0.6000000000000005
+17
+4.199999999999999
+19
+5.4
+3
+-4.2
+8
+-1.2000000000000002
+16
+3.5999999999999996
+10
+0.0
+1
+-5.4
+-0.6000000000000005
+0
+-6.0
+16
+3.5999999999999996
+7
+-1.7999999999999998
+3
+-4.2
+-0.6000000000000005
+19
+5.4
+10
+0.0
+-0.6000000000000005
+7
+-1.7999999999999998
+14
+2.4000000000000004
+4
+-3.6
+0
+-6.0
+16
+3.5999999999999996
+11
+0.5999999999999996
+15
+3.0
+10
+0.0
+7
+-1.7999999999999998
+1
+-5.4
+17
+4.199999999999999
+17
+4.199999999999999
+1.1999999999999993
+14
+2.4000000000000004
+1.1999999999999993
+8
+-1.2000000000000002
+1.1999999999999993
+14
+2.4000000000000004
+11
+0.5999999999999996
+2
+-4.8
+1
+-5.4
+12
+1.1999999999999993
+14
+2.4000000000000004
+5.4
+5.4
+17
+4.199999999999999
+16
+3.5999999999999996
+2
+-4.8
+20
+6.0
+5.4
+18
+4.799999999999999
+14
+2.4000000000000004
+1
+-5.4
+16
+3.5999999999999996
+16
+3.5999999999999996
+20
+6.0
+11
+0.5999999999999996
+5
+-3.0
+3
+-4.2
+15
+3.0
+7
+-1.7999999999999998
+2
+-4.8
+11
+0.5999999999999996
+-1.7999999999999998
+18
+4.799999999999999
+-1.7999999999999998
+2
+-4.8
+4
+-3.6
+20
+6.0
+1
+-5.4
+11
+0.5999999999999996
+14
+2.4000000000000004
+18
+4.799999999999999
+-1.7999999999999998
+-1.7999999999999998
+8
+-1.2000000000000002
+2
+-4.8
+13
+1.7999999999999998
+9
+-0.6000000000000005
+12
+1.1999999999999993
+12
+1.1999999999999993
+3
+-4.2
+14
+2.4000000000000004
+8
+-1.2000000000000002
+7
+-1.7999999999999998
+20
+6.0
+13
+1.7999999999999998
+-5.4
+16
+3.5999999999999996
+18
+4.799999999999999
+15
+3.0
+5
+-3.0
+20
+6.0
+13
+1.7999999999999998
+6
+-2.4000000000000004
+-5.4
+8
+-1.2000000000000002
+16
+3.5999999999999996
+20
+6.0
+-3.6
+3
+-4.2
+0
+-6.0
+16
+3.5999999999999996
+1
+-5.4
+19
+5.4
+9
+-0.6000000000000005
+7
+-1.7999999999999998
+20
+6.0
+-0.6000000000000005
+11
+0.5999999999999996
+9
+-0.6000000000000005
+2
+-4.8
+8
+-1.2000000000000002
+9
+-0.6000000000000005
+19
+5.4
+10
+0.0
+-1.7999999999999998
+3
+-4.2
+2
+-4.8
+3
+-4.2
+-1.2000000000000002
+4
+-3.6
+16
+3.5999999999999996
+0
+-6.0
+-0.6000000000000005
+8
+-1.2000000000000002
+-0.6000000000000005
+15
+3.0
+1.7999999999999998
+13
+1.7999999999999998
+1
+-5.4
+1.7999999999999998
+-3.6
+15
+3.0
+3
+-4.2
+-3.6
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/m/dense_3/bias:0' shape=(64,) dtype=float32, numpy=
+array([ 1.29222721e-02,  2.12590303e-02,  0.00000000e+00, -8.35425127e-03,
+        1.18177779e-08,  1.08866327e-04,  1.59419433e-04,  4.87480444e-20,
+       -3.47966095e-03,  1.99852017e-04, -2.72236502e-04, -3.41246650e-03,
+        9.86970216e-03,  8.38842243e-05, -2.05537826e-02, -2.05603801e-02,
+        6.69094454e-03, -8.74661608e-04,  4.49927375e-02,  4.43988739e-08,
+        3.02800089e-02, -4.10967623e-05,  1.38771869e-02,  1.91511307e-02,
+        1.47791626e-02,  4.39117110e-04,  2.23683119e-02,  1.00414921e-02,
+        0.00000000e+00,  2.58170534e-03,  1.44431666e-02, -1.15738530e-02,
+        2.28217291e-03,  3.55442630e-34,  3.05031543e-03,  2.08838470e-02,
+       -7.82237388e-04, -1.26094222e-02,  4.34373476e-04, -2.01594606e-02,
+        1.26156416e-02, -1.14001296e-02,  2.28111190e-03,  8.44066963e-03,
+       -6.73688063e-03, -1.43294549e-02,  2.36922819e-02, -2.74244958e-04,
+        1.61462357e-35, -1.13588674e-02,  7.86901044e-04, -1.39568653e-02,
+        1.10205659e-03,  2.76096282e-04,  9.48116576e-06, -6.60290898e-05,
+       -9.26781431e-05, -6.07232610e-03,  2.01812899e-03,  1.36194695e-02,
+       -6.29438669e-04, -2.18745954e-02,  1.84043404e-03,  1.53061439e-04],
+      dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 379, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 260, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1493, in r_binary_op_wrapper
+    y, x = maybe_promote_tensors(y, x, force_same_dtype=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 113, in _result_type
+    return dtypes.as_dtype(canonicalize_dtype(dtype))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 805, in as_dtype
+    if isinstance(type_value, DType):
+  File "/usr/lib/python3.8/abc.py", line 98, in __instancecheck__
+    return _abc_instancecheck(cls, instance)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/m/dense_3/bias:0' shape=(64,) dtype=float32, numpy=
+array([ 1.29222721e-02,  2.12590303e-02,  0.00000000e+00, -8.35425127e-03,
+        1.18177779e-08,  1.08866327e-04,  1.59419433e-04,  4.87480444e-20,
+       -3.47966095e-03,  1.99852017e-04, -2.72236502e-04, -3.41246650e-03,
+        9.86970216e-03,  8.38842243e-05, -2.05537826e-02, -2.05603801e-02,
+        6.69094454e-03, -8.74661608e-04,  4.49927375e-02,  4.43988739e-08,
+        3.02800089e-02, -4.10967623e-05,  1.38771869e-02,  1.91511307e-02,
+        1.47791626e-02,  4.39117110e-04,  2.23683119e-02,  1.00414921e-02,
+        0.00000000e+00,  2.58170534e-03,  1.44431666e-02, -1.15738530e-02,
+        2.28217291e-03,  3.55442630e-34,  3.05031543e-03,  2.08838470e-02,
+       -7.82237388e-04, -1.26094222e-02,  4.34373476e-04, -2.01594606e-02,
+        1.26156416e-02, -1.14001296e-02,  2.28111190e-03,  8.44066963e-03,
+       -6.73688063e-03, -1.43294549e-02,  2.36922819e-02, -2.74244958e-04,
+        1.61462357e-35, -1.13588674e-02,  7.86901044e-04, -1.39568653e-02,
+        1.10205659e-03,  2.76096282e-04,  9.48116576e-06, -6.60290898e-05,
+       -9.26781431e-05, -6.07232610e-03,  2.01812899e-03,  1.36194695e-02,
+       -6.29438669e-04, -2.18745954e-02,  1.84043404e-03,  1.53061439e-04],
+      dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 379, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 260, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1493, in r_binary_op_wrapper
+    y, x = maybe_promote_tensors(y, x, force_same_dtype=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 113, in _result_type
+    return dtypes.as_dtype(canonicalize_dtype(dtype))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 805, in as_dtype
+    if isinstance(type_value, DType):
+  File "/usr/lib/python3.8/abc.py", line 98, in __instancecheck__
+    return _abc_instancecheck(cls, instance)
+KeyboardInterrupt

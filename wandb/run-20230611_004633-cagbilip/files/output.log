@@ -1,0 +1,368 @@
+Warning: window 'pinocchio' already created.
+The previously created objects will not be destroyed and do not have to be created again.
+[-6.  -5.4 -4.8 -4.2 -3.6 -3.  -2.4 -1.8 -1.2 -0.6  0.   0.6  1.2  1.8
+  2.4  3.   3.6  4.2  4.8  5.4  6. ]
+save_dir:  models/double_pendulum/3000_episodes
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________
+4
+19
+3
+11
+13
+13
+2
+18
+15
+12
+5
+4
+16
+11
+20
+0
+7
+0
+3
+10
+15
+4
+1
+1
+15
+17
+10
+7
+10
+18
+6
+1
+9
+2
+2
+19
+14
+20
+3
+17
+17
+12
+18
+8
+5
+6
+10
+11
+0
+10
+3
+5
+1
+20
+6
+18
+0
+10
+2
+18
+10
+12
+2
+2
+3
+17
+17
+11
+10
+19
+3
+10
+17
+3
+11
+7
+0
+20
+15
+11
+12
+17
+12
+5
+20
+11
+2
+7
+14
+6
+20
+1
+19
+16
+13
+11
+15
+13
+8
+5
+1
+9
+12
+8
+18
+8
+16
+2
+1
+9
+18
+9
+12
+9
+18
+17
+13
+10
+2
+12
+2
+16
+11
+19
+18
+10
+5
+7
+19
+5
+9
+7
+19
+5
+14
+8
+9
+9
+4
+17
+12
+5
+19
+9
+20
+18
+14
+11
+7
+4
+6
+14
+17
+4
+0
+19
+10
+13
+13
+17
+11
+13
+19
+0
+19
+5
+20
+12
+13
+10
+2
+1
+1
+1
+7
+6
+13
+7
+9
+15
+0
+13
+19
+2
+3
+8
+16
+15
+0
+19
+0
+14
+0
+15
+6
+7
+1
+12
+16
+17
+19
+12
+8
+11
+15
+18
+8
+1
+19
+0
+0
+3
+7
+6
+2
+1
+11
+8
+14
+15
+19
+13
+15
+1
+0
+13
+1
+17
+2
+11
+11
+5
+11
+3
+11
+4
+1
+13
+2
+17
+11
+1
+12
+13
+15
+5
+19
+16
+11
+1
+13
+9
+17
+3
+20
+19
+14
+14
+3
+6
+5
+17
+1
+15
+15
+4
+10
+7
+19
+1
+16
+0
+18
+13
+17
+15
+11
+7
+4
+17
+4
+10
+20
+7
+6
+17
+4
+7
+19
+9
+18
+1
+2
+2
+10
+4
+0
+15
+3
+4
+Traceback (most recent call last):
+  File "DQN template.py", line 379, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 260, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1173, in apply_gradients
+    grads_and_vars = self.aggregate_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1139, in aggregate_gradients
+    return optimizer_utils.all_reduce_sum_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/utils.py", line 37, in all_reduce_sum_gradients
+    reduced = tf.distribute.get_replica_context().all_reduce(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3273, in all_reduce
+    return nest.pack_sequence_as(value, grad_wrapper(*flattened_value))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/custom_gradient.py", line 343, in __call__
+    return self._d(self._f, a, k)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/custom_gradient.py", line 297, in decorated
+    return _eager_mode_decorator(wrapped, args, kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/custom_gradient.py", line 544, in _eager_mode_decorator
+    flat_args = composite_tensor_gradient.get_flat_tensors_for_gradients(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/composite_tensor_gradient.py", line 170, in get_flat_tensors_for_gradients
+    return nest.flatten([_get_tensors_for_gradient(x) for x in xs])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 379, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 260, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1173, in apply_gradients
+    grads_and_vars = self.aggregate_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1139, in aggregate_gradients
+    return optimizer_utils.all_reduce_sum_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/utils.py", line 37, in all_reduce_sum_gradients
+    reduced = tf.distribute.get_replica_context().all_reduce(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3273, in all_reduce
+    return nest.pack_sequence_as(value, grad_wrapper(*flattened_value))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/custom_gradient.py", line 343, in __call__
+    return self._d(self._f, a, k)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/custom_gradient.py", line 297, in decorated
+    return _eager_mode_decorator(wrapped, args, kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/custom_gradient.py", line 544, in _eager_mode_decorator
+    flat_args = composite_tensor_gradient.get_flat_tensors_for_gradients(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/composite_tensor_gradient.py", line 170, in get_flat_tensors_for_gradients
+    return nest.flatten([_get_tensors_for_gradient(x) for x in xs])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt

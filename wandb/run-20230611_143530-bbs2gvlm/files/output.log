@@ -1,0 +1,155 @@
+(2, 2)
+stack x0:  [[-1.8494289   2.71075014]
+ [ 0.16875371  0.72093217]]
+concatenate x0:  [-1.8494289   2.71075014  0.16875371  0.72093217]
+(4,)
+Episode : 1 sum_costs : -587.63 Avg Reward : -587.63
+(2, 2)
+stack x0:  [[ 2.34597711 -0.86921203]
+ [ 0.46849063  0.80737612]]
+concatenate x0:  [ 2.34597711 -0.86921203  0.46849063  0.80737612]
+(4,)
+Episode : 2 sum_costs : -547.20 Avg Reward : -567.42
+(2, 2)
+stack x0:  [[ 2.98059552  0.97052595]
+ [-0.56745655 -0.88416297]]
+concatenate x0:  [ 2.98059552  0.97052595 -0.56745655 -0.88416297]
+(4,)
+Episode : 3 sum_costs : -691.06 Avg Reward : -608.63
+(2, 2)
+stack x0:  [[-0.57264092  0.84822661]
+ [ 0.79778816  0.76173669]]
+concatenate x0:  [-0.57264092  0.84822661  0.79778816  0.76173669]
+(4,)
+Episode : 4 sum_costs : -495.55 Avg Reward : -580.36
+(2, 2)
+stack x0:  [[-1.37017908  2.21949216]
+ [-0.74343594  0.0863215 ]]
+concatenate x0:  [-1.37017908  2.21949216 -0.74343594  0.0863215 ]
+(4,)
+Episode : 5 sum_costs : -488.03 Avg Reward : -561.89
+(2, 2)
+stack x0:  [[-2.83961254  1.0060295 ]
+ [ 0.42555459 -0.27823555]]
+concatenate x0:  [-2.83961254  1.0060295   0.42555459 -0.27823555]
+(4,)
+Episode : 6 sum_costs : -629.14 Avg Reward : -573.10
+(2, 2)
+stack x0:  [[2.20290654 2.85729646]
+ [0.96668342 0.06850873]]
+concatenate x0:  [2.20290654 2.85729646 0.96668342 0.06850873]
+(4,)
+Episode : 7 sum_costs : -666.73 Avg Reward : -586.48
+(2, 2)
+stack x0:  [[-2.86432969 -2.7931704 ]
+ [ 0.77429357  0.11162123]]
+concatenate x0:  [-2.86432969 -2.7931704   0.77429357  0.11162123]
+(4,)
+Episode : 8 sum_costs : -764.91 Avg Reward : -608.78
+(2, 2)
+stack x0:  [[-1.81919263 -2.37319477]
+ [ 0.33254683 -0.71549845]]
+concatenate x0:  [-1.81919263 -2.37319477  0.33254683 -0.71549845]
+(4,)
+Episode : 9 sum_costs : -685.80 Avg Reward : -617.34
+(2, 2)
+stack x0:  [[ 0.47950406 -2.60728121]
+ [-0.03211351 -0.80527667]]
+concatenate x0:  [ 0.47950406 -2.60728121 -0.03211351 -0.80527667]
+(4,)
+Episode : 10 sum_costs : -498.07 Avg Reward : -605.41
+(2, 2)
+stack x0:  [[-0.43422488  1.61361982]
+ [-0.69686393 -0.54066469]]
+concatenate x0:  [-0.43422488  1.61361982 -0.69686393 -0.54066469]
+(4,)
+Episode : 11 sum_costs : -402.85 Avg Reward : -587.00
+(2, 2)
+stack x0:  [[ 0.23075561  1.77953968]
+ [-0.55254609 -0.96418864]]
+concatenate x0:  [ 0.23075561  1.77953968 -0.55254609 -0.96418864]
+(4,)
+Episode : 12 sum_costs : -447.84 Avg Reward : -575.40
+(2, 2)
+stack x0:  [[-1.38765072 -2.19871069]
+ [ 0.11356833 -0.47005895]]
+concatenate x0:  [-1.38765072 -2.19871069  0.11356833 -0.47005895]
+(4,)
+Episode : 13 sum_costs : -525.23 Avg Reward : -571.54
+(2, 2)
+stack x0:  [[-0.73759229 -2.01135308]
+ [ 0.09631695  0.55701256]]
+concatenate x0:  [-0.73759229 -2.01135308  0.09631695  0.55701256]
+(4,)
+Episode : 14 sum_costs : -468.95 Avg Reward : -564.21
+(2, 2)
+stack x0:  [[-0.77042643 -1.23331343]
+ [-0.06942106  0.2716184 ]]
+concatenate x0:  [-0.77042643 -1.23331343 -0.06942106  0.2716184 ]
+(4,)
+Episode : 15 sum_costs : -550.12 Avg Reward : -563.27
+(2, 2)
+stack x0:  [[ 0.71588375 -2.75164502]
+ [ 0.52363488  0.35543745]]
+concatenate x0:  [ 0.71588375 -2.75164502  0.52363488  0.35543745]
+(4,)
+Traceback (most recent call last):
+  File "DQN template.py", line 380, in <module>
+    nu = 2
+  File "DQN template.py", line 247, in train_dqn
+    indices = np.arange(dqn.batch_size)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1070, in __call__
+    inputs = tf.nest.map_structure(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 914, in map_structure
+    entries = zip(*flat_structure)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 913, in <genexpr>
+    flat_structure = (flatten(s, expand_composites) for s in structure)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 380, in <module>
+    nu = 2
+  File "DQN template.py", line 247, in train_dqn
+    indices = np.arange(dqn.batch_size)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1070, in __call__
+    inputs = tf.nest.map_structure(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 914, in map_structure
+    entries = zip(*flat_structure)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 913, in <genexpr>
+    flat_structure = (flatten(s, expand_composites) for s in structure)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt

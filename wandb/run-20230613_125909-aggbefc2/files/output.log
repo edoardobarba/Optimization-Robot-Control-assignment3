@@ -1,0 +1,47 @@
+
+WARNING:tensorflow:No training configuration found in save file, so the model was *not* compiled. Compile it manually.
+Episode:  1
+Traceback (most recent call last):
+  File "DQN template.py", line 408, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 349, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 673, in _run_internal_graph
+    node.flat_output_ids, tf.nest.flatten(outputs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 408, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 349, in test_dqn
+    q_values = Q(input)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 673, in _run_internal_graph
+    node.flat_output_ids, tf.nest.flatten(outputs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/nest.py", line 454, in flatten
+    return _pywrap_utils.Flatten(structure, expand_composites)
+KeyboardInterrupt

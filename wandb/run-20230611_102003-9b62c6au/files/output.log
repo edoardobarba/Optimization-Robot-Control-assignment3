@@ -1,0 +1,19 @@
+Warning: window 'pinocchio' already created.
+The previously created objects will not be destroyed and do not have to be created again.
+[-6.  -5.4 -4.8 -4.2 -3.6 -3.  -2.4 -1.8 -1.2 -0.6  0.   0.6  1.2  1.8
+  2.4  3.   3.6  4.2  4.8  5.4  6. ]
+save_dir:  models/double_pendulum/3000_episodes
+Episode:  1
+WARNING:tensorflow:No training configuration found in save file, so the model was *not* compiled. Compile it manually.
+Traceback (most recent call last):
+  File "DQN template.py", line 382, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 308, in test_dqn
+    env.reset(np.array[np.pi,0.,0.,0.])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+Traceback (most recent call last):
+  File "DQN template.py", line 382, in <module>
+    test_dqn(env, episodes, save_dir)
+  File "DQN template.py", line 308, in test_dqn
+    env.reset(np.array[np.pi,0.,0.,0.])
+TypeError: 'builtin_function_or_method' object is not subscriptable

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "DQN template.py", line 395, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 207, in train_dqn
+    env.reset(np.array([[np.pi][0.]]))
+TypeError: list indices must be integers or slices, not float
+Traceback (most recent call last):
+  File "DQN template.py", line 395, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 207, in train_dqn
+    env.reset(np.array([[np.pi][0.]]))
+TypeError: list indices must be integers or slices, not float

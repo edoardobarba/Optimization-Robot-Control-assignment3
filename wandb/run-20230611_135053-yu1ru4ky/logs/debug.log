@@ -1,0 +1,41 @@
+2023-06-11 13:50:53,024 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-11 13:50:53,024 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Configure stats pid to 440821
+2023-06-11 13:50:53,024 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Loading settings from /home/edo/.config/wandb/settings
+2023-06-11 13:50:53,025 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Loading settings from /home/edo/Desktop/orc/03_assignment/wandb/settings
+2023-06-11 13:50:53,025 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_executable': '/usr/bin/python3'}
+2023-06-11 13:50:53,025 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'DQN template.py', 'program': 'DQN template.py'}
+2023-06-11 13:50:53,025 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-11 13:50:53,025 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-11 13:50:53,025 INFO    MainThread:440821 [wandb_init.py:_log_setup():507] Logging user logs to /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_135053-yu1ru4ky/logs/debug.log
+2023-06-11 13:50:53,026 INFO    MainThread:440821 [wandb_init.py:_log_setup():508] Logging internal logs to /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_135053-yu1ru4ky/logs/debug-internal.log
+2023-06-11 13:50:53,026 INFO    MainThread:440821 [wandb_init.py:init():547] calling init triggers
+2023-06-11 13:50:53,026 INFO    MainThread:440821 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-11 13:50:53,026 INFO    MainThread:440821 [wandb_init.py:init():596] starting backend
+2023-06-11 13:50:53,026 INFO    MainThread:440821 [wandb_init.py:init():600] setting up manager
+2023-06-11 13:50:53,030 INFO    MainThread:440821 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-11 13:50:53,034 INFO    MainThread:440821 [wandb_init.py:init():606] backend started and connected
+2023-06-11 13:50:53,039 INFO    MainThread:440821 [wandb_init.py:init():700] updated telemetry
+2023-06-11 13:50:53,064 INFO    MainThread:440821 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-06-11 13:51:07,455 INFO    MainThread:440821 [wandb_run.py:_on_init():2177] communicating current version
+2023-06-11 13:51:12,221 INFO    MainThread:440821 [wandb_run.py:_on_init():2186] got version response 
+2023-06-11 13:51:12,221 INFO    MainThread:440821 [wandb_init.py:init():787] starting run threads in backend
+2023-06-11 13:51:12,410 INFO    MainThread:440821 [wandb_run.py:_console_start():2158] atexit reg
+2023-06-11 13:51:12,411 INFO    MainThread:440821 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-06-11 13:51:12,411 INFO    MainThread:440821 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-06-11 13:51:12,412 INFO    MainThread:440821 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-06-11 13:51:12,414 INFO    MainThread:440821 [wandb_init.py:init():829] run started, returning control to user process
+2023-06-11 13:51:15,291 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-11 13:51:15,291 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Configure stats pid to 440821
+2023-06-11 13:51:15,291 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Loading settings from /home/edo/.config/wandb/settings
+2023-06-11 13:51:15,291 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Loading settings from /home/edo/Desktop/orc/03_assignment/wandb/settings
+2023-06-11 13:51:15,291 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_executable': '/usr/bin/python3'}
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'DQN template.py', 'program': 'DQN template.py'}
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_init.py:_log_setup():507] Logging user logs to /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_135115-ux1vgj0n/logs/debug.log
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_init.py:_log_setup():508] Logging internal logs to /home/edo/Desktop/orc/03_assignment/wandb/run-20230611_135115-ux1vgj0n/logs/debug-internal.log
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_init.py:init():547] calling init triggers
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-11 13:51:15,292 INFO    MainThread:440821 [wandb_init.py:init():591] wandb.init() called when a run is still active

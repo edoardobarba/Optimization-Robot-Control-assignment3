@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "DQN template.py", line 392, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 217, in train_dqn
+    idx_u = dqn.get_epsilon_action(x, episode)
+  File "DQN template.py", line 89, in get_epsilon_action
+    epsilon = final_epsilon + (initial_epsilon-final_epsilon) * np.exp(-decay_rate*count)
+NameError: name 'count' is not defined
+Traceback (most recent call last):
+  File "DQN template.py", line 392, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 217, in train_dqn
+    idx_u = dqn.get_epsilon_action(x, episode)
+  File "DQN template.py", line 89, in get_epsilon_action
+    epsilon = final_epsilon + (initial_epsilon-final_epsilon) * np.exp(-decay_rate*count)
+NameError: name 'count' is not defined

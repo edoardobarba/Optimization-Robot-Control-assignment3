@@ -1,0 +1,58 @@
+
+Episode : 1 sum_costs : -325.24 Avg Reward : -325.24
+Episode : 2 sum_costs : -196.74 Avg Reward : -260.99
+Episode : 3 sum_costs : -332.68 Avg Reward : -284.89
+Episode : 4 sum_costs : -414.98 Avg Reward : -317.41
+Episode : 5 sum_costs : -122.17 Avg Reward : -278.36
+Episode : 6 sum_costs : -425.84 Avg Reward : -302.94
+Episode : 7 sum_costs : -286.59 Avg Reward : -300.61
+Episode : 8 sum_costs : -319.56 Avg Reward : -302.98
+Episode : 9 sum_costs : -209.58 Avg Reward : -292.60
+Traceback (most recent call last):
+  File "DQN template.py", line 380, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 259, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_grad.py", line 248, in _MeanGrad
+    sum_grad = _SumGrad(op, grad)[0]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_grad.py", line 163, in _SumGrad
+    input_shape = constant_op.constant(input_0_shape, dtype=dtypes.int32)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 268, in constant
+    return _constant_impl(value, dtype, shape, name, verify_shape=False,
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 280, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 305, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 103, in convert_to_eager_tensor
+    return ops.EagerTensor(value, ctx.device_name, dtype)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 380, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 259, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_grad.py", line 248, in _MeanGrad
+    sum_grad = _SumGrad(op, grad)[0]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_grad.py", line 163, in _SumGrad
+    input_shape = constant_op.constant(input_0_shape, dtype=dtypes.int32)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 268, in constant
+    return _constant_impl(value, dtype, shape, name, verify_shape=False,
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 280, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 305, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 103, in convert_to_eager_tensor
+    return ops.EagerTensor(value, ctx.device_name, dtype)
+KeyboardInterrupt

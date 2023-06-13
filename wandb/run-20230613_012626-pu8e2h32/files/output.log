@@ -1,0 +1,649 @@
+
+Episode : 1 sum_costs : -3093.58 Avg Reward : -3093.58
+Episode : 2 sum_costs : -3055.08 Avg Reward : -3074.33
+Episode : 3 sum_costs : -3139.87 Avg Reward : -3096.18
+Episode : 4 sum_costs : -3039.65 Avg Reward : -3082.04
+Episode : 5 sum_costs : -2935.86 Avg Reward : -3052.81
+Episode : 6 sum_costs : -3142.55 Avg Reward : -3067.76
+Episode : 7 sum_costs : -3081.31 Avg Reward : -3069.70
+Episode : 8 sum_costs : -3169.71 Avg Reward : -3082.20
+Episode : 9 sum_costs : -3171.22 Avg Reward : -3092.09
+Episode : 10 sum_costs : -2806.62 Avg Reward : -3063.55
+Episode : 11 sum_costs : -3085.32 Avg Reward : -3065.53
+Episode : 12 sum_costs : -3038.96 Avg Reward : -3063.31
+Episode : 13 sum_costs : -2919.87 Avg Reward : -3052.28
+Episode : 14 sum_costs : -3079.47 Avg Reward : -3054.22
+Episode : 15 sum_costs : -3039.94 Avg Reward : -3053.27
+Episode : 16 sum_costs : -2917.32 Avg Reward : -3044.77
+Episode : 17 sum_costs : -3067.21 Avg Reward : -3046.09
+Episode : 18 sum_costs : -3048.19 Avg Reward : -3046.21
+Episode : 19 sum_costs : -2990.09 Avg Reward : -3043.25
+Episode : 20 sum_costs : -3057.42 Avg Reward : -3043.96
+Episode : 21 sum_costs : -3102.33 Avg Reward : -3046.74
+Episode : 22 sum_costs : -3123.74 Avg Reward : -3050.24
+Episode : 23 sum_costs : -3091.42 Avg Reward : -3052.03
+Episode : 24 sum_costs : -2846.78 Avg Reward : -3043.48
+Episode : 25 sum_costs : -2712.43 Avg Reward : -3030.24
+Episode : 26 sum_costs : -3113.97 Avg Reward : -3033.46
+Episode : 27 sum_costs : -3169.86 Avg Reward : -3038.51
+Episode : 28 sum_costs : -3113.38 Avg Reward : -3041.18
+Episode : 29 sum_costs : -2746.48 Avg Reward : -3031.02
+Episode : 30 sum_costs : -2965.74 Avg Reward : -3028.85
+Episode : 31 sum_costs : -3216.28 Avg Reward : -3034.89
+Episode : 32 sum_costs : -3080.59 Avg Reward : -3036.32
+Episode : 33 sum_costs : -2793.34 Avg Reward : -3028.96
+Episode : 34 sum_costs : -3140.08 Avg Reward : -3032.23
+Episode : 35 sum_costs : -2980.63 Avg Reward : -3030.75
+Episode : 36 sum_costs : -3080.71 Avg Reward : -3032.14
+Episode : 37 sum_costs : -2786.03 Avg Reward : -3025.49
+Episode : 38 sum_costs : -3116.83 Avg Reward : -3027.89
+Episode : 39 sum_costs : -2903.65 Avg Reward : -3024.71
+Episode : 40 sum_costs : -2999.76 Avg Reward : -3024.08
+Episode : 41 sum_costs : -3093.59 Avg Reward : -3025.78
+Episode : 42 sum_costs : -3002.27 Avg Reward : -3025.22
+Episode : 43 sum_costs : -3047.14 Avg Reward : -3025.73
+Episode : 44 sum_costs : -2981.78 Avg Reward : -3024.73
+Episode : 45 sum_costs : -3007.15 Avg Reward : -3024.34
+Episode : 46 sum_costs : -2862.11 Avg Reward : -3020.81
+Episode : 47 sum_costs : -2913.30 Avg Reward : -3018.52
+Episode : 48 sum_costs : -3155.70 Avg Reward : -3021.38
+Episode : 49 sum_costs : -3101.05 Avg Reward : -3023.01
+Episode : 50 sum_costs : -3044.97 Avg Reward : -3023.45
+Episode : 51 sum_costs : -3065.73 Avg Reward : -3024.28
+Episode : 52 sum_costs : -3168.06 Avg Reward : -3027.04
+Episode : 53 sum_costs : -2918.92 Avg Reward : -3025.00
+Episode : 54 sum_costs : -3037.00 Avg Reward : -3025.22
+Episode : 55 sum_costs : -2977.94 Avg Reward : -3024.36
+Episode : 56 sum_costs : -3042.17 Avg Reward : -3024.68
+Episode : 57 sum_costs : -3105.69 Avg Reward : -3026.10
+Episode : 58 sum_costs : -3052.47 Avg Reward : -3026.56
+Episode : 59 sum_costs : -3017.52 Avg Reward : -3026.40
+Episode : 60 sum_costs : -2960.85 Avg Reward : -3025.31
+Episode : 61 sum_costs : -3056.51 Avg Reward : -3025.82
+Episode : 62 sum_costs : -2542.73 Avg Reward : -3018.03
+Episode : 63 sum_costs : -2987.78 Avg Reward : -3017.55
+Episode : 64 sum_costs : -2912.69 Avg Reward : -3015.91
+Episode : 65 sum_costs : -2972.75 Avg Reward : -3015.25
+Episode : 66 sum_costs : -3060.12 Avg Reward : -3015.93
+Episode : 67 sum_costs : -3057.54 Avg Reward : -3016.55
+Episode : 68 sum_costs : -2577.83 Avg Reward : -3010.10
+Episode : 69 sum_costs : -2942.84 Avg Reward : -3009.12
+Episode : 70 sum_costs : -2799.30 Avg Reward : -3006.13
+Episode : 71 sum_costs : -2823.44 Avg Reward : -3003.55
+Episode : 72 sum_costs : -3119.05 Avg Reward : -3005.16
+Episode : 73 sum_costs : -2867.48 Avg Reward : -3003.27
+Episode : 74 sum_costs : -3067.76 Avg Reward : -3004.14
+Episode : 75 sum_costs : -3009.91 Avg Reward : -3004.22
+Episode : 76 sum_costs : -2935.75 Avg Reward : -3003.32
+Episode : 77 sum_costs : -3038.52 Avg Reward : -3003.78
+Episode : 78 sum_costs : -2984.72 Avg Reward : -3003.53
+Episode : 79 sum_costs : -2846.57 Avg Reward : -3001.54
+Episode : 80 sum_costs : -3003.38 Avg Reward : -3001.57
+Episode : 81 sum_costs : -3015.13 Avg Reward : -3001.73
+Episode : 82 sum_costs : -2967.44 Avg Reward : -3001.32
+Episode : 83 sum_costs : -2992.89 Avg Reward : -3001.21
+Episode : 84 sum_costs : -2699.13 Avg Reward : -2997.62
+Episode : 85 sum_costs : -2795.99 Avg Reward : -2995.25
+Episode : 86 sum_costs : -2900.63 Avg Reward : -2994.15
+Episode : 87 sum_costs : -3056.87 Avg Reward : -2994.87
+Episode : 88 sum_costs : -2852.08 Avg Reward : -2993.24
+Episode : 89 sum_costs : -2629.34 Avg Reward : -2989.16
+Episode : 90 sum_costs : -2919.38 Avg Reward : -2988.38
+Episode : 91 sum_costs : -2683.14 Avg Reward : -2985.03
+Episode : 92 sum_costs : -3035.40 Avg Reward : -2985.57
+Episode : 93 sum_costs : -2844.52 Avg Reward : -2984.06
+Episode : 94 sum_costs : -2971.17 Avg Reward : -2983.92
+Episode : 95 sum_costs : -2963.05 Avg Reward : -2983.70
+Episode : 96 sum_costs : -3020.39 Avg Reward : -2984.08
+Episode : 97 sum_costs : -3042.20 Avg Reward : -2984.68
+Episode : 98 sum_costs : -2775.05 Avg Reward : -2982.54
+Episode : 99 sum_costs : -2998.08 Avg Reward : -2982.70
+Saving model...
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+models/double_pendulum/1000_episodes100_episode
+Episode : 100 sum_costs : -2999.26 Avg Reward : -2982.86
+Episode : 101 sum_costs : -2811.89 Avg Reward : -2980.05
+Episode : 102 sum_costs : -2908.30 Avg Reward : -2978.58
+Episode : 103 sum_costs : -2818.64 Avg Reward : -2975.37
+Episode : 104 sum_costs : -2828.04 Avg Reward : -2973.25
+Episode : 105 sum_costs : -2925.87 Avg Reward : -2973.15
+Episode : 106 sum_costs : -2967.69 Avg Reward : -2971.40
+Episode : 107 sum_costs : -2869.20 Avg Reward : -2969.28
+Episode : 108 sum_costs : -2613.38 Avg Reward : -2963.72
+Episode : 109 sum_costs : -2802.57 Avg Reward : -2960.03
+Episode : 110 sum_costs : -2780.06 Avg Reward : -2959.77
+Episode : 111 sum_costs : -2705.71 Avg Reward : -2955.97
+Episode : 112 sum_costs : -2815.78 Avg Reward : -2953.74
+Episode : 113 sum_costs : -2577.58 Avg Reward : -2950.32
+Episode : 114 sum_costs : -2919.66 Avg Reward : -2948.72
+Episode : 115 sum_costs : -2566.92 Avg Reward : -2943.99
+Episode : 116 sum_costs : -2507.41 Avg Reward : -2939.89
+Episode : 117 sum_costs : -2875.16 Avg Reward : -2937.97
+Episode : 118 sum_costs : -2533.60 Avg Reward : -2932.82
+Episode : 119 sum_costs : -2570.00 Avg Reward : -2928.62
+Episode : 120 sum_costs : -2660.68 Avg Reward : -2924.65
+Episode : 121 sum_costs : -2677.21 Avg Reward : -2920.40
+Episode : 122 sum_costs : -2794.68 Avg Reward : -2917.11
+Episode : 123 sum_costs : -2554.31 Avg Reward : -2911.74
+Episode : 124 sum_costs : -2767.30 Avg Reward : -2910.95
+Episode : 125 sum_costs : -2860.61 Avg Reward : -2912.43
+Episode : 126 sum_costs : -2732.73 Avg Reward : -2908.62
+Episode : 127 sum_costs : -2343.45 Avg Reward : -2900.35
+Episode : 128 sum_costs : -2711.62 Avg Reward : -2896.33
+Episode : 129 sum_costs : -2874.76 Avg Reward : -2897.62
+Episode : 130 sum_costs : -2771.68 Avg Reward : -2895.68
+Episode : 131 sum_costs : -2802.01 Avg Reward : -2891.53
+Episode : 132 sum_costs : -2752.81 Avg Reward : -2888.26
+Episode : 133 sum_costs : -2799.50 Avg Reward : -2888.32
+Episode : 134 sum_costs : -2930.83 Avg Reward : -2886.23
+Episode : 135 sum_costs : -2982.90 Avg Reward : -2886.25
+Episode : 136 sum_costs : -2977.30 Avg Reward : -2885.21
+Episode : 137 sum_costs : -2808.86 Avg Reward : -2885.44
+Episode : 138 sum_costs : -2884.73 Avg Reward : -2883.12
+Episode : 139 sum_costs : -2683.31 Avg Reward : -2880.92
+Episode : 140 sum_costs : -2672.75 Avg Reward : -2877.65
+Episode : 141 sum_costs : -2467.56 Avg Reward : -2871.39
+Episode : 142 sum_costs : -2775.50 Avg Reward : -2869.12
+Episode : 143 sum_costs : -2680.59 Avg Reward : -2865.45
+Episode : 144 sum_costs : -2921.20 Avg Reward : -2864.85
+Episode : 145 sum_costs : -2580.59 Avg Reward : -2860.58
+Episode : 146 sum_costs : -2606.91 Avg Reward : -2858.03
+Episode : 147 sum_costs : -2755.63 Avg Reward : -2856.45
+Episode : 148 sum_costs : -2636.83 Avg Reward : -2851.27
+Episode : 149 sum_costs : -2745.45 Avg Reward : -2847.71
+Episode : 150 sum_costs : -2400.60 Avg Reward : -2841.27
+Episode : 151 sum_costs : -2566.04 Avg Reward : -2836.27
+Episode : 152 sum_costs : -2851.15 Avg Reward : -2833.10
+Episode : 153 sum_costs : -2511.09 Avg Reward : -2829.02
+Episode : 154 sum_costs : -2772.54 Avg Reward : -2826.38
+Episode : 155 sum_costs : -2516.29 Avg Reward : -2821.76
+Episode : 156 sum_costs : -2846.50 Avg Reward : -2819.80
+Episode : 157 sum_costs : -2688.56 Avg Reward : -2815.63
+Episode : 158 sum_costs : -2438.05 Avg Reward : -2809.49
+Episode : 159 sum_costs : -2718.47 Avg Reward : -2806.50
+Episode : 160 sum_costs : -2472.92 Avg Reward : -2801.62
+Episode : 161 sum_costs : -2500.82 Avg Reward : -2796.06
+Episode : 162 sum_costs : -2686.58 Avg Reward : -2797.50
+Episode : 163 sum_costs : -2782.70 Avg Reward : -2795.45
+Episode : 164 sum_costs : -2653.15 Avg Reward : -2792.85
+Episode : 165 sum_costs : -2540.20 Avg Reward : -2788.53
+Episode : 166 sum_costs : -2861.04 Avg Reward : -2786.54
+Episode : 167 sum_costs : -2614.94 Avg Reward : -2782.11
+Episode : 168 sum_costs : -2624.51 Avg Reward : -2782.58
+Episode : 169 sum_costs : -2937.62 Avg Reward : -2782.53
+Episode : 170 sum_costs : -2826.52 Avg Reward : -2782.80
+Episode : 171 sum_costs : -2722.46 Avg Reward : -2781.79
+Episode : 172 sum_costs : -2780.70 Avg Reward : -2778.40
+Episode : 173 sum_costs : -2438.12 Avg Reward : -2774.11
+Episode : 174 sum_costs : -2743.75 Avg Reward : -2770.87
+Episode : 175 sum_costs : -2867.49 Avg Reward : -2769.45
+Episode : 176 sum_costs : -2859.01 Avg Reward : -2768.68
+Episode : 177 sum_costs : -2660.07 Avg Reward : -2764.89
+Episode : 178 sum_costs : -2749.25 Avg Reward : -2762.54
+Episode : 179 sum_costs : -2786.61 Avg Reward : -2761.94
+Episode : 180 sum_costs : -2632.49 Avg Reward : -2758.23
+Episode : 181 sum_costs : -2838.89 Avg Reward : -2756.47
+Episode : 182 sum_costs : -2877.26 Avg Reward : -2755.57
+Episode : 183 sum_costs : -2783.30 Avg Reward : -2753.47
+Episode : 184 sum_costs : -2565.28 Avg Reward : -2752.13
+Episode : 185 sum_costs : -2882.34 Avg Reward : -2753.00
+Episode : 186 sum_costs : -2884.80 Avg Reward : -2752.84
+Episode : 187 sum_costs : -2715.78 Avg Reward : -2749.43
+Episode : 188 sum_costs : -2388.69 Avg Reward : -2744.79
+Episode : 189 sum_costs : -2940.58 Avg Reward : -2747.91
+Episode : 190 sum_costs : -2295.72 Avg Reward : -2741.67
+Episode : 191 sum_costs : -2714.04 Avg Reward : -2741.98
+Episode : 192 sum_costs : -2874.33 Avg Reward : -2740.37
+Episode : 193 sum_costs : -2796.66 Avg Reward : -2739.89
+Episode : 194 sum_costs : -2858.95 Avg Reward : -2738.77
+Episode : 195 sum_costs : -2876.32 Avg Reward : -2737.90
+Episode : 196 sum_costs : -2714.33 Avg Reward : -2734.84
+Episode : 197 sum_costs : -2901.52 Avg Reward : -2733.43
+Episode : 198 sum_costs : -2886.16 Avg Reward : -2734.54
+Episode : 199 sum_costs : -2846.27 Avg Reward : -2733.03
+Saving model...
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+models/double_pendulum/1000_episodes200_episode
+Episode : 200 sum_costs : -2846.69 Avg Reward : -2731.50
+Episode : 201 sum_costs : -2759.25 Avg Reward : -2730.97
+Episode : 202 sum_costs : -2840.26 Avg Reward : -2730.29
+Episode : 203 sum_costs : -2473.52 Avg Reward : -2726.84
+Episode : 204 sum_costs : -2893.46 Avg Reward : -2727.50
+Episode : 205 sum_costs : -2895.25 Avg Reward : -2727.19
+Episode : 206 sum_costs : -2888.27 Avg Reward : -2726.40
+Episode : 207 sum_costs : -2888.59 Avg Reward : -2726.59
+Episode : 208 sum_costs : -2825.13 Avg Reward : -2728.71
+Episode : 209 sum_costs : -2957.26 Avg Reward : -2730.25
+Episode : 210 sum_costs : -2852.97 Avg Reward : -2730.98
+Episode : 211 sum_costs : -2389.84 Avg Reward : -2727.82
+Episode : 212 sum_costs : -2267.03 Avg Reward : -2722.34
+Episode : 213 sum_costs : -2719.75 Avg Reward : -2723.76
+Episode : 214 sum_costs : -2901.62 Avg Reward : -2723.58
+Episode : 215 sum_costs : -2164.37 Avg Reward : -2719.55
+Episode : 216 sum_costs : -2894.71 Avg Reward : -2723.43
+Episode : 217 sum_costs : -2669.97 Avg Reward : -2721.37
+Episode : 218 sum_costs : -2795.47 Avg Reward : -2723.99
+Episode : 219 sum_costs : -2906.08 Avg Reward : -2727.35
+Episode : 220 sum_costs : -2691.04 Avg Reward : -2727.66
+Episode : 221 sum_costs : -2773.43 Avg Reward : -2728.62
+Episode : 222 sum_costs : -2836.08 Avg Reward : -2729.03
+Episode : 223 sum_costs : -2832.40 Avg Reward : -2731.81
+Episode : 224 sum_costs : -2858.48 Avg Reward : -2732.72
+Episode : 225 sum_costs : -2809.06 Avg Reward : -2732.21
+Episode : 226 sum_costs : -2444.86 Avg Reward : -2729.33
+Episode : 227 sum_costs : -2684.28 Avg Reward : -2732.74
+Episode : 228 sum_costs : -2690.40 Avg Reward : -2732.53
+Episode : 229 sum_costs : -2796.43 Avg Reward : -2731.74
+Episode : 230 sum_costs : -2800.30 Avg Reward : -2732.03
+Episode : 231 sum_costs : -2670.25 Avg Reward : -2730.71
+Episode : 232 sum_costs : -2767.48 Avg Reward : -2730.86
+Episode : 233 sum_costs : -2782.82 Avg Reward : -2730.69
+Episode : 234 sum_costs : -2482.52 Avg Reward : -2726.21
+Episode : 235 sum_costs : -2574.38 Avg Reward : -2722.12
+Episode : 236 sum_costs : -2781.27 Avg Reward : -2720.16
+Episode : 237 sum_costs : -2828.16 Avg Reward : -2720.36
+Episode : 238 sum_costs : -2790.90 Avg Reward : -2719.42
+Episode : 239 sum_costs : -2858.04 Avg Reward : -2721.17
+Episode : 240 sum_costs : -2749.36 Avg Reward : -2721.93
+Episode : 241 sum_costs : -2802.96 Avg Reward : -2725.29
+Episode : 242 sum_costs : -2532.71 Avg Reward : -2722.86
+Episode : 243 sum_costs : -2723.07 Avg Reward : -2723.28
+Episode : 244 sum_costs : -2797.05 Avg Reward : -2722.04
+Episode : 245 sum_costs : -2824.59 Avg Reward : -2724.48
+Episode : 246 sum_costs : -2791.20 Avg Reward : -2726.32
+Episode : 247 sum_costs : -2333.38 Avg Reward : -2722.10
+Episode : 248 sum_costs : -2772.11 Avg Reward : -2723.45
+Episode : 249 sum_costs : -2419.48 Avg Reward : -2720.19
+Episode : 250 sum_costs : -2826.80 Avg Reward : -2724.46
+Episode : 251 sum_costs : -2829.83 Avg Reward : -2727.09
+Episode : 252 sum_costs : -2447.47 Avg Reward : -2723.06
+Episode : 253 sum_costs : -2387.55 Avg Reward : -2721.82
+Episode : 254 sum_costs : -2904.08 Avg Reward : -2723.14
+Episode : 255 sum_costs : -2787.16 Avg Reward : -2725.85
+Episode : 256 sum_costs : -2832.37 Avg Reward : -2725.70
+Episode : 257 sum_costs : -2545.28 Avg Reward : -2724.27
+Episode : 258 sum_costs : -2537.91 Avg Reward : -2725.27
+Episode : 259 sum_costs : -2842.71 Avg Reward : -2726.51
+Episode : 260 sum_costs : -2906.15 Avg Reward : -2730.85
+Episode : 261 sum_costs : -2422.83 Avg Reward : -2730.07
+Episode : 262 sum_costs : -2923.04 Avg Reward : -2732.43
+Episode : 263 sum_costs : -2907.20 Avg Reward : -2733.68
+Episode : 264 sum_costs : -2745.42 Avg Reward : -2734.60
+Episode : 265 sum_costs : -2849.17 Avg Reward : -2737.69
+Episode : 266 sum_costs : -2832.42 Avg Reward : -2737.40
+Episode : 267 sum_costs : -2267.12 Avg Reward : -2733.92
+Episode : 268 sum_costs : -2855.20 Avg Reward : -2736.23
+Episode : 269 sum_costs : -2868.56 Avg Reward : -2735.54
+Episode : 270 sum_costs : -2869.68 Avg Reward : -2735.97
+Episode : 271 sum_costs : -2253.28 Avg Reward : -2731.28
+Episode : 272 sum_costs : -2608.17 Avg Reward : -2729.55
+Episode : 273 sum_costs : -2829.94 Avg Reward : -2733.47
+Episode : 274 sum_costs : -2839.84 Avg Reward : -2734.43
+Episode : 275 sum_costs : -2627.91 Avg Reward : -2732.04
+Episode : 276 sum_costs : -2871.73 Avg Reward : -2732.16
+Episode : 277 sum_costs : -2862.79 Avg Reward : -2734.19
+Episode : 278 sum_costs : -2786.20 Avg Reward : -2734.56
+Episode : 279 sum_costs : -2431.36 Avg Reward : -2731.01
+Episode : 280 sum_costs : -2498.11 Avg Reward : -2729.66
+Episode : 281 sum_costs : -2454.82 Avg Reward : -2725.82
+Episode : 282 sum_costs : -2472.34 Avg Reward : -2721.78
+Episode : 283 sum_costs : -2698.03 Avg Reward : -2720.92
+Episode : 284 sum_costs : -2788.85 Avg Reward : -2723.16
+Episode : 285 sum_costs : -2739.53 Avg Reward : -2721.73
+Episode : 286 sum_costs : -2658.98 Avg Reward : -2719.47
+Episode : 287 sum_costs : -2639.36 Avg Reward : -2718.71
+Episode : 288 sum_costs : -2712.13 Avg Reward : -2721.94
+Episode : 289 sum_costs : -2543.83 Avg Reward : -2717.97
+Episode : 290 sum_costs : -2641.80 Avg Reward : -2721.44
+Episode : 291 sum_costs : -2467.92 Avg Reward : -2718.97
+Episode : 292 sum_costs : -2728.92 Avg Reward : -2717.52
+Episode : 293 sum_costs : -2688.32 Avg Reward : -2716.44
+Episode : 294 sum_costs : -2856.95 Avg Reward : -2716.42
+Episode : 295 sum_costs : -2621.98 Avg Reward : -2713.87
+Episode : 296 sum_costs : -2841.14 Avg Reward : -2715.14
+Episode : 297 sum_costs : -2791.44 Avg Reward : -2714.04
+Episode : 298 sum_costs : -2581.20 Avg Reward : -2710.99
+Episode : 299 sum_costs : -2498.17 Avg Reward : -2707.51
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+Saving model...
+models/double_pendulum/1000_episodes300_episode
+Episode : 300 sum_costs : -2711.53 Avg Reward : -2706.16
+Episode : 301 sum_costs : -2716.77 Avg Reward : -2705.73
+Episode : 302 sum_costs : -2234.06 Avg Reward : -2699.67
+Episode : 303 sum_costs : -2628.29 Avg Reward : -2701.22
+Episode : 304 sum_costs : -2756.48 Avg Reward : -2699.85
+Episode : 305 sum_costs : -2797.56 Avg Reward : -2698.87
+Episode : 306 sum_costs : -2795.76 Avg Reward : -2697.95
+Episode : 307 sum_costs : -2748.81 Avg Reward : -2696.55
+Episode : 308 sum_costs : -2741.67 Avg Reward : -2695.71
+Episode : 309 sum_costs : -2809.31 Avg Reward : -2694.24
+Episode : 310 sum_costs : -2775.46 Avg Reward : -2693.46
+Episode : 311 sum_costs : -2784.79 Avg Reward : -2697.41
+Episode : 312 sum_costs : -2749.59 Avg Reward : -2702.24
+Episode : 313 sum_costs : -2776.92 Avg Reward : -2702.81
+Episode : 314 sum_costs : -2750.10 Avg Reward : -2701.29
+Episode : 315 sum_costs : -2714.45 Avg Reward : -2706.79
+Episode : 316 sum_costs : -2766.15 Avg Reward : -2705.51
+Episode : 317 sum_costs : -2361.04 Avg Reward : -2702.42
+Episode : 318 sum_costs : -2764.35 Avg Reward : -2702.11
+Episode : 319 sum_costs : -2739.91 Avg Reward : -2700.44
+Episode : 320 sum_costs : -2785.84 Avg Reward : -2701.39
+Episode : 321 sum_costs : -2793.40 Avg Reward : -2701.59
+Episode : 322 sum_costs : -2770.81 Avg Reward : -2700.94
+Episode : 323 sum_costs : -2779.76 Avg Reward : -2700.41
+Episode : 324 sum_costs : -2731.57 Avg Reward : -2699.14
+Episode : 325 sum_costs : -2772.02 Avg Reward : -2698.77
+Episode : 326 sum_costs : -2808.26 Avg Reward : -2702.41
+Episode : 327 sum_costs : -2791.30 Avg Reward : -2703.48
+Episode : 328 sum_costs : -2757.58 Avg Reward : -2704.15
+Episode : 329 sum_costs : -2902.26 Avg Reward : -2705.21
+Episode : 330 sum_costs : -2799.39 Avg Reward : -2705.20
+Episode : 331 sum_costs : -2755.46 Avg Reward : -2706.05
+Episode : 332 sum_costs : -2756.43 Avg Reward : -2705.94
+Episode : 333 sum_costs : -2868.72 Avg Reward : -2706.80
+Episode : 334 sum_costs : -2731.96 Avg Reward : -2709.29
+Episode : 335 sum_costs : -2752.13 Avg Reward : -2711.07
+Episode : 336 sum_costs : -2711.40 Avg Reward : -2710.37
+Episode : 337 sum_costs : -2739.08 Avg Reward : -2709.48
+Episode : 338 sum_costs : -2682.88 Avg Reward : -2708.40
+Episode : 339 sum_costs : -2696.46 Avg Reward : -2706.79
+Episode : 340 sum_costs : -2680.31 Avg Reward : -2706.10
+Episode : 341 sum_costs : -2666.07 Avg Reward : -2704.73
+Episode : 342 sum_costs : -2751.89 Avg Reward : -2706.92
+Episode : 343 sum_costs : -2721.34 Avg Reward : -2706.90
+Episode : 344 sum_costs : -2700.51 Avg Reward : -2705.94
+Episode : 345 sum_costs : -2678.15 Avg Reward : -2704.47
+Episode : 346 sum_costs : -2744.36 Avg Reward : -2704.00
+Episode : 347 sum_costs : -2304.76 Avg Reward : -2703.72
+Episode : 348 sum_costs : -2719.26 Avg Reward : -2703.19
+Episode : 349 sum_costs : -2428.70 Avg Reward : -2703.28
+Episode : 350 sum_costs : -2760.47 Avg Reward : -2702.62
+Episode : 351 sum_costs : -2772.48 Avg Reward : -2702.04
+Episode : 352 sum_costs : -2792.01 Avg Reward : -2705.49
+Episode : 353 sum_costs : -2781.46 Avg Reward : -2709.43
+Episode : 354 sum_costs : -2841.32 Avg Reward : -2708.80
+Episode : 355 sum_costs : -2780.03 Avg Reward : -2708.73
+Episode : 356 sum_costs : -2615.58 Avg Reward : -2706.56
+Episode : 357 sum_costs : -2751.25 Avg Reward : -2708.62
+Episode : 358 sum_costs : -2759.31 Avg Reward : -2710.83
+Episode : 359 sum_costs : -2635.66 Avg Reward : -2708.76
+Episode : 360 sum_costs : -2760.55 Avg Reward : -2707.31
+Episode : 361 sum_costs : -2762.18 Avg Reward : -2710.70
+Episode : 362 sum_costs : -2746.58 Avg Reward : -2708.94
+Episode : 363 sum_costs : -2717.76 Avg Reward : -2707.04
+Episode : 364 sum_costs : -2677.94 Avg Reward : -2706.37
+Episode : 365 sum_costs : -2606.49 Avg Reward : -2703.94
+Episode : 366 sum_costs : -2732.18 Avg Reward : -2702.94
+Episode : 367 sum_costs : -2526.72 Avg Reward : -2705.53
+Episode : 368 sum_costs : -2801.50 Avg Reward : -2705.00
+Episode : 369 sum_costs : -2791.55 Avg Reward : -2704.23
+Episode : 370 sum_costs : -2538.68 Avg Reward : -2700.92
+Episode : 371 sum_costs : -2859.90 Avg Reward : -2706.98
+Episode : 372 sum_costs : -2411.32 Avg Reward : -2705.02
+Episode : 373 sum_costs : -2835.71 Avg Reward : -2705.07
+Episode : 374 sum_costs : -2833.85 Avg Reward : -2705.01
+Episode : 375 sum_costs : -2796.38 Avg Reward : -2706.70
+Episode : 376 sum_costs : -2774.35 Avg Reward : -2705.72
+Episode : 377 sum_costs : -2735.15 Avg Reward : -2704.45
+Episode : 378 sum_costs : -2743.41 Avg Reward : -2704.02
+Episode : 379 sum_costs : -2809.55 Avg Reward : -2707.80
+Episode : 380 sum_costs : -2417.47 Avg Reward : -2707.00
+Episode : 381 sum_costs : -2814.06 Avg Reward : -2710.59
+Episode : 382 sum_costs : -2708.16 Avg Reward : -2712.95
+Episode : 383 sum_costs : -2123.93 Avg Reward : -2707.20
+Episode : 384 sum_costs : -2814.32 Avg Reward : -2707.46
+Episode : 385 sum_costs : -2697.16 Avg Reward : -2707.04
+Episode : 386 sum_costs : -2816.70 Avg Reward : -2708.61
+Episode : 387 sum_costs : -2154.78 Avg Reward : -2703.77
+Episode : 388 sum_costs : -2805.12 Avg Reward : -2704.70
+Episode : 389 sum_costs : -2690.72 Avg Reward : -2706.17
+Episode : 390 sum_costs : -2844.71 Avg Reward : -2708.20
+Episode : 391 sum_costs : -2475.94 Avg Reward : -2708.28
+Episode : 392 sum_costs : -2944.98 Avg Reward : -2710.44
+Episode : 393 sum_costs : -2775.66 Avg Reward : -2711.31
+Episode : 394 sum_costs : -2856.03 Avg Reward : -2711.30
+Episode : 395 sum_costs : -2547.84 Avg Reward : -2710.56
+Episode : 396 sum_costs : -2808.42 Avg Reward : -2710.23
+Episode : 397 sum_costs : -2775.89 Avg Reward : -2710.08
+Episode : 398 sum_costs : -2822.51 Avg Reward : -2712.49
+Episode : 399 sum_costs : -2695.26 Avg Reward : -2714.46
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+Saving model...
+models/double_pendulum/1000_episodes400_episode
+Episode : 400 sum_costs : -2447.00 Avg Reward : -2711.82
+Episode : 401 sum_costs : -2768.54 Avg Reward : -2712.33
+Episode : 402 sum_costs : -2702.85 Avg Reward : -2717.02
+Episode : 403 sum_costs : -2774.60 Avg Reward : -2718.48
+Episode : 404 sum_costs : -2671.93 Avg Reward : -2717.64
+Episode : 405 sum_costs : -2325.35 Avg Reward : -2712.92
+Episode : 406 sum_costs : -2810.08 Avg Reward : -2713.06
+Episode : 407 sum_costs : -2818.71 Avg Reward : -2713.76
+Episode : 408 sum_costs : -2861.45 Avg Reward : -2714.96
+Episode : 409 sum_costs : -2767.23 Avg Reward : -2714.54
+Episode : 410 sum_costs : -2772.65 Avg Reward : -2714.51
+Episode : 411 sum_costs : -2775.04 Avg Reward : -2714.41
+Episode : 412 sum_costs : -2850.30 Avg Reward : -2715.42
+Episode : 413 sum_costs : -2740.16 Avg Reward : -2715.05
+Episode : 414 sum_costs : -2762.74 Avg Reward : -2715.18
+Episode : 415 sum_costs : -2537.81 Avg Reward : -2713.41
+Episode : 416 sum_costs : -2835.50 Avg Reward : -2714.10
+Episode : 417 sum_costs : -2759.46 Avg Reward : -2718.09
+Episode : 418 sum_costs : -2897.68 Avg Reward : -2719.42
+Episode : 419 sum_costs : -2844.24 Avg Reward : -2720.46
+Episode : 420 sum_costs : -2810.84 Avg Reward : -2720.71
+Episode : 421 sum_costs : -2750.33 Avg Reward : -2720.28
+Episode : 422 sum_costs : -2709.59 Avg Reward : -2719.67
+Episode : 423 sum_costs : -2739.59 Avg Reward : -2719.27
+Episode : 424 sum_costs : -2397.95 Avg Reward : -2715.93
+Episode : 425 sum_costs : -2746.27 Avg Reward : -2715.68
+Episode : 426 sum_costs : -2733.69 Avg Reward : -2714.93
+Episode : 427 sum_costs : -2735.52 Avg Reward : -2714.37
+Episode : 428 sum_costs : -2711.99 Avg Reward : -2713.92
+Episode : 429 sum_costs : -2725.13 Avg Reward : -2712.14
+Episode : 430 sum_costs : -2683.39 Avg Reward : -2710.98
+Episode : 431 sum_costs : -2673.49 Avg Reward : -2710.17
+Episode : 432 sum_costs : -2696.56 Avg Reward : -2709.57
+Episode : 433 sum_costs : -2643.34 Avg Reward : -2707.31
+Episode : 434 sum_costs : -2792.64 Avg Reward : -2707.92
+Episode : 435 sum_costs : -2679.78 Avg Reward : -2707.20
+Episode : 436 sum_costs : -2670.48 Avg Reward : -2706.79
+Episode : 437 sum_costs : -2700.09 Avg Reward : -2706.40
+Episode : 438 sum_costs : -2724.98 Avg Reward : -2706.82
+Episode : 439 sum_costs : -2711.08 Avg Reward : -2706.96
+Episode : 440 sum_costs : -2670.29 Avg Reward : -2706.86
+Episode : 441 sum_costs : -2732.80 Avg Reward : -2707.53
+Episode : 442 sum_costs : -2681.05 Avg Reward : -2706.82
+Episode : 443 sum_costs : -2741.50 Avg Reward : -2707.02
+Episode : 444 sum_costs : -2709.37 Avg Reward : -2707.11
+Episode : 445 sum_costs : -2668.11 Avg Reward : -2707.01
+Episode : 446 sum_costs : -2685.91 Avg Reward : -2706.43
+Episode : 447 sum_costs : -2722.08 Avg Reward : -2710.60
+Episode : 448 sum_costs : -2703.03 Avg Reward : -2710.44
+Episode : 449 sum_costs : -2685.76 Avg Reward : -2713.01
+Episode : 450 sum_costs : -2704.15 Avg Reward : -2712.45
+Episode : 451 sum_costs : -2756.59 Avg Reward : -2712.29
+Episode : 452 sum_costs : -2753.41 Avg Reward : -2711.90
+Episode : 453 sum_costs : -2685.77 Avg Reward : -2710.94
+Episode : 454 sum_costs : -2762.75 Avg Reward : -2710.16
+Episode : 455 sum_costs : -2752.90 Avg Reward : -2709.89
+Episode : 456 sum_costs : -2693.30 Avg Reward : -2710.66
+Episode : 457 sum_costs : -2727.43 Avg Reward : -2710.43
+Episode : 458 sum_costs : -2736.90 Avg Reward : -2710.20
+Episode : 459 sum_costs : -2731.06 Avg Reward : -2711.16
+Episode : 460 sum_costs : -2718.70 Avg Reward : -2710.74
+Episode : 461 sum_costs : -2679.91 Avg Reward : -2709.92
+Episode : 462 sum_costs : -2737.55 Avg Reward : -2709.82
+Episode : 463 sum_costs : -2724.46 Avg Reward : -2709.89
+Episode : 464 sum_costs : -2718.41 Avg Reward : -2710.30
+Episode : 465 sum_costs : -2764.01 Avg Reward : -2711.87
+Episode : 466 sum_costs : -2626.10 Avg Reward : -2710.81
+Episode : 467 sum_costs : -2752.81 Avg Reward : -2713.07
+Episode : 468 sum_costs : -2754.27 Avg Reward : -2712.60
+Episode : 469 sum_costs : -2758.46 Avg Reward : -2712.27
+Episode : 470 sum_costs : -2756.87 Avg Reward : -2714.45
+Episode : 471 sum_costs : -2810.82 Avg Reward : -2713.96
+Episode : 472 sum_costs : -2802.41 Avg Reward : -2717.87
+Episode : 473 sum_costs : -2776.51 Avg Reward : -2717.28
+Episode : 474 sum_costs : -2745.60 Avg Reward : -2716.40
+Episode : 475 sum_costs : -2773.68 Avg Reward : -2716.17
+Episode : 476 sum_costs : -2760.69 Avg Reward : -2716.03
+Episode : 477 sum_costs : -2784.27 Avg Reward : -2716.52
+Episode : 478 sum_costs : -2791.11 Avg Reward : -2717.00
+Episode : 479 sum_costs : -2760.53 Avg Reward : -2716.51
+Episode : 480 sum_costs : -2715.58 Avg Reward : -2719.49
+Episode : 481 sum_costs : -2786.93 Avg Reward : -2719.22
+Episode : 482 sum_costs : -2742.65 Avg Reward : -2719.57
+Episode : 483 sum_costs : -2776.31 Avg Reward : -2726.09
+Episode : 484 sum_costs : -2782.28 Avg Reward : -2725.77
+Episode : 485 sum_costs : -2802.65 Avg Reward : -2726.82
+Episode : 486 sum_costs : -2779.54 Avg Reward : -2726.45
+Episode : 487 sum_costs : -2812.11 Avg Reward : -2733.03
+Episode : 488 sum_costs : -2777.02 Avg Reward : -2732.74
+Episode : 489 sum_costs : -2699.45 Avg Reward : -2732.83
+Episode : 490 sum_costs : -2828.62 Avg Reward : -2732.67
+Episode : 491 sum_costs : -2798.48 Avg Reward : -2735.90
+Episode : 492 sum_costs : -2814.16 Avg Reward : -2734.59
+Episode : 493 sum_costs : -2842.62 Avg Reward : -2735.26
+Episode : 494 sum_costs : -2760.88 Avg Reward : -2734.31
+Episode : 495 sum_costs : -2763.71 Avg Reward : -2736.46
+Episode : 496 sum_costs : -2827.73 Avg Reward : -2736.66
+Episode : 497 sum_costs : -2792.22 Avg Reward : -2736.82
+Episode : 498 sum_costs : -2791.01 Avg Reward : -2736.51
+Episode : 499 sum_costs : -2260.21 Avg Reward : -2732.16
+Saving model...
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+models/double_pendulum/1000_episodes500_episode
+Episode : 500 sum_costs : -2838.35 Avg Reward : -2736.07
+Episode : 501 sum_costs : -2803.13 Avg Reward : -2736.42
+Episode : 502 sum_costs : -2800.87 Avg Reward : -2737.40
+Episode : 503 sum_costs : -2840.43 Avg Reward : -2738.05
+Episode : 504 sum_costs : -2767.14 Avg Reward : -2739.01
+Episode : 505 sum_costs : -2838.65 Avg Reward : -2744.14
+Episode : 506 sum_costs : -2409.10 Avg Reward : -2740.13
+Episode : 507 sum_costs : -2779.15 Avg Reward : -2739.73
+Episode : 508 sum_costs : -2778.64 Avg Reward : -2738.91
+Episode : 509 sum_costs : -2810.75 Avg Reward : -2739.34
+Episode : 510 sum_costs : -2607.13 Avg Reward : -2737.69
+Episode : 511 sum_costs : -2489.43 Avg Reward : -2734.83
+Episode : 512 sum_costs : -2772.22 Avg Reward : -2734.05
+Episode : 513 sum_costs : -2880.94 Avg Reward : -2735.46
+Episode : 514 sum_costs : -2856.70 Avg Reward : -2736.40
+Episode : 515 sum_costs : -2817.60 Avg Reward : -2739.19
+Episode : 516 sum_costs : -2850.39 Avg Reward : -2739.34
+Episode : 517 sum_costs : -2805.29 Avg Reward : -2739.80
+Episode : 518 sum_costs : -2826.40 Avg Reward : -2739.09
+Episode : 519 sum_costs : -2831.02 Avg Reward : -2738.96
+Episode : 520 sum_costs : -2789.68 Avg Reward : -2738.74
+Episode : 521 sum_costs : -2810.63 Avg Reward : -2739.35
+Episode : 522 sum_costs : -2799.08 Avg Reward : -2740.24
+Episode : 523 sum_costs : -2790.59 Avg Reward : -2740.75
+Episode : 524 sum_costs : -2784.99 Avg Reward : -2744.62
+Episode : 525 sum_costs : -2767.61 Avg Reward : -2744.84
+Episode : 526 sum_costs : -2870.32 Avg Reward : -2746.20
+Episode : 527 sum_costs : -2755.63 Avg Reward : -2746.40
+Episode : 528 sum_costs : -2842.86 Avg Reward : -2747.71
+Episode : 529 sum_costs : -2744.92 Avg Reward : -2747.91
+Episode : 530 sum_costs : -2791.24 Avg Reward : -2748.99
+Episode : 531 sum_costs : -2774.66 Avg Reward : -2750.00
+Episode : 532 sum_costs : -2764.96 Avg Reward : -2750.68
+Episode : 533 sum_costs : -2800.28 Avg Reward : -2752.25
+Episode : 534 sum_costs : -2715.80 Avg Reward : -2751.49
+Episode : 535 sum_costs : -2741.50 Avg Reward : -2752.10
+Episode : 536 sum_costs : -2715.60 Avg Reward : -2752.55
+Episode : 537 sum_costs : -2778.48 Avg Reward : -2753.34
+Episode : 538 sum_costs : -2757.11 Avg Reward : -2753.66
+Episode : 539 sum_costs : -2730.46 Avg Reward : -2753.85
+Episode : 540 sum_costs : -2746.51 Avg Reward : -2754.61
+Episode : 541 sum_costs : -2762.54 Avg Reward : -2754.91
+Episode : 542 sum_costs : -2717.83 Avg Reward : -2755.28
+Episode : 543 sum_costs : -2765.53 Avg Reward : -2755.52
+Episode : 544 sum_costs : -2716.80 Avg Reward : -2755.59
+Episode : 545 sum_costs : -2764.54 Avg Reward : -2756.56
+Episode : 546 sum_costs : -2719.33 Avg Reward : -2756.89
+Episode : 547 sum_costs : -2716.81 Avg Reward : -2756.84
+Episode : 548 sum_costs : -2717.85 Avg Reward : -2756.99
+Episode : 549 sum_costs : -2730.80 Avg Reward : -2757.44
+Episode : 550 sum_costs : -2585.59 Avg Reward : -2756.25
+Episode : 551 sum_costs : -2736.64 Avg Reward : -2756.05
+Episode : 552 sum_costs : -2770.77 Avg Reward : -2756.23
+Episode : 553 sum_costs : -2765.06 Avg Reward : -2757.02
+Episode : 554 sum_costs : -2649.31 Avg Reward : -2755.89
+Episode : 555 sum_costs : -2708.64 Avg Reward : -2755.44
+Episode : 556 sum_costs : -2654.95 Avg Reward : -2755.06
+Episode : 557 sum_costs : -2716.12 Avg Reward : -2754.95
+Episode : 558 sum_costs : -2682.44 Avg Reward : -2754.40
+Episode : 559 sum_costs : -2717.50 Avg Reward : -2754.27
+Episode : 560 sum_costs : -2834.78 Avg Reward : -2755.43
+Episode : 561 sum_costs : -2748.50 Avg Reward : -2756.11
+Episode : 562 sum_costs : -2816.71 Avg Reward : -2756.91
+Episode : 563 sum_costs : -2825.29 Avg Reward : -2757.91
+Episode : 564 sum_costs : -2746.92 Avg Reward : -2758.20
+Episode : 565 sum_costs : -2779.94 Avg Reward : -2758.36
+Episode : 566 sum_costs : -2762.02 Avg Reward : -2759.72
+Episode : 567 sum_costs : -2809.31 Avg Reward : -2760.28
+Episode : 568 sum_costs : -2836.33 Avg Reward : -2761.10
+Episode : 569 sum_costs : -2815.20 Avg Reward : -2761.67
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 258, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1769, in _slice_helper
+    stacked_indices = _tensordot(stacked_indices, index_scaling)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1768, in _tensordot
+    return math_ops.reduce_sum(a * b, axis=-1)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1459, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1819, in _mul_dispatch
+    return multiply(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 530, in multiply
+    return gen_math_ops.mul(x, y, name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6576, in mul
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 258, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1769, in _slice_helper
+    stacked_indices = _tensordot(stacked_indices, index_scaling)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1768, in _tensordot
+    return math_ops.reduce_sum(a * b, axis=-1)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1459, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1819, in _mul_dispatch
+    return multiply(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 530, in multiply
+    return gen_math_ops.mul(x, y, name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6576, in mul
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

@@ -1,0 +1,98 @@
+
+Episode : 1 sum_costs : -588.17 Avg Reward : -588.17
+Episode : 2 sum_costs : -846.00 Avg Reward : -717.09
+Episode : 3 sum_costs : -448.69 Avg Reward : -627.62
+Episode : 4 sum_costs : -408.10 Avg Reward : -572.74
+Episode : 5 sum_costs : -461.75 Avg Reward : -550.54
+Episode : 6 sum_costs : -383.01 Avg Reward : -522.62
+Episode : 7 sum_costs : -531.55 Avg Reward : -523.90
+Episode : 8 sum_costs : -348.67 Avg Reward : -501.99
+Episode : 9 sum_costs : -391.81 Avg Reward : -489.75
+Traceback (most recent call last):
+  File "DQN template.py", line 399, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 259, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1770, in _slice_helper
+    flat_shape = array_ops.concat(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1839, in concat
+    return gen_array_ops.concat_v2(values=values, axis=axis, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 1267, in concat_v2
+    return concat_v2_eager_fallback(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 1298, in concat_v2_eager_fallback
+    _attr_T, values = _execute.args_to_matching_eager(list(values), ctx, [])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 269, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 269, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1642, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 344, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 268, in constant
+    return _constant_impl(value, dtype, shape, name, verify_shape=False,
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 280, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 305, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 103, in convert_to_eager_tensor
+    return ops.EagerTensor(value, ctx.device_name, dtype)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 399, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 259, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1770, in _slice_helper
+    flat_shape = array_ops.concat(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1839, in concat
+    return gen_array_ops.concat_v2(values=values, axis=axis, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 1267, in concat_v2
+    return concat_v2_eager_fallback(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 1298, in concat_v2_eager_fallback
+    _attr_T, values = _execute.args_to_matching_eager(list(values), ctx, [])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 269, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 269, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1642, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 344, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 268, in constant
+    return _constant_impl(value, dtype, shape, name, verify_shape=False,
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 280, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 305, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/constant_op.py", line 103, in convert_to_eager_tensor
+    return ops.EagerTensor(value, ctx.device_name, dtype)
+KeyboardInterrupt

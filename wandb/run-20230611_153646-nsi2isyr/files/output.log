@@ -1,0 +1,36 @@
+
+Episode : 1 sum_costs : -2589.02 Avg Reward : -2589.02
+Episode : 2 sum_costs : -2520.71 Avg Reward : -2554.86
+Episode : 3 sum_costs : -2737.76 Avg Reward : -2615.83
+Episode : 4 sum_costs : -2280.00 Avg Reward : -2531.87
+Episode : 5 sum_costs : -2451.73 Avg Reward : -2515.85
+Episode : 6 sum_costs : -2469.20 Avg Reward : -2508.07
+Episode : 7 sum_costs : -2532.32 Avg Reward : -2511.54
+Episode : 8 sum_costs : -2403.28 Avg Reward : -2498.00
+Episode : 9 sum_costs : -2852.10 Avg Reward : -2537.35
+Episode : 10 sum_costs : -2795.32 Avg Reward : -2563.14
+Episode : 11 sum_costs : -3018.59 Avg Reward : -2604.55
+Traceback (most recent call last):
+  File "DQN template.py", line 388, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 267, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 116, in _gradient_function
+    def _gradient_function(op_name, attr_tuple, num_inputs, inputs, outputs,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 388, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 267, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 116, in _gradient_function
+    def _gradient_function(op_name, attr_tuple, num_inputs, inputs, outputs,
+KeyboardInterrupt

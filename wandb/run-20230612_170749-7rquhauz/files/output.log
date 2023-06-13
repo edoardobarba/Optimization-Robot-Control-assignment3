@@ -1,0 +1,46 @@
+
+Episode : 1 sum_costs : -3132.01 Avg Reward : -3132.01
+Episode : 2 sum_costs : -3051.04 Avg Reward : -3091.52
+Episode : 3 sum_costs : -3142.57 Avg Reward : -3108.54
+Episode : 4 sum_costs : -3187.82 Avg Reward : -3128.36
+Episode : 5 sum_costs : -3183.03 Avg Reward : -3139.29
+Episode : 6 sum_costs : -3219.82 Avg Reward : -3152.71
+Episode : 7 sum_costs : -3195.52 Avg Reward : -3158.83
+Episode : 8 sum_costs : -3109.99 Avg Reward : -3152.72
+Episode : 9 sum_costs : -3084.59 Avg Reward : -3145.15
+Episode : 10 sum_costs : -3032.70 Avg Reward : -3133.91
+Episode : 11 sum_costs : -3172.75 Avg Reward : -3137.44
+Episode : 12 sum_costs : -3104.39 Avg Reward : -3134.69
+Episode : 13 sum_costs : -3083.37 Avg Reward : -3130.74
+Episode : 14 sum_costs : -3181.21 Avg Reward : -3134.34
+Episode : 15 sum_costs : -3093.63 Avg Reward : -3131.63
+Episode : 16 sum_costs : -2951.06 Avg Reward : -3120.34
+Episode : 17 sum_costs : -3102.18 Avg Reward : -3119.28
+Episode : 18 sum_costs : -3072.14 Avg Reward : -3116.66
+Episode : 19 sum_costs : -3046.04 Avg Reward : -3112.94
+Episode : 20 sum_costs : -3063.38 Avg Reward : -3110.46
+Episode : 21 sum_costs : -3162.28 Avg Reward : -3112.93
+Episode : 22 sum_costs : -3166.42 Avg Reward : -3115.36
+Episode : 23 sum_costs : -3178.54 Avg Reward : -3118.11
+Episode : 24 sum_costs : -3197.21 Avg Reward : -3121.40
+Episode : 25 sum_costs : -3228.26 Avg Reward : -3125.68
+Traceback (most recent call last):
+  File "DQN template.py", line 392, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 220, in train_dqn
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 171, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 308, in dynamics
+    time.sleep(1e-2)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 392, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 220, in train_dqn
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 171, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 308, in dynamics
+    time.sleep(1e-2)
+KeyboardInterrupt

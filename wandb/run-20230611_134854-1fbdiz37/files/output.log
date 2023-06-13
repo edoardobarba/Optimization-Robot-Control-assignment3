@@ -1,0 +1,39 @@
+Warning: window 'pinocchio' already created.
+The previously created objects will not be destroyed and do not have to be created again.
+[-6.  -5.4 -4.8 -4.2 -3.6 -3.  -2.4 -1.8 -1.2 -0.6  0.   0.6  1.2  1.8
+  2.4  3.   3.6  4.2  4.8  5.4  6. ]
+save_dir:  models/double_pendulum/3000_episodes
+Episode:  1
+WARNING:tensorflow:No training configuration found in save file, so the model was *not* compiled. Compile it manually.
+Episode : 1 total_reward : -3272.37 Avg Reward : -3272.37
+Episode:  2
+Episode : 2 total_reward : -3272.37 Avg Reward : -3272.37
+Episode:  3
+Episode : 3 total_reward : -3272.37 Avg Reward : -3272.37
+Episode:  4
+Episode : 4 total_reward : -3272.37 Avg Reward : -3272.37
+Episode:  5
+Episode : 5 total_reward : -3272.37 Avg Reward : -3272.37
+Episode:  6
+Traceback (most recent call last):
+  File "DQN template.py", line 382, in <module>
+    print("save_dir: ", save_dir)
+  File "DQN template.py", line 325, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 167, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 301, in dynamics
+    time.sleep(1e-2)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 382, in <module>
+    print("save_dir: ", save_dir)
+  File "DQN template.py", line 325, in test_dqn
+    next_x, reward = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 167, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 301, in dynamics
+    time.sleep(1e-2)
+KeyboardInterrupt
+Episode : 6 total_reward : -3272.37 Avg Reward : -3272.37
+Episode:  7

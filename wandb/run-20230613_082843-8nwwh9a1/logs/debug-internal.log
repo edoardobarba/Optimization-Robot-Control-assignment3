@@ -1,0 +1,84 @@
+2023-06-13 08:28:43,289 INFO    StreamThr :744481 [internal.py:wandb_internal():86] W&B internal server running at pid: 744481, started at: 2023-06-13 08:28:43.288805
+2023-06-13 08:28:43,291 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: status
+2023-06-13 08:28:43,293 INFO    WriterThread:744481 [datastore.py:open_for_write():85] open: /home/edo/Desktop/orc/03_assignment/wandb/run-20230613_082843-8nwwh9a1/run-8nwwh9a1.wandb
+2023-06-13 08:28:43,295 DEBUG   SenderThread:744481 [sender.py:send():375] send: header
+2023-06-13 08:28:43,314 DEBUG   SenderThread:744481 [sender.py:send():375] send: run
+2023-06-13 08:28:46,555 INFO    SenderThread:744481 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connection.py", line 200, in _new_conn
+    sock = connection.create_connection(
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connection.py", line 604, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connection.py", line 207, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fd07c456490>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/edo/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd07c456490>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd07c456490>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+2023-06-13 08:28:48,317 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:28:53,319 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:28:58,322 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:03,324 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:08,326 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:13,328 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:18,330 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:23,332 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:28,334 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:33,336 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:38,340 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-13 08:29:43,342 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: cancel
+2023-06-13 08:29:43,344 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: cancel
+2023-06-13 08:29:43,344 DEBUG   SenderThread:744481 [sender.py:send():384] Record cancelled: run
+2023-06-13 08:29:43,345 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: status_report
+2023-06-13 08:29:43,396 DEBUG   HandlerThread:744481 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-13 08:29:43,396 INFO    HandlerThread:744481 [handler.py:finish():842] shutting down handler
+2023-06-13 08:29:44,345 INFO    SenderThread:744481 [sender.py:finish():1550] shutting down sender
+2023-06-13 08:29:44,346 INFO    WriterThread:744481 [datastore.py:close():298] close: /home/edo/Desktop/orc/03_assignment/wandb/run-20230613_082843-8nwwh9a1/run-8nwwh9a1.wandb

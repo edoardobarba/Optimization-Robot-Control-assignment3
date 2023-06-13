@@ -71,7 +71,7 @@ class Pendulum:
         self.NDT        = 1      # Number of Euler steps per integration (internal)
         self.Kf         = .10    # Friction coefficient
         self.vmax       = 8.0    # Max velocity (clipped if larger)
-        self.umax       = 6.0    # Max torque   (clipped if larger)
+        self.umax       = 2.0    # Max torque   (clipped if larger)
         self.withSinCos = False  # If true, state is [cos(q),sin(q),qdot], else [q,qdot]
 
     def createPendulum(self, nbJoint, rootId=0, prefix='', jointPlacement=None):
@@ -137,13 +137,17 @@ class Pendulum:
             # print("v0: ")
             # print(v0)
             #if self.nx == 2: 
-            #x0 = np.vstack([q0,v0])
-            # print("x0: ")
-            # print(x0)
-            #print("stack x0: ", x0)
-            #else:
-            x0 = np.concatenate((q0,v0))
+
+            x0 = np.vstack([q0,v0])
+            # print(np.shape(x0))
+            # # # print("x0: ")
+            # # # print(x0)
+            # print("stack x0: ", x0)
+            # #else:
+            # x0 = np.concatenate((q0,v0))
+            
             # print("concatenate x0: ", x0)
+            # print(np.shape(x0))
             
             #x0 = x0.reshape((2, 1))
 
@@ -179,7 +183,7 @@ class Pendulum:
         pin.framesKinematics(self.model, self.data,q)
         return self.data.oMf[1].translation[2,0]
 
-    def dynamics(self, x, u, display=True):
+    def dynamics(self, x, u, display=False):
         '''
         Dynamic function: x,u -> xnext=f(x,y).
         Put the result in x (the initial value is destroyed). 
@@ -191,12 +195,15 @@ class Pendulum:
         sumsq    = lambda x : np.sum(np.square(x))
 
         cost = 0.0
-        # print("x:")
+        # print("x in dynamics:")
         # print(x)
         # print("")
-
-        q = modulePi(x[:self.nq])
-        v = x[self.nq:]
+        if self.nx == 2:
+            q = modulePi(x[:self.nq])
+            v = x[self.nq:]
+        else:
+            q = modulePi(x[0])
+            v = x[1]
         # print("q:")
         # print(q)
         # print("")
@@ -221,87 +228,59 @@ class Pendulum:
             M   = self.data.M
             b   = self.data.nle
 
-            # print("u")
-            # print(u)
-            # print("self.Kf*v")
-            # print(self.Kf*v)
-            # print("u-self.Kf*v-b")
-            # print(u-self.Kf*v-b)
-            
-            # print("M")
-            # print(M)
-            # print("b")
-            # print(b)
-            #if self.nx == 2: 
-            #a   = inv(M)*(u-self.Kf*v-b)
-
-            #else:
-   
             a   = np.dot(inv(M),(u-self.Kf*v-b))
-
-            #print("a")
-            #a = np.linalg.solve(M, u - self.Kf * v - b)
-            #print(a)
-            
-            #print("new a: ", a)
 
             a   = a.reshape(self.nv) + np.random.randn(self.nv)*self.noise_stddev
             self.a = a
-            #print("after reshape: ", a)
             q    += (v+0.5*DT*a)*DT
             v    += a*DT
 
             #print(q)
             q_first = q[0]
 
-
             q_goal = 0
     
             delta_q = 0
-            delta_q += 0.7*sumsq(q_goal-abs(q_first))
+            
             #print(q)
             if len(q)==2:
+                delta_q += 0.7*sumsq(q_goal-abs(q_first))
                 q_second = q[1]
                 #q2_vertical = q_first + q_second
                 #delta_q += sumsq(q_goal-abs(q2_vertical))
-                delta_q += 0.15*sumsq(q_goal-abs(q_second))
+                delta_q += 0.3*sumsq(q_goal-abs(q_second))
                 
-                q2_vertical = q_first + q_second
-                if (q2_vertical > np.pi):
-                    q2_vertical = -(2*np.pi-q2_vertical)
+                # q2_vertical = q_first + q_second
+                # if (q2_vertical > np.pi):
+                #     q2_vertical = -(2*np.pi-q2_vertical)
 
-                delta_q += 0.15*sumsq(q_goal-abs(q2_vertical))
+                # delta_q += 0.15*sumsq(q_goal-abs(q2_vertical))
+
+            else:
+                delta_q += sumsq(q_goal-abs(q_first))      
             
-                
-            
-            # Wq = 0.9
+            # Wq = 0.7
             # Wv = 1-Wq
-
-            #cost += (sumsq(q) + 1e-1*sumsq(v) + 1e-3*sumsq(u))*DT # cost function
-
-            #cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+            # cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+                
             cost += delta_q
-            # print("q_first")
-            # print(q_first)
-            # print("delta_q")
-            # print(delta_q)
-            # print("COST")
-            # print(cost)
-            # time.sleep(0.5)
-
-            # if constrained:
-            #     if abs(q[1]) < (np.pi/4): 
-            #         print("penalizzo constraint")
-            #         print("cost before: ", cost)
-            #         cost += 100*q[1]
-            #         print("cost after: ", cost)
 
             if display:
                 self.display(q)
-                time.sleep(1e-9)
+                time.sleep(1e-2)
 
-        x[:self.nq] = modulePi(q)
-        x[self.nq:] = np.clip(v,-self.vmax,self.vmax)
+        
+        if self.nx == 4:
+            x[0] = modulePi(q)
+            x[1] = np.clip(v,-self.vmax,self.vmax)
+
+        else:
+            x[:self.nq] = modulePi(q)
+            x[self.nq:] = np.clip(v,-self.vmax,self.vmax)
+
+
+        # print(x)
+        # time.sleep(5)
         
         return x, -cost
      
@@ -319,20 +298,20 @@ if __name__ == "__main__":
     # print(x)
     q1 = x[0]
     q2 = x[1]
-    print("q1: ", q1)
-    print("q2: ", q2)
+    # print("q1: ", q1)
+    # print("q2: ", q2)
     q2_vertical = q1 + q2
     if (q2_vertical>np.pi):
          q2_vertical = -(2*np.pi-q2_vertical)
-    print("q2_vertical: ", q2_vertical)
-    print(type(env.x))
-    print(env.x)
+    # print("q2_vertical: ", q2_vertical)
+    # print(type(env.x))
+    # print(env.x)
     env.render()
     #time.sleep(20)
 
     for i in range(10000):
         x, reward = env.step()
-        print(reward)
+        # print(reward)
         env.render()
         time.sleep(2)
         

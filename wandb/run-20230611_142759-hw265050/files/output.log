@@ -1,0 +1,86 @@
+
+Episode : 1 sum_costs : -547.87 Avg Reward : -547.87
+Episode : 2 sum_costs : -255.01 Avg Reward : -401.44
+Episode : 3 sum_costs : -197.14 Avg Reward : -333.34
+Episode : 4 sum_costs : -195.84 Avg Reward : -298.97
+Episode : 5 sum_costs : -236.01 Avg Reward : -286.37
+Episode : 6 sum_costs : -168.10 Avg Reward : -266.66
+Episode : 7 sum_costs : -181.56 Avg Reward : -254.50
+Episode : 8 sum_costs : -557.38 Avg Reward : -292.36
+Episode : 9 sum_costs : -182.58 Avg Reward : -280.17
+Episode : 10 sum_costs : -208.76 Avg Reward : -273.03
+Episode : 11 sum_costs : -381.02 Avg Reward : -282.84
+Episode : 12 sum_costs : -393.45 Avg Reward : -292.06
+Episode : 13 sum_costs : -274.33 Avg Reward : -290.70
+Episode : 14 sum_costs : -296.75 Avg Reward : -291.13
+Episode : 15 sum_costs : -582.53 Avg Reward : -310.56
+Episode : 16 sum_costs : -400.01 Avg Reward : -316.15
+Episode : 17 sum_costs : -280.74 Avg Reward : -314.06
+Episode : 18 sum_costs : -334.10 Avg Reward : -315.18
+Episode : 19 sum_costs : -271.75 Avg Reward : -312.89
+Episode : 20 sum_costs : -547.97 Avg Reward : -324.65
+Episode : 21 sum_costs : -563.37 Avg Reward : -336.01
+Episode : 22 sum_costs : -286.06 Avg Reward : -333.74
+Episode : 23 sum_costs : -263.09 Avg Reward : -330.67
+Episode : 24 sum_costs : -160.61 Avg Reward : -323.58
+Episode : 25 sum_costs : -297.50 Avg Reward : -322.54
+Traceback (most recent call last):
+  File "DQN template.py", line 380, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 245, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1134, in __call__
+    namescope_stack.enter_context(tf.name_scope(name_scope))
+  File "/usr/lib/python3.8/contextlib.py", line 425, in enter_context
+    result = _cm_type.__enter__(cm)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 7027, in __enter__
+    if ctx.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 978, in executing_eagerly
+    return self._thread_local_data.is_eager
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 380, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 245, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1134, in __call__
+    namescope_stack.enter_context(tf.name_scope(name_scope))
+  File "/usr/lib/python3.8/contextlib.py", line 425, in enter_context
+    result = _cm_type.__enter__(cm)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 7027, in __enter__
+    if ctx.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 978, in executing_eagerly
+    return self._thread_local_data.is_eager
+KeyboardInterrupt

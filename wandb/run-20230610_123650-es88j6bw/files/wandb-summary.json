@@ -1,1 +1,1 @@
-{"episode": 1, "total_reward": -1580.8128338719941, "avg_reward": -1580.8128338719941, "_timestamp": 1686393464.7402272, "_runtime": 54.45224714279175, "_step": 0}
+{"episode": 17, "total_reward": -2426.4437680640617, "avg_reward": -2386.1954213079102, "_timestamp": 1686394079.9730673, "_runtime": 669.6850872039795, "_step": 16, "_wandb": {"runtime": 696}}

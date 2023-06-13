@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "DQN template.py", line 392, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 220, in train_dqn
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 171, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 227, in dynamics
+    pin.computeAllTerms(self.model, self.data, q, v)
+Boost.Python.ArgumentError: Python argument types in
+    pinocchio.pinocchio_pywrap.computeAllTerms(Model, Data, numpy.ndarray, numpy.ndarray)
+did not match C++ signature:
+    computeAllTerms(pinocchio::ModelTpl<double, 0, pinocchio::JointCollectionDefaultTpl> model, pinocchio::DataTpl<double, 0, pinocchio::JointCollectionDefaultTpl> {lvalue} data, Eigen::Matrix<double, -1, 1, 0, -1, 1> q, Eigen::Matrix<double, -1, 1, 0, -1, 1> v)
+Traceback (most recent call last):
+  File "DQN template.py", line 392, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, goon=False)
+  File "DQN template.py", line 220, in train_dqn
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 171, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 227, in dynamics
+    pin.computeAllTerms(self.model, self.data, q, v)
+Boost.Python.ArgumentError: Python argument types in
+    pinocchio.pinocchio_pywrap.computeAllTerms(Model, Data, numpy.ndarray, numpy.ndarray)
+did not match C++ signature:
+    computeAllTerms(pinocchio::ModelTpl<double, 0, pinocchio::JointCollectionDefaultTpl> model, pinocchio::DataTpl<double, 0, pinocchio::JointCollectionDefaultTpl> {lvalue} data, Eigen::Matrix<double, -1, 1, 0, -1, 1> q, Eigen::Matrix<double, -1, 1, 0, -1, 1> v)
