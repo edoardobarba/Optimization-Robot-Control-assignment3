@@ -1,0 +1,104 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2408.82 Avg Reward : -2408.82
+Episode : 2 sum_costs : -2247.53 Avg Reward : -2328.18
+Episode : 3 sum_costs : -2206.61 Avg Reward : -2287.65
+Episode : 4 sum_costs : -2230.11 Avg Reward : -2273.27
+Episode : 5 sum_costs : -2304.81 Avg Reward : -2279.57
+Episode : 6 sum_costs : -2309.18 Avg Reward : -2284.51
+Episode : 7 sum_costs : -1773.43 Avg Reward : -2211.50
+Episode : 8 sum_costs : -2405.22 Avg Reward : -2235.71
+Episode : 9 sum_costs : -1891.93 Avg Reward : -2197.52
+Episode : 10 sum_costs : -2308.63 Avg Reward : -2208.63
+Episode : 11 sum_costs : -2434.24 Avg Reward : -2229.14
+Episode : 12 sum_costs : -1686.85 Avg Reward : -2183.95
+Episode : 13 sum_costs : -2229.95 Avg Reward : -2187.49
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 237, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 939, in assign_add
+    ops.convert_to_tensor(delta, dtype=self.dtype),
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1602, in convert_to_tensor
+    if dtype is not None and not dtype.is_compatible_with(value.dtype):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 203, in is_compatible_with
+    return self._type_enum in (other.as_datatype_enum,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 237, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 939, in assign_add
+    ops.convert_to_tensor(delta, dtype=self.dtype),
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1602, in convert_to_tensor
+    if dtype is not None and not dtype.is_compatible_with(value.dtype):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py", line 203, in is_compatible_with
+    return self._type_enum in (other.as_datatype_enum,
+KeyboardInterrupt

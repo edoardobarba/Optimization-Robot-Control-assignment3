@@ -1,0 +1,314 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2238.49 Avg Reward : -2238.49
+Episode : 2 sum_costs : -2043.97 Avg Reward : -2141.23
+Episode : 3 sum_costs : -1799.82 Avg Reward : -2027.43
+Episode : 4 sum_costs : -1916.42 Avg Reward : -1999.67
+Episode : 5 sum_costs : -2258.67 Avg Reward : -2051.47
+Episode : 6 sum_costs : -2350.33 Avg Reward : -2101.28
+Episode : 7 sum_costs : -2389.47 Avg Reward : -2142.45
+Episode : 8 sum_costs : -1752.20 Avg Reward : -2093.67
+Episode : 9 sum_costs : -2016.23 Avg Reward : -2085.07
+Episode : 10 sum_costs : -2389.09 Avg Reward : -2115.47
+Episode : 11 sum_costs : -2150.88 Avg Reward : -2118.69
+Episode : 12 sum_costs : -2201.04 Avg Reward : -2125.55
+Episode : 13 sum_costs : -2226.53 Avg Reward : -2133.32
+Episode : 14 sum_costs : -2008.37 Avg Reward : -2124.39
+Episode : 15 sum_costs : -2125.30 Avg Reward : -2124.45
+Episode : 16 sum_costs : -1987.94 Avg Reward : -2115.92
+Episode : 17 sum_costs : -2205.05 Avg Reward : -2121.16
+Episode : 18 sum_costs : -2206.00 Avg Reward : -2125.88
+Episode : 19 sum_costs : -2142.93 Avg Reward : -2126.78
+Episode : 20 sum_costs : -2119.59 Avg Reward : -2126.42
+Episode : 21 sum_costs : -2145.25 Avg Reward : -2127.31
+Episode : 22 sum_costs : -2267.12 Avg Reward : -2133.67
+Episode : 23 sum_costs : -1988.14 Avg Reward : -2127.34
+Episode : 24 sum_costs : -2049.38 Avg Reward : -2124.09
+Episode : 25 sum_costs : -2384.20 Avg Reward : -2134.50
+Episode : 26 sum_costs : -2313.34 Avg Reward : -2141.37
+Episode : 27 sum_costs : -2160.00 Avg Reward : -2142.06
+Episode : 28 sum_costs : -2079.97 Avg Reward : -2139.85
+Episode : 29 sum_costs : -2264.54 Avg Reward : -2144.15
+Episode : 30 sum_costs : -2163.46 Avg Reward : -2144.79
+Episode : 31 sum_costs : -2109.96 Avg Reward : -2143.67
+Episode : 32 sum_costs : -2251.62 Avg Reward : -2147.04
+Episode : 33 sum_costs : -2513.10 Avg Reward : -2158.13
+Episode : 34 sum_costs : -2159.69 Avg Reward : -2158.18
+Episode : 35 sum_costs : -2208.31 Avg Reward : -2159.61
+Episode : 36 sum_costs : -2342.99 Avg Reward : -2164.70
+Episode : 37 sum_costs : -2270.18 Avg Reward : -2167.56
+Episode : 38 sum_costs : -2213.57 Avg Reward : -2168.77
+Episode : 39 sum_costs : -2418.17 Avg Reward : -2175.16
+Episode : 40 sum_costs : -2009.21 Avg Reward : -2171.01
+Episode : 41 sum_costs : -2343.88 Avg Reward : -2175.23
+Episode : 42 sum_costs : -2250.01 Avg Reward : -2177.01
+Episode : 43 sum_costs : -2386.32 Avg Reward : -2181.88
+Episode : 44 sum_costs : -2359.96 Avg Reward : -2185.92
+Episode : 45 sum_costs : -2284.68 Avg Reward : -2188.12
+Episode : 46 sum_costs : -2255.89 Avg Reward : -2189.59
+Episode : 47 sum_costs : -2152.22 Avg Reward : -2188.80
+Episode : 48 sum_costs : -2418.47 Avg Reward : -2193.58
+Episode : 49 sum_costs : -2023.92 Avg Reward : -2190.12
+Episode : 50 sum_costs : -2241.96 Avg Reward : -2191.16
+Episode : 51 sum_costs : -2346.97 Avg Reward : -2194.21
+Episode : 52 sum_costs : -2377.28 Avg Reward : -2197.73
+Episode : 53 sum_costs : -2141.01 Avg Reward : -2196.66
+Episode : 54 sum_costs : -2122.27 Avg Reward : -2195.28
+Episode : 55 sum_costs : -2534.29 Avg Reward : -2201.45
+Episode : 56 sum_costs : -2348.28 Avg Reward : -2204.07
+Episode : 57 sum_costs : -2261.74 Avg Reward : -2205.08
+Episode : 58 sum_costs : -2199.87 Avg Reward : -2204.99
+Episode : 59 sum_costs : -2290.99 Avg Reward : -2206.45
+Episode : 60 sum_costs : -1992.25 Avg Reward : -2202.88
+Episode : 61 sum_costs : -2107.54 Avg Reward : -2201.32
+Episode : 62 sum_costs : -2344.62 Avg Reward : -2203.63
+Episode : 63 sum_costs : -2353.00 Avg Reward : -2206.00
+Episode : 64 sum_costs : -2248.67 Avg Reward : -2206.67
+Episode : 65 sum_costs : -2179.05 Avg Reward : -2206.24
+Episode : 66 sum_costs : -2163.27 Avg Reward : -2205.59
+Episode : 67 sum_costs : -2170.21 Avg Reward : -2205.06
+Episode : 68 sum_costs : -2252.67 Avg Reward : -2205.76
+Episode : 69 sum_costs : -2343.39 Avg Reward : -2207.76
+Episode : 70 sum_costs : -1777.90 Avg Reward : -2201.62
+Episode : 71 sum_costs : -2457.65 Avg Reward : -2205.22
+Episode : 72 sum_costs : -2324.66 Avg Reward : -2206.88
+Episode : 73 sum_costs : -2157.88 Avg Reward : -2206.21
+Episode : 74 sum_costs : -2316.93 Avg Reward : -2207.71
+Episode : 75 sum_costs : -2270.27 Avg Reward : -2208.54
+Episode : 76 sum_costs : -2435.71 Avg Reward : -2211.53
+Episode : 77 sum_costs : -2078.06 Avg Reward : -2209.80
+Episode : 78 sum_costs : -2063.12 Avg Reward : -2207.91
+Episode : 79 sum_costs : -2031.37 Avg Reward : -2205.68
+Episode : 80 sum_costs : -2171.48 Avg Reward : -2205.25
+Episode : 81 sum_costs : -2300.56 Avg Reward : -2206.43
+Episode : 82 sum_costs : -2147.19 Avg Reward : -2205.71
+Episode : 83 sum_costs : -2120.14 Avg Reward : -2204.68
+Episode : 84 sum_costs : -2159.02 Avg Reward : -2204.13
+Episode : 85 sum_costs : -1993.03 Avg Reward : -2201.65
+Episode : 86 sum_costs : -1858.39 Avg Reward : -2197.66
+Episode : 87 sum_costs : -2251.01 Avg Reward : -2198.27
+Episode : 88 sum_costs : -1969.32 Avg Reward : -2195.67
+Episode : 89 sum_costs : -2305.25 Avg Reward : -2196.90
+Episode : 90 sum_costs : -2165.84 Avg Reward : -2196.56
+Episode : 91 sum_costs : -2026.02 Avg Reward : -2194.68
+Episode : 92 sum_costs : -2148.24 Avg Reward : -2194.18
+Episode : 93 sum_costs : -2290.20 Avg Reward : -2195.21
+Episode : 94 sum_costs : -2235.27 Avg Reward : -2195.63
+Episode : 95 sum_costs : -2174.65 Avg Reward : -2195.41
+Episode : 96 sum_costs : -2326.56 Avg Reward : -2196.78
+Episode : 97 sum_costs : -2342.41 Avg Reward : -2198.28
+Episode : 98 sum_costs : -1947.46 Avg Reward : -2195.72
+Episode : 99 sum_costs : -2292.66 Avg Reward : -2196.70
+Episode : 100 sum_costs : -2178.03 Avg Reward : -2196.51
+Episode : 101 sum_costs : -2226.54 Avg Reward : -2196.39
+Episode : 102 sum_costs : -2056.64 Avg Reward : -2196.52
+Episode : 103 sum_costs : -2126.54 Avg Reward : -2199.79
+Episode : 104 sum_costs : -2142.42 Avg Reward : -2202.05
+Episode : 105 sum_costs : -2209.81 Avg Reward : -2201.56
+Episode : 106 sum_costs : -2100.44 Avg Reward : -2199.06
+Episode : 107 sum_costs : -2501.14 Avg Reward : -2200.18
+Episode : 108 sum_costs : -2175.08 Avg Reward : -2204.41
+Episode : 109 sum_costs : -2047.84 Avg Reward : -2204.72
+Episode : 110 sum_costs : -2100.02 Avg Reward : -2201.83
+Episode : 111 sum_costs : -2264.70 Avg Reward : -2202.97
+Episode : 112 sum_costs : -2119.36 Avg Reward : -2202.15
+Episode : 113 sum_costs : -2283.03 Avg Reward : -2202.72
+Episode : 114 sum_costs : -2239.10 Avg Reward : -2205.03
+Episode : 115 sum_costs : -2030.58 Avg Reward : -2204.08
+Episode : 116 sum_costs : -1981.00 Avg Reward : -2204.01
+Episode : 117 sum_costs : -2262.46 Avg Reward : -2204.58
+Episode : 118 sum_costs : -1939.22 Avg Reward : -2201.92
+Episode : 119 sum_costs : -2052.07 Avg Reward : -2201.01
+Episode : 120 sum_costs : -2206.75 Avg Reward : -2201.88
+Episode : 121 sum_costs : -1892.12 Avg Reward : -2199.35
+Episode : 122 sum_costs : -2175.70 Avg Reward : -2198.43
+Episode : 123 sum_costs : -2128.65 Avg Reward : -2199.84
+Episode : 124 sum_costs : -1844.76 Avg Reward : -2197.79
+Episode : 125 sum_costs : -1989.38 Avg Reward : -2193.84
+Episode : 126 sum_costs : -2350.24 Avg Reward : -2194.21
+Episode : 127 sum_costs : -1993.55 Avg Reward : -2192.55
+Episode : 128 sum_costs : -2209.92 Avg Reward : -2193.85
+Episode : 129 sum_costs : -2326.50 Avg Reward : -2194.47
+Episode : 130 sum_costs : -2342.34 Avg Reward : -2196.26
+Episode : 131 sum_costs : -2093.47 Avg Reward : -2196.09
+Episode : 132 sum_costs : -1906.84 Avg Reward : -2192.64
+Episode : 133 sum_costs : -2411.70 Avg Reward : -2191.63
+Episode : 134 sum_costs : -2142.58 Avg Reward : -2191.46
+Episode : 135 sum_costs : -2501.93 Avg Reward : -2194.39
+Episode : 136 sum_costs : -2265.91 Avg Reward : -2193.62
+Episode : 137 sum_costs : -2219.90 Avg Reward : -2193.12
+Episode : 138 sum_costs : -2215.24 Avg Reward : -2193.14
+Episode : 139 sum_costs : -2049.45 Avg Reward : -2189.45
+Episode : 140 sum_costs : -1871.84 Avg Reward : -2188.08
+Episode : 141 sum_costs : -2019.73 Avg Reward : -2184.84
+Episode : 142 sum_costs : -2227.23 Avg Reward : -2184.61
+Episode : 143 sum_costs : -2213.32 Avg Reward : -2182.88
+Episode : 144 sum_costs : -2289.68 Avg Reward : -2182.17
+Episode : 145 sum_costs : -2510.58 Avg Reward : -2184.43
+Episode : 146 sum_costs : -2228.29 Avg Reward : -2184.16
+Episode : 147 sum_costs : -2037.01 Avg Reward : -2183.01
+Episode : 148 sum_costs : -2200.79 Avg Reward : -2180.83
+Episode : 149 sum_costs : -2062.57 Avg Reward : -2181.22
+Episode : 150 sum_costs : -2024.30 Avg Reward : -2179.04
+Episode : 151 sum_costs : -2300.47 Avg Reward : -2178.57
+Episode : 152 sum_costs : -2068.48 Avg Reward : -2175.49
+Episode : 153 sum_costs : -2310.33 Avg Reward : -2177.18
+Episode : 154 sum_costs : -2243.86 Avg Reward : -2178.39
+Episode : 155 sum_costs : -2094.42 Avg Reward : -2174.00
+Episode : 156 sum_costs : -2290.48 Avg Reward : -2173.42
+Episode : 157 sum_costs : -1943.55 Avg Reward : -2170.24
+Episode : 158 sum_costs : -2076.57 Avg Reward : -2169.00
+Episode : 159 sum_costs : -2220.76 Avg Reward : -2168.30
+Episode : 160 sum_costs : -2284.64 Avg Reward : -2171.22
+Episode : 161 sum_costs : -2109.27 Avg Reward : -2171.24
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/v/dense_3/kernel:0' shape=(64, 64) dtype=float32, numpy=
+array([[2.88177907e-01, 6.55010760e-01, 1.40249658e+00, ...,
+        8.09453487e-01, 9.20656979e-01, 7.83642411e-01],
+       [1.28663918e-02, 8.14946219e-02, 1.10733598e-01, ...,
+        1.02801122e-01, 1.05748884e-01, 9.16970149e-02],
+       [3.31418440e-02, 6.76328242e-02, 4.53583330e-01, ...,
+        8.70686397e-02, 1.01761192e-01, 8.42361450e-02],
+       ...,
+       [2.18058735e-01, 5.15249252e-01, 6.40164912e-01, ...,
+        6.28665447e-01, 7.21409917e-01, 6.10892594e-01],
+       [5.56515813e-01, 1.34335113e+00, 2.83385611e+00, ...,
+        1.68081963e+00, 1.87838185e+00, 1.57276058e+00],
+       [6.88111223e-03, 1.71569418e-02, 5.52814628e-04, ...,
+        2.14877333e-02, 2.39046887e-02, 1.91067066e-02]], dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 403, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 237, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 195, in update_step
+    v.assign_add((tf.square(gradient) - v) * (1 - self.beta_2))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1493, in r_binary_op_wrapper
+    y, x = maybe_promote_tensors(y, x, force_same_dtype=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 111, in _result_type
+    arrays_and_dtypes = [preprocess_float(x) for x in arrays_and_dtypes]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 111, in <listcomp>
+    arrays_and_dtypes = [preprocess_float(x) for x in arrays_and_dtypes]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/v/dense_3/kernel:0' shape=(64, 64) dtype=float32, numpy=
+array([[2.88177907e-01, 6.55010760e-01, 1.40249658e+00, ...,
+        8.09453487e-01, 9.20656979e-01, 7.83642411e-01],
+       [1.28663918e-02, 8.14946219e-02, 1.10733598e-01, ...,
+        1.02801122e-01, 1.05748884e-01, 9.16970149e-02],
+       [3.31418440e-02, 6.76328242e-02, 4.53583330e-01, ...,
+        8.70686397e-02, 1.01761192e-01, 8.42361450e-02],
+       ...,
+       [2.18058735e-01, 5.15249252e-01, 6.40164912e-01, ...,
+        6.28665447e-01, 7.21409917e-01, 6.10892594e-01],
+       [5.56515813e-01, 1.34335113e+00, 2.83385611e+00, ...,
+        1.68081963e+00, 1.87838185e+00, 1.57276058e+00],
+       [6.88111223e-03, 1.71569418e-02, 5.52814628e-04, ...,
+        2.14877333e-02, 2.39046887e-02, 1.91067066e-02]], dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 403, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 237, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 195, in update_step
+    v.assign_add((tf.square(gradient) - v) * (1 - self.beta_2))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1493, in r_binary_op_wrapper
+    y, x = maybe_promote_tensors(y, x, force_same_dtype=True)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 111, in _result_type
+    arrays_and_dtypes = [preprocess_float(x) for x in arrays_and_dtypes]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 111, in <listcomp>
+    arrays_and_dtypes = [preprocess_float(x) for x in arrays_and_dtypes]
+KeyboardInterrupt

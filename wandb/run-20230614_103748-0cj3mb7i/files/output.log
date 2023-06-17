@@ -1,0 +1,140 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 7)                 455
+=================================================================
+Total params: 7,351
+Trainable params: 7,351
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2344.76 Avg Reward : -2344.76
+Episode : 2 sum_costs : -2031.97 Avg Reward : -2188.36
+Episode : 3 sum_costs : -2377.61 Avg Reward : -2251.45
+Episode : 4 sum_costs : -1829.33 Avg Reward : -2145.92
+Episode : 5 sum_costs : -2013.03 Avg Reward : -2119.34
+Episode : 6 sum_costs : -2397.07 Avg Reward : -2165.63
+Episode : 7 sum_costs : -2269.25 Avg Reward : -2180.43
+Episode : 8 sum_costs : -2324.96 Avg Reward : -2198.50
+Episode : 9 sum_costs : -2055.94 Avg Reward : -2182.66
+Episode : 10 sum_costs : -2333.54 Avg Reward : -2197.75
+Episode : 11 sum_costs : -2531.16 Avg Reward : -2228.06
+Episode : 12 sum_costs : -2392.02 Avg Reward : -2241.72
+Episode : 13 sum_costs : -2417.18 Avg Reward : -2255.22
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/m/dense/bias:0' shape=(16,) dtype=float32, numpy=
+array([-0.03502337,  0.25458515,  0.07784688,  0.07409032,  0.13078983,
+       -0.10720322, -0.06213467, -0.05284093,  0.11587316, -0.19952075,
+       -0.03974994,  0.07195194, -0.15888417, -0.09899263,  0.04241196,
+        0.24218242], dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 238, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 592, in value
+    return self._read_variable_op()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 755, in _read_variable_op
+    if not context.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2224, in executing_eagerly
+    return ctx.executing_eagerly()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1458, in binary_op_wrapper
+    x, y = maybe_promote_tensors(x, y)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1428, in maybe_promote_tensors
+    result_type = np_dtypes._result_type(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_dtypes.py", line 112, in _result_type
+    dtype = np.result_type(*arrays_and_dtypes)
+  File "<__array_function__ internals>", line 180, in result_type
+TypeError: Cannot interpret '<tf.Variable 'Adam/m/dense/bias:0' shape=(16,) dtype=float32, numpy=
+array([-0.03502337,  0.25458515,  0.07784688,  0.07409032,  0.13078983,
+       -0.10720322, -0.06213467, -0.05284093,  0.11587316, -0.19952075,
+       -0.03974994,  0.07195194, -0.15888417, -0.09899263,  0.04241196,
+        0.24218242], dtype=float32)>' as a data type
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 238, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 194, in update_step
+    m.assign_add((gradient - m) * (1 - self.beta_1))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1470, in binary_op_wrapper
+    out = r_op(x)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/variables.py", line 1106, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 592, in value
+    return self._read_variable_op()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 755, in _read_variable_op
+    if not context.executing_eagerly():
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2224, in executing_eagerly
+    return ctx.executing_eagerly()
+KeyboardInterrupt

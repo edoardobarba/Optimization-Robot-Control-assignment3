@@ -1,0 +1,82 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 7)                 455
+=================================================================
+Total params: 7,351
+Trainable params: 7,351
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2207.08 Avg Reward : -2207.08
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 5324, in gather
+    return params.sparse_read(indices, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 443, in __getattr__
+    self.__getattribute__(name)
+AttributeError: 'tensorflow.python.framework.ops.EagerTensor' object has no attribute 'sparse_read'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 224, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1775, in _slice_helper
+    return array_ops.gather(tensor, stacked_indices, axis=axis)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py", line 576, in new_func
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 5326, in gather
+    return gen_array_ops.gather_v2(params, indices, axis, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 3964, in gather_v2
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 5324, in gather
+    return params.sparse_read(indices, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 443, in __getattr__
+    self.__getattribute__(name)
+AttributeError: 'tensorflow.python.framework.ops.EagerTensor' object has no attribute 'sparse_read'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 224, in train_dqn
+    q_pred = Q(np.array(states), training = True)[indices, actions]
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 1004, in _slice_helper
+    return tensor._numpy_style_getitem(slice_spec)  # pylint: disable=protected-access
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1806, in _getitem
+    result_t = _slice_helper(self, slice_spec)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/numpy_ops/np_array_ops.py", line 1775, in _slice_helper
+    return array_ops.gather(tensor, stacked_indices, axis=axis)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 1176, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py", line 576, in new_func
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py", line 5326, in gather
+    return gen_array_ops.gather_v2(params, indices, axis, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 3964, in gather_v2
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

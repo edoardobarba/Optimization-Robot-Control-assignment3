@@ -18,15 +18,6 @@ from numpy.linalg import inv
 import time
 import matplotlib.pyplot as plt
 
-# Define initial conditions
-theta = 0.2  # radians
-omega = 0.0  # radians/second
-
-# Define simulation parameters
-t_end = 10.0  # seconds
-dt = 0.01  # seconds
-N = int(t_end / dt)
-
 
 class Visual:
     '''
@@ -72,6 +63,8 @@ class Pendulum:
         self.Kf         = .10    # Friction coefficient
         self.vmax       = 8.0    # Max velocity (clipped if larger)
         self.umax       = 2.0    # Max torque   (clipped if larger)
+        self.DQ = 2*np.pi/self.nq   # discretization resolution for joint angle
+        self.DV = 2*self.vmax/self.nv # discretization resolution for joint velocity
         self.withSinCos = False  # If true, state is [cos(q),sin(q),qdot], else [q,qdot]
 
     def createPendulum(self, nbJoint, rootId=0, prefix='', jointPlacement=None):
@@ -131,35 +124,7 @@ class Pendulum:
         if x0 is None: 
             q0 = np.pi*(np.random.rand(self.nq)*2-1)
             v0 = np.random.rand(self.nv)*2-1
-            # print("Reset")
-            # print("q0: ")
-            # print(q0)
-            # print("v0: ")
-            # print(v0)
-            #if self.nx == 2: 
-
             x0 = np.vstack([q0,v0])
-            # print(np.shape(x0))
-            # # # print("x0: ")
-            # # # print(x0)
-            # print("stack x0: ", x0)
-            # #else:
-            # x0 = np.concatenate((q0,v0))
-            
-            # print("concatenate x0: ", x0)
-            # print(np.shape(x0))
-            
-            #x0 = x0.reshape((2, 1))
-
-            # print("concatenate shape: ", np.shape(x0))
-            #print(x0)
-            
-
-            # print("stack shape: ", np.shape(x0))
-            # print(x0)
-        # print("self.nx: ", self.nx)
-        # print("len(x0): ", len(x0))
-        #assert len(x0)==self.nx
         self.x = x0.copy()
         self.r = 0.0
         return self.obs(self.x)
@@ -167,7 +132,6 @@ class Pendulum:
 
     def step(self, u):
         ''' Simulate one time step '''
-        #assert(len(u)==self.nu)
         _,self.r = self.dynamics(self.x, u)
         return self.obs(self.x), self.r
 
@@ -183,7 +147,7 @@ class Pendulum:
         pin.framesKinematics(self.model, self.data,q)
         return self.data.oMf[1].translation[2,0]
 
-    def dynamics(self, x, u, display=False):
+    def dynamics(self, x, u, display=True):
         '''
         Dynamic function: x,u -> xnext=f(x,y).
         Put the result in x (the initial value is destroyed). 
@@ -195,30 +159,16 @@ class Pendulum:
         sumsq    = lambda x : np.sum(np.square(x))
 
         cost = 0.0
-        # print("x in dynamics:")
-        # print(x)
-        # print("")
         if self.nx == 2:
             q = modulePi(x[:self.nq])
             v = x[self.nq:]
         else:
             q = modulePi(x[0])
             v = x[1]
-        # print("q:")
-        # print(q)
-        # print("")
-
-        # print("v:")
-        # print(v)
-        # print("")
 
         if self.nu == 2: 
              u = [u, 0]
        
-
-        # print("q: ", q)
-        # print("v: ", v)
-        #print("before: ", u)
         u = np.clip(np.reshape(np.array(u),self.nu),-self.umax,self.umax)
 
         #print("after: ", u)
@@ -259,15 +209,15 @@ class Pendulum:
             else:
                 delta_q += sumsq(q_goal-abs(q_first))      
             
-            # Wq = 0.7
-            # Wv = 1-Wq
-            # cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
+            Wq = 0.7
+            Wv = 1-Wq
+            cost += Wq * delta_q + Wv * np.exp(-delta_q/2) * np.sum(v)
                 
-            cost += delta_q
+            #cost += delta_q
 
             if display:
                 self.display(q)
-                time.sleep(1e-2)
+                #time.sleep(1e-1)
 
         
         if self.nx == 4:
@@ -287,7 +237,26 @@ class Pendulum:
     def render(self):
         q = self.x[:self.nq]
         self.display(q)
-        time.sleep(self.DT/10)
+        #time.sleep(self.DT/10)
+
+
+    # Continuous to discrete
+    def c2dq(self, q):
+        q = (q+np.pi)%(2*np.pi)
+        return int(np.floor(q/self.DQ))  % self.nq
+    
+    def c2dv(self, v):
+        v = np.clip(v,-self.vmax+1e-3,self.vmax-1e-3)
+        return int(np.floor((v+self.vmax)/self.DV))
+    
+    # Discrete to continuous
+    def d2cq(self, iq):
+        iq = np.clip(iq,0,self.nq-1)
+        return iq*self.DQ - np.pi + 0.5*self.DQ
+    
+    def d2cv(self, iv):
+        iv = np.clip(iv,0,self.nv-1) - (self.nv-1)/2
+        return iv*self.DV
 
 
 

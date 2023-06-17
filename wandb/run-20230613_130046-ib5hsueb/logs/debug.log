@@ -26,3 +26,10 @@ config: {}
 2023-06-13 13:00:47,383 INFO    MainThread:758632 [wandb_run.py:_redirect():2078] Wrapping output streams.
 2023-06-13 13:00:47,384 INFO    MainThread:758632 [wandb_run.py:_redirect():2103] Redirects installed.
 2023-06-13 13:00:47,385 INFO    MainThread:758632 [wandb_init.py:init():829] run started, returning control to user process
+2023-06-14 01:30:59,650 INFO    MainThread:758632 [wandb_run.py:_finish():1893] finishing run myteamunitn/pendulum_DQN/ib5hsueb
+2023-06-14 01:30:59,651 INFO    MainThread:758632 [wandb_run.py:_atexit_cleanup():2127] got exitcode: 0
+2023-06-14 01:30:59,651 INFO    MainThread:758632 [wandb_run.py:_restore():2110] restore
+2023-06-14 01:30:59,651 INFO    MainThread:758632 [wandb_run.py:_restore():2116] restore done
+2023-06-14 01:31:22,548 INFO    MainThread:758632 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-14 01:31:22,548 INFO    MainThread:758632 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-14 01:31:22,552 INFO    MainThread:758632 [wandb_run.py:_footer_sync_info():3428] logging synced files

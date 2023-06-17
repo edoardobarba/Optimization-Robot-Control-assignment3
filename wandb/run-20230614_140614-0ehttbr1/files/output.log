@@ -1,0 +1,88 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 7)                 455
+=================================================================
+Total params: 7,351
+Trainable params: 7,351
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2215.43 Avg Reward : -2215.43
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 238, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 170, in update_step
+    alpha = lr * tf.sqrt(1 - beta_2_power) / (1 - beta_1_power)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1494, in r_binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 149, in error_handler
+    try:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 238, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 170, in update_step
+    alpha = lr * tf.sqrt(1 - beta_2_power) / (1 - beta_1_power)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/math_ops.py", line 1494, in r_binary_op_wrapper
+    return func(x, y, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/util/traceback_utils.py", line 149, in error_handler
+    try:
+KeyboardInterrupt

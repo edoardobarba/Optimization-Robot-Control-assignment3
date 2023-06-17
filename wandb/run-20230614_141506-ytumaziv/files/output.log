@@ -1,0 +1,124 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 7)                 455
+=================================================================
+Total params: 7,351
+Trainable params: 7,351
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2061.16 Avg Reward : -2061.16
+Episode : 2 sum_costs : -2266.14 Avg Reward : -2163.65
+Episode : 3 sum_costs : -2381.24 Avg Reward : -2236.18
+Episode : 4 sum_costs : -2298.84 Avg Reward : -2251.84
+Episode : 5 sum_costs : -2306.58 Avg Reward : -2262.79
+Episode : 6 sum_costs : -2132.76 Avg Reward : -2241.12
+Episode : 7 sum_costs : -2101.17 Avg Reward : -2221.13
+Episode : 8 sum_costs : -1688.13 Avg Reward : -2154.50
+Episode : 9 sum_costs : -2181.21 Avg Reward : -2157.47
+Episode : 10 sum_costs : -2167.27 Avg Reward : -2158.45
+Episode : 11 sum_costs : -2089.00 Avg Reward : -2152.14
+Episode : 12 sum_costs : -2384.98 Avg Reward : -2171.54
+Episode : 13 sum_costs : -1722.87 Avg Reward : -2137.03
+Episode : 14 sum_costs : -2331.18 Avg Reward : -2150.89
+Episode : 15 sum_costs : -2302.71 Avg Reward : -2161.02
+Episode : 16 sum_costs : -2111.91 Avg Reward : -2157.95
+Episode : 17 sum_costs : -1979.04 Avg Reward : -2147.42
+Episode : 18 sum_costs : -2035.68 Avg Reward : -2141.21
+Episode : 19 sum_costs : -2224.54 Avg Reward : -2145.60
+Episode : 20 sum_costs : -2300.88 Avg Reward : -2153.36
+Episode : 21 sum_costs : -2118.15 Avg Reward : -2151.69
+Episode : 22 sum_costs : -2380.00 Avg Reward : -2162.07
+Episode : 23 sum_costs : -2259.86 Avg Reward : -2166.32
+Episode : 24 sum_costs : -2242.59 Avg Reward : -2169.50
+Episode : 25 sum_costs : -2283.34 Avg Reward : -2174.05
+Episode : 26 sum_costs : -2220.20 Avg Reward : -2175.82
+Episode : 27 sum_costs : -2034.21 Avg Reward : -2170.58
+Episode : 28 sum_costs : -2123.18 Avg Reward : -2168.89
+Episode : 29 sum_costs : -1762.24 Avg Reward : -2154.86
+Episode : 30 sum_costs : -2231.02 Avg Reward : -2157.40
+Episode : 31 sum_costs : -2352.06 Avg Reward : -2163.68
+Episode : 32 sum_costs : -2231.88 Avg Reward : -2165.81
+Episode : 33 sum_costs : -1695.44 Avg Reward : -2151.56
+Episode : 34 sum_costs : -2304.42 Avg Reward : -2156.06
+Episode : 35 sum_costs : -2393.54 Avg Reward : -2162.84
+Episode : 36 sum_costs : -2289.01 Avg Reward : -2166.34
+Episode : 37 sum_costs : -2101.50 Avg Reward : -2164.59
+Episode : 38 sum_costs : -2411.20 Avg Reward : -2171.08
+Episode : 39 sum_costs : -2090.61 Avg Reward : -2169.02
+Episode : 40 sum_costs : -1856.04 Avg Reward : -2161.19
+Episode : 41 sum_costs : -2331.53 Avg Reward : -2165.35
+Episode : 42 sum_costs : -2143.10 Avg Reward : -2164.82
+Episode : 43 sum_costs : -1880.66 Avg Reward : -2158.21
+Episode : 44 sum_costs : -2273.19 Avg Reward : -2160.82
+Episode : 45 sum_costs : -1876.65 Avg Reward : -2154.51
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 238, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 195, in update_step
+    v.assign_add((tf.square(gradient) - v) * (1 - self.beta_2))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 11098, in square
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 238, in train_dqn
+    critic_optimizer.apply_gradients(zip(Q_grad, Q.trainable_variables))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1174, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 650, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1200, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1250, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 1247, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/optimizer.py", line 240, in _update_step
+    self.update_step(gradient, variable)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/optimizers/adam.py", line 195, in update_step
+    v.assign_add((tf.square(gradient) - v) * (1 - self.beta_2))
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_math_ops.py", line 11098, in square
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

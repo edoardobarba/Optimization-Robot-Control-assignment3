@@ -1,0 +1,39 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 3)                 195
+=================================================================
+Total params: 7,091
+Trainable params: 7,091
+Non-trainable params: 0
+_________________________________________________________________
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 162, in train_dqn
+    dqn.fill_replay_memory(env)
+  File "DQN template.py", line 120, in fill_replay_memory
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 171, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 270, in dynamics
+    #time.sleep(1e-1)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 162, in train_dqn
+    dqn.fill_replay_memory(env)
+  File "DQN template.py", line 120, in fill_replay_memory
+    next_x, cost = env.step(u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 171, in step
+    _,self.r = self.dynamics(self.x, u)
+  File "/home/edo/Desktop/orc/03_assignment/pendulum.py", line 270, in dynamics
+    #time.sleep(1e-1)
+KeyboardInterrupt

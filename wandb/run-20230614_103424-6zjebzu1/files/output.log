@@ -1,0 +1,81 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 3)                 195
+=================================================================
+Total params: 7,091
+Trainable params: 7,091
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2120.30 Avg Reward : -2120.30
+Episode : 2 sum_costs : -1660.80 Avg Reward : -1890.55
+Episode : 3 sum_costs : -2294.24 Avg Reward : -2025.11
+Episode : 4 sum_costs : -2381.61 Avg Reward : -2114.24
+Episode : 5 sum_costs : -1961.00 Avg Reward : -2083.59
+Episode : 6 sum_costs : -2074.51 Avg Reward : -2082.08
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 225, in train_dqn
+    q_target_pred = Q_target(np.array(next_states))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1134, in __call__
+    namescope_stack.enter_context(tf.name_scope(name_scope))
+  File "/usr/lib/python3.8/contextlib.py", line 425, in enter_context
+    result = _cm_type.__enter__(cm)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 7026, in __enter__
+    ctx = context.context()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2136, in context_safe
+    def context_safe():
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 397, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 225, in train_dqn
+    q_target_pred = Q_target(np.array(next_states))
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/training.py", line 558, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 512, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/edo/.local/lib/python3.8/site-packages/keras/engine/base_layer.py", line 1134, in __call__
+    namescope_stack.enter_context(tf.name_scope(name_scope))
+  File "/usr/lib/python3.8/contextlib.py", line 425, in enter_context
+    result = _cm_type.__enter__(cm)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 7026, in __enter__
+    ctx = context.context()
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/context.py", line 2136, in context_safe
+    def context_safe():
+KeyboardInterrupt

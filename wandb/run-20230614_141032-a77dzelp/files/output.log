@@ -1,0 +1,55 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 7)                 455
+=================================================================
+Total params: 7,351
+Trainable params: 7,351
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2044.79 Avg Reward : -2044.79
+Episode : 2 sum_costs : -2110.00 Avg Reward : -2077.39
+Episode : 3 sum_costs : -2472.55 Avg Reward : -2209.11
+Episode : 4 sum_costs : -2110.93 Avg Reward : -2184.57
+Episode : 5 sum_costs : -2304.00 Avg Reward : -2208.45
+Episode : 6 sum_costs : -2373.39 Avg Reward : -2235.94
+WARNING:tensorflow:Gradients do not exist for variables ['dense/kernel:0'] when minimizing the loss. If you're using `model.compile()`, did you forget to provide a `loss` argument?
+WARNING:tensorflow:Gradients do not exist for variables ['dense/kernel:0'] when minimizing the loss. If you're using `model.compile()`, did you forget to provide a `loss` argument?
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 236, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/nn_grad.py", line 414, in _ReluGrad
+    return gen_nn_ops.relu_grad(grad, op.outputs[0])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 11311, in relu_grad
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 236, in train_dqn
+    Q_grad = tape.gradient(Q_loss, Q.trainable_variables)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/nn_grad.py", line 414, in _ReluGrad
+    return gen_nn_ops.relu_grad(grad, op.outputs[0])
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 11311, in relu_grad
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

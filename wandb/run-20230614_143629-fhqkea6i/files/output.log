@@ -1,0 +1,90 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0
+ dense (Dense)               (None, 16)                80
+ dense_1 (Dense)             (None, 32)                544
+ dense_2 (Dense)             (None, 64)                2112
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 21)                1365
+=================================================================
+Total params: 8,261
+Trainable params: 8,261
+Non-trainable params: 0
+_________________________________________________________________
+Episode : 1 sum_costs : -2273.35 Avg Reward : -2273.35
+Episode : 2 sum_costs : -2079.33 Avg Reward : -2176.34
+Episode : 3 sum_costs : -2162.78 Avg Reward : -2171.82
+Episode : 4 sum_costs : -2005.44 Avg Reward : -2130.22
+Episode : 5 sum_costs : -2313.38 Avg Reward : -2166.85
+Episode : 6 sum_costs : -2418.56 Avg Reward : -2208.80
+Episode : 7 sum_costs : -2315.60 Avg Reward : -2224.06
+Episode : 8 sum_costs : -1835.56 Avg Reward : -2175.50
+Episode : 9 sum_costs : -1842.16 Avg Reward : -2138.46
+Episode : 10 sum_costs : -2101.27 Avg Reward : -2134.74
+Episode : 11 sum_costs : -2250.85 Avg Reward : -2145.30
+Episode : 12 sum_costs : -2473.34 Avg Reward : -2172.63
+Episode : 13 sum_costs : -1845.09 Avg Reward : -2147.44
+Episode : 14 sum_costs : -2397.51 Avg Reward : -2165.30
+Episode : 15 sum_costs : -2211.80 Avg Reward : -2168.40
+Episode : 16 sum_costs : -2019.34 Avg Reward : -2159.08
+Episode : 17 sum_costs : -2065.64 Avg Reward : -2153.59
+Episode : 18 sum_costs : -2138.96 Avg Reward : -2152.78
+Episode : 19 sum_costs : -2088.50 Avg Reward : -2149.39
+Episode : 20 sum_costs : -2202.16 Avg Reward : -2152.03
+Episode : 21 sum_costs : -2259.38 Avg Reward : -2157.14
+Episode : 22 sum_costs : -2277.31 Avg Reward : -2162.60
+Episode : 23 sum_costs : -2341.97 Avg Reward : -2170.40
+Episode : 24 sum_costs : -2287.54 Avg Reward : -2175.28
+Episode : 25 sum_costs : -2347.22 Avg Reward : -2182.16
+Episode : 26 sum_costs : -2229.75 Avg Reward : -2183.99
+Episode : 27 sum_costs : -2330.08 Avg Reward : -2189.40
+Episode : 28 sum_costs : -2414.39 Avg Reward : -2197.44
+Episode : 29 sum_costs : -2223.45 Avg Reward : -2198.33
+Episode : 30 sum_costs : -1997.99 Avg Reward : -2191.66
+Episode : 31 sum_costs : -2362.25 Avg Reward : -2197.16
+Episode : 32 sum_costs : -2330.22 Avg Reward : -2201.32
+Episode : 33 sum_costs : -2305.55 Avg Reward : -2204.48
+Episode : 34 sum_costs : -1574.56 Avg Reward : -2185.95
+Episode : 35 sum_costs : -2393.36 Avg Reward : -2191.88
+Episode : 36 sum_costs : -1744.77 Avg Reward : -2179.46
+Episode : 37 sum_costs : -2387.28 Avg Reward : -2185.07
+Episode : 38 sum_costs : -2107.39 Avg Reward : -2183.03
+Episode : 39 sum_costs : -2368.43 Avg Reward : -2187.78
+Episode : 40 sum_costs : -2366.40 Avg Reward : -2192.25
+Episode : 41 sum_costs : -2134.19 Avg Reward : -2190.83
+Episode : 42 sum_costs : -2230.71 Avg Reward : -2191.78
+Episode : 43 sum_costs : -2220.57 Avg Reward : -2192.45
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 236, in train_dqn
+    # Update the critic backpropagating the gradients
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_grad.py", line 286, in _StridedSliceGrad
+    return array_ops.strided_slice_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 10890, in strided_slice_grad
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "DQN template.py", line 398, in <module>
+    train_dqn(dqn, env, episodes, critic_optimizer, save_dir, go_on=False)
+  File "DQN template.py", line 236, in train_dqn
+    # Update the critic backpropagating the gradients
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 1063, in gradient
+    flat_grad = imperative_grad.imperative_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/imperative_grad.py", line 67, in imperative_grad
+    return pywrap_tfe.TFE_Py_TapeGradient(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/eager/backprop.py", line 146, in _gradient_function
+    return grad_fn(mock_op, *out_grads)
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/array_grad.py", line 286, in _StridedSliceGrad
+    return array_ops.strided_slice_grad(
+  File "/home/edo/.local/lib/python3.8/site-packages/tensorflow/python/ops/gen_array_ops.py", line 10890, in strided_slice_grad
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt
