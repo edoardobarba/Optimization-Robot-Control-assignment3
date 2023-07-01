@@ -5,3 +5,7 @@ of a mass attached to a fixed pivot point, exhibits complex dynamics that requir
 In this specific scenario, our objective is to bring the pendulum to an upright position. We achieved this result by utilizing the powerful Deep Q-Network (DQN)
 algorithm. The DQN algorithm has gained substantial popularity due to its ability to learn control policies directly from raw sensory inputs, 
 making it an ideal choice for addressing complex control problems such as this one. 
+
+More details can be found in the project report. 
+
+
